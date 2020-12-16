@@ -1,0 +1,175 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  16/Dec/2020  13:52:24
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\Exe\PWM.out
+#    Map file     =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\List\PWM.map
+#    Command line =
+#        -f C:\Users\soren\AppData\Local\Temp\EW9384.tmp
+#        (C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\Obj\main.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\Obj\stm32l0xx_it.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\Obj\system_stm32l0xx.o
+#        --no_out_extension -o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\Exe\PWM.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\List\PWM.map
+#        --config "Z:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\config\linker\ST\stm32l053x8.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+
+No sections matched the following patterns:
+
+  rw               in "P2"
+  section .eeprom  in "P3"
+
+
+  Section   Kind         Address   Size  Object
+  -------   ----         -------   ----  ------
+"A0":                              0x40
+  .intvec   ro code   0x800'0000   0x40  vector_table_M.o [3]
+                    - 0x800'0040   0x40
+
+"P1":                             0x100
+  .text     ro code   0x800'0040   0x64  main.o [1]
+  .text     ro code   0x800'00a4   0x2c  main.o [1]
+  .text     ro code   0x800'00d0   0x1e  cmain.o [3]
+  .text     ro code   0x800'00ee    0x4  low_level_init.o [2]
+  .text     ro code   0x800'00f2    0xc  main.o [1]
+  .text     ro code   0x800'00fe    0x8  exit.o [2]
+  .text     ro code   0x800'0106    0x2  vector_table_M.o [3]
+  .text     ro code   0x800'0108    0xa  cexit.o [3]
+  .text     ro code   0x800'0114   0x14  exit.o [4]
+  .text     ro code   0x800'0128    0xc  stm32l0xx_it.o [1]
+  .text     ro code   0x800'0134    0xc  cstartup_M.o [3]
+                    - 0x800'0140  0x100
+
+"P2":                             0x400
+  CSTACK             0x2000'0000  0x400  <Block>
+    CSTACK  uninit   0x2000'0000  0x400  <Block tail>
+                   - 0x2000'0400  0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'0140   0x800'ffff  0xfec0
+  0x2000'0400  0x2000'1fff  0x1c00
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  rw data
+    ------            -------  -------
+command line/config:
+    ----------------------------------
+    Total:
+
+C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\Obj: [1]
+    main.o                156
+    stm32l0xx_it.o         12
+    ----------------------------------
+    Total:                168
+
+dl6M_tln.a: [2]
+    exit.o                  8
+    low_level_init.o        4
+    ----------------------------------
+    Total:                 12
+
+rt6M_tl.a: [3]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           12
+    vector_table_M.o       66
+    ----------------------------------
+    Total:                118
+
+shb_l.a: [4]
+    exit.o                 20
+    ----------------------------------
+    Total:                 20
+
+    Gaps                    2
+    Linker created               1'024
+--------------------------------------
+    Grand Total:          320    1'024
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address  Size  Type      Object
+-----                     -------  ----  ----      ------
+?main                  0x800'00d1        Code  Gb  cmain.o [3]
+CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit         0x2000'0400         --   Gb  - Linker created -
+ConfigureGPIO          0x800'00a5  0x2c  Code  Gb  main.o [1]
+HardFault_Handler      0x800'012b   0x4  Code  Gb  stm32l0xx_it.o [1]
+NMI_Handler            0x800'0129   0x2  Code  Gb  stm32l0xx_it.o [1]
+PWM_Init               0x800'0041  0x64  Code  Gb  main.o [1]
+PendSV_Handler         0x800'0131   0x2  Code  Gb  stm32l0xx_it.o [1]
+Region$$Table$$Base           0x0         --   Gb  - Linker created -
+Region$$Table$$Limit          0x0         --   Gb  - Linker created -
+SVC_Handler            0x800'012f   0x2  Code  Gb  stm32l0xx_it.o [1]
+SysTick_Handler        0x800'0133   0x2  Code  Gb  stm32l0xx_it.o [1]
+__cmain                0x800'00d1        Code  Gb  cmain.o [3]
+__exit                 0x800'0115  0x14  Code  Gb  exit.o [4]
+__iar_program_start    0x800'0135        Code  Gb  cstartup_M.o [3]
+__low_level_init       0x800'00ef   0x4  Code  Gb  low_level_init.o [2]
+__vector_table         0x800'0000        Data  Gb  vector_table_M.o [3]
+_call_main             0x800'00dd        Code  Gb  cmain.o [3]
+_exit                  0x800'0109        Code  Gb  cexit.o [3]
+_main                  0x800'00eb        Code  Gb  cmain.o [3]
+exit                   0x800'00ff   0x8  Code  Gb  exit.o [2]
+main                   0x800'00f3   0xc  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\PWM\EWARM\Debug\Obj
+[2] = dl6M_tln.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+    320 bytes of readonly  code memory
+  1'024 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
