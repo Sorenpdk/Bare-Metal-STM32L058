@@ -1,0 +1,206 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  20/Dec/2020  11:33:10
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Exe\ADC.out
+#    Map file     =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\List\ADC.map
+#    Command line =
+#        -f C:\Users\soren\AppData\Local\Temp\EW203E.tmp
+#        (C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Obj\customclock.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Obj\main.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Obj\startup_stm32l053xx.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Obj\stm32l0xx_it.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Obj\system_stm32l0xx.o
+#        --no_out_extension -o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Exe\ADC.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\List\ADC.map
+#        --config "Z:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\config\linker\ST\stm32l053x8.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+
+No sections matched the following patterns:
+
+  rw               in "P2"
+  section .eeprom  in "P3"
+
+
+  Section   Kind         Address   Size  Object
+  -------   ----         -------   ----  ------
+"A0":                              0xc0
+  .intvec   ro code   0x800'0000   0xc0  startup_stm32l053xx.o [1]
+                    - 0x800'00c0   0xc0
+
+"P1":                             0x14e
+  .text     ro code   0x800'00c0   0x9c  customclock.o [1]
+  .text     ro code   0x800'015c   0x1e  cmain.o [3]
+  .text     ro code   0x800'017a    0x4  low_level_init.o [2]
+  .text     ro code   0x800'017e    0x8  main.o [1]
+  .text     ro code   0x800'0186    0x8  exit.o [2]
+  .text     ro code   0x800'018e    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'0190    0xa  cexit.o [3]
+  .text     ro code   0x800'019a    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'019c   0x14  exit.o [4]
+  .text     ro code   0x800'01b0   0x10  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01c0    0xc  stm32l0xx_it.o [1]
+  .text     ro code   0x800'01cc    0xc  cstartup_M.o [3]
+  .text     ro code   0x800'01d8    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01da    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01dc    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01de    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01e0    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01e2    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01e4    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01e6    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01e8    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01ea    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01ec    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01ee    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01f0    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01f2    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01f4    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01f6    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01f8    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01fa    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01fc    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'01fe    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'0200    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'0202    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'0204    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'0206    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'0208    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'020a    0x2  startup_stm32l053xx.o [1]
+  .text     ro code   0x800'020c    0x2  system_stm32l0xx.o [1]
+                    - 0x800'020e  0x14e
+
+"P2":                             0x400
+  CSTACK             0x2000'0000  0x400  <Block>
+    CSTACK  uninit   0x2000'0000  0x400  <Block tail>
+                   - 0x2000'0400  0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'020e   0x800'ffff  0xfdf2
+  0x2000'0400  0x2000'1fff  0x1c00
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  rw data
+    ------                 -------  -------
+command line/config:
+    ---------------------------------------
+    Total:
+
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Obj: [1]
+    customclock.o              156
+    main.o                       8
+    startup_stm32l053xx.o      264
+    stm32l0xx_it.o              12
+    system_stm32l0xx.o           2
+    ---------------------------------------
+    Total:                     442
+
+dl6M_tln.a: [2]
+    exit.o                       8
+    low_level_init.o             4
+    ---------------------------------------
+    Total:                      12
+
+rt6M_tl.a: [3]
+    cexit.o                     10
+    cmain.o                     30
+    cstartup_M.o                12
+    ---------------------------------------
+    Total:                      52
+
+shb_l.a: [4]
+    exit.o                      20
+    ---------------------------------------
+    Total:                      20
+
+    Linker created                    1'024
+-------------------------------------------
+    Grand Total:               526    1'024
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address  Size  Type      Object
+-----                     -------  ----  ----      ------
+?main                  0x800'015d        Code  Gb  cmain.o [3]
+CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit         0x2000'0400         --   Gb  - Linker created -
+CustomClock_init       0x800'00c1  0x9c  Code  Gb  customclock.o [1]
+HardFault_Handler      0x800'01c3   0x4  Code  Gb  stm32l0xx_it.o [1]
+NMI_Handler            0x800'01c1   0x2  Code  Gb  stm32l0xx_it.o [1]
+PendSV_Handler         0x800'01c9   0x2  Code  Gb  stm32l0xx_it.o [1]
+Region$$Table$$Base           0x0         --   Gb  - Linker created -
+Region$$Table$$Limit          0x0         --   Gb  - Linker created -
+SVC_Handler            0x800'01c7   0x2  Code  Gb  stm32l0xx_it.o [1]
+SysTick_Handler        0x800'01cb   0x2  Code  Gb  stm32l0xx_it.o [1]
+SystemInit             0x800'020d   0x2  Code  Gb  system_stm32l0xx.o [1]
+__cmain                0x800'015d        Code  Gb  cmain.o [3]
+__exit                 0x800'019d  0x14  Code  Gb  exit.o [4]
+__iar_program_start    0x800'01cd        Code  Gb  cstartup_M.o [3]
+__low_level_init       0x800'017b   0x4  Code  Gb  low_level_init.o [2]
+__vector_table         0x800'0000        Data  Gb  startup_stm32l053xx.o [1]
+_call_main             0x800'0169        Code  Gb  cmain.o [3]
+_exit                  0x800'0191        Code  Gb  cexit.o [3]
+_main                  0x800'0177        Code  Gb  cmain.o [3]
+exit                   0x800'0187   0x8  Code  Gb  exit.o [2]
+main                   0x800'017f   0x8  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\EWARM\Debug\Obj
+[2] = dl6M_tln.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+    526 bytes of readonly  code memory
+  1'024 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
