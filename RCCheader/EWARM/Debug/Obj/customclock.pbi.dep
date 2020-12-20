@@ -1,6 +1,6 @@
 customclock.pbi: \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\Src\customclock.c \
-  C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\Inc\SYSCLKCUSTOM.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\Inc\customclock.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\Inc/stm32l0xx.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\Inc/stm32l053xx.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\CMSIS\core_cm0plus.h \

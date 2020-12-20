@@ -39,7 +39,7 @@ int main(void)
   
 /* The MSI clock is always used as system clock after restart from Reset 2.097 MHz (default value)*/
  SysTick_Config(SystemCoreClock/1000); /* 1ms config */
- Custom_clk_config();
+ CustomClock_init();
  SystemCoreClockUpdate();
  ConfigureGPIO();
  SysTick_Config(12000); // 12 MHz

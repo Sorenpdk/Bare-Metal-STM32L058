@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.6.265/W32 for ARM                  18/Dec/2020  14:10:23
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  20/Dec/2020  11:38:08
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
@@ -8,7 +8,7 @@
 #    Map file     =
 #        C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\EWARM\Debug\List\RCCH.map
 #    Command line =
-#        -f C:\Users\soren\AppData\Local\Temp\EW3E81.tmp
+#        -f C:\Users\soren\AppData\Local\Temp\EWAE40.tmp
 #        (C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\EWARM\Debug\Obj\customclock.o
 #        C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\EWARM\Debug\Obj\main.o
 #        C:\Users\soren\Desktop\Bare-Metal-STM32L058\RCCheader\EWARM\Debug\Obj\stm32l0xx_it.o
@@ -182,7 +182,7 @@ AHBPrescTable            0x800'04b4  0x10  Data  Gb  system_stm32l0xx.o [1]
 CSTACK$$Base            0x2000'0008         --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'0408         --   Gb  - Linker created -
 ConfigureGPIO            0x800'03b5  0x44  Code  Gb  main.o [1]
-Custom_clk_config        0x800'0229  0x9c  Code  Gb  customclock.o [1]
+CustomClock_init         0x800'0229  0x9c  Code  Gb  customclock.o [1]
 HardFault_Handler        0x800'0221   0x4  Code  Gb  stm32l0xx_it.o [1]
 NMI_Handler              0x800'021f   0x2  Code  Gb  stm32l0xx_it.o [1]
 NVIC_SetPriority         0x800'0041  0x8a  Code  Lc  main.o [1]

@@ -2857,6 +2857,9 @@
     <group>
         <name>Inc</name>
         <file>
+            <name>$PROJ_DIR$\..\Inc\customclock.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\Inc\stm32l053xx.h</name>
         </file>
         <file>

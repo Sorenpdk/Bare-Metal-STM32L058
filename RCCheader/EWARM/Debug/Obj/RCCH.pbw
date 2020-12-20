@@ -97416,30 +97416,44 @@
     "scope": null
   },
   {
-    "ID": "c:SYSCLKCUSTOM.h@519@macro@CUSTOMCLOCK_H",
+    "ID": "c:customclock.h@113@macro@CUSTOMCLOCK_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CUSTOMCLOCK_H",
     "location": {
       "column": "9",
-      "line": "13",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\RCCheader\\Inc\\SYSCLKCUSTOM.h"
+      "line": "3",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\RCCheader\\Inc\\customclock.h"
     },
     "name": "CUSTOMCLOCK_H",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@Custom_clk_config",
+    "ID": "c:@F@CustomClock_init",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void Custom_clk_config(void)",
+    "display": "void CustomClock_init(void)",
     "location": {
       "column": "13",
-      "line": "23",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\RCCheader\\Inc\\SYSCLKCUSTOM.h"
+      "line": "14",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\RCCheader\\Inc\\customclock.h"
     },
-    "name": "Custom_clk_config",
+    "name": "CustomClock_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@CustomClock_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void CustomClock_init(void)",
+    "location": {
+      "column": "13",
+      "line": "14",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\RCCheader\\Inc\\customclock.h"
+    },
+    "name": "CustomClock_init",
     "origin": "user_include",
     "scope": null
   },
@@ -97472,16 +97486,16 @@
     "scope": null
   },
   {
-    "ID": "c:@F@Custom_clk_config",
+    "ID": "c:@F@CustomClock_init",
     "What": "Function",
     "defdec": "Def",
-    "display": "void Custom_clk_config(void)",
+    "display": "void CustomClock_init(void)",
     "location": {
       "column": "6",
       "line": "23",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\RCCheader\\Src\\customclock.c"
     },
-    "name": "Custom_clk_config",
+    "name": "CustomClock_init",
     "origin": "project_file",
     "scope": null
   },
@@ -97917,34 +97931,6 @@
     },
     "name": "msirange",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:customclock.h@114@macro@SYSCLKCUSTOM_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SYSCLKCUSTOM_H",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\RCCheader\\Inc\\customclock.h"
-    },
-    "name": "SYSCLKCUSTOM_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Custom_clk_config",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Custom_clk_config(void)",
-    "location": {
-      "column": "13",
-      "line": "14",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\RCCheader\\Inc\\customclock.h"
-    },
-    "name": "Custom_clk_config",
-    "origin": "user_include",
     "scope": null
   },
   {

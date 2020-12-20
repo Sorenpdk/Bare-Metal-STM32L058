@@ -1,6 +1,6 @@
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef SYSCLKCUSTOM_H
-#define SYSCLKCUSTOM_H
+#ifndef CUSTOMCLOCK_H
+#define CUSTOMCLOCK_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -11,7 +11,7 @@ extern "C" {
 
 
 
-extern void Custom_clk_config(void);
+extern void CustomClock_init(void);
 
 
-#endif // SYSCLKCUSTOM_H
+#endif // CUSTOMCLOCK_H
