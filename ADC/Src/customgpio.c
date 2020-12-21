@@ -36,12 +36,12 @@ void customGPIO_init(void)
         
         
         // PORT A configs
-        GPIOA->MODER = (GPIOA->MODER & RESET_VAL_PORTA_MODER) | (1<<10); /* (2) GEN. PURPOSE OUTPUT */
-        GPIOA->MODER = (GPIOA->MODER & RESET_VAL_PORTA_MODER) & ~(1<<11); /* (2) */
+        GPIOA->MODER = (GPIOA->MODER & RESET_VAL_PORTA_MODER) | GPIO_MODER_MODE5_0; /* (2) GEN. PURPOSE OUTPUT */
+        GPIOA->MODER = (GPIOA->MODER & RESET_VAL_PORTA_MODER) & ~GPIO_MODER_MODE5_1; /* (2) */
         GPIOA->OTYPER &= ~GPIO_OTYPER_OT_5;  /* (3) PUSH PULL */
         GPIOA->PUPDR = (GPIOA->PUPDR & RESET_VAL_PORTA_PUPDR) | GPIO_PUPDR_PUPD5_0;  /* (4) PULL UP */
         GPIOA->OSPEEDR = (GPIOA->OSPEEDR & RESET_VAL_PORTA_SPEEDR) | GPIO_OSPEEDER_OSPEED15_0;   /* (5) MEDIUM SPEED */
-        
+        GPIOA->AFR 
         // PORT B configs
  
 }
@@ -49,7 +49,7 @@ void customGPIO_init(void)
 /** TogglePort A Pin 5 (LD2) every second **/
 void toggleLED2(void)
 {
-    GPIOA->ODR ^= (1 << 5);
+    GPIOA->ODR ^= GPIO_ODR_OD5;
     customDelay(SEC_DELAY/2); 
 }
  
