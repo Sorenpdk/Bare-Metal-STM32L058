@@ -15,4 +15,6 @@ customclock.pbi: \
   Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c/iccarm_builtin.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\CMSIS\core_cmFunc.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\Inc/system_stm32l0xx.h \
-  C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\Inc\system_stm32l0xx.h
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\Inc/customdelay.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\Inc/stm32l0xx_it.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\ADC\Inc\customdelay.h

@@ -1,6 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "customclock.h"
-#include "system_stm32l0xx.h" // For SysTick_Handler
+#include "customdelay.h"
 
 /* Private define ------------------------------------------------------------*/
 
@@ -20,7 +20,7 @@
   * Param   None
   * Retval  None
   */
-void CustomClock_init(void)
+void customClock_init(void)
 {
   /* (1) Enable the clock for power settings on the APB1 bus  */
   /* (2) Select voltage scale  (VDD 1.71 - 3.6V)  VCORE 1.8V range 1 */

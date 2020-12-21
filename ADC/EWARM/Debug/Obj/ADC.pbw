@@ -97416,6 +97416,20 @@
     "scope": null
   },
   {
+    "ID": "c:ycheck.h@1402@macro@__AEABI_PORTABILITY_INTERNAL_LEVEL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
+    "location": {
+      "column": "11",
+      "line": "42",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ycheck.h"
+    },
+    "name": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
     "ID": "c:customclock.h@113@macro@CUSTOMCLOCK_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -97430,45 +97444,73 @@
     "scope": null
   },
   {
-    "ID": "c:@F@CustomClock_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void CustomClock_init(void)",
-    "location": {
-      "column": "13",
-      "line": "14",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customclock.h"
-    },
-    "name": "CustomClock_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@CustomClock_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void CustomClock_init(void)",
-    "location": {
-      "column": "13",
-      "line": "14",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customclock.h"
-    },
-    "name": "CustomClock_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ycheck.h@1402@macro@__AEABI_PORTABILITY_INTERNAL_LEVEL",
+    "ID": "c:customclock.h@458@macro@HSI_TIMEOUT_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
+    "display": "HSI_TIMEOUT_VALUE",
     "location": {
-      "column": "11",
-      "line": "42",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ycheck.h"
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customclock.h"
     },
-    "name": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
-    "origin": "system_include",
+    "name": "HSI_TIMEOUT_VALUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:customclock.h@528@macro@REGULATOR_TIMEOUT_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "REGULATOR_TIMEOUT_VALUE",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customclock.h"
+    },
+    "name": "REGULATOR_TIMEOUT_VALUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:customclock.h@598@macro@CLOCKSWITCH_TIMEOUT_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CLOCKSWITCH_TIMEOUT_VALUE",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customclock.h"
+    },
+    "name": "CLOCKSWITCH_TIMEOUT_VALUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customClock_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void customClock_init(void)",
+    "location": {
+      "column": "13",
+      "line": "20",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customclock.h"
+    },
+    "name": "customClock_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customClock_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void customClock_init(void)",
+    "location": {
+      "column": "13",
+      "line": "20",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customclock.h"
+    },
+    "name": "customClock_init",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -97486,16 +97528,16 @@
     "scope": null
   },
   {
-    "ID": "c:@F@CustomClock_init",
+    "ID": "c:@F@customClock_init",
     "What": "Function",
     "defdec": "Def",
-    "display": "void CustomClock_init(void)",
+    "display": "void customClock_init(void)",
     "location": {
       "column": "6",
       "line": "23",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customclock.c"
     },
-    "name": "CustomClock_init",
+    "name": "customClock_init",
     "origin": "project_file",
     "scope": null
   },
@@ -97598,6 +97640,440 @@
     "scope": null
   },
   {
+    "ID": "c:customdelay.h@113@macro@CUSTOMDELAY_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CUSTOMDELAY_H",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customdelay.h"
+    },
+    "name": "CUSTOMDELAY_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:customdelay.h@486@macro@SEC_DELAY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEC_DELAY",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customdelay.h"
+    },
+    "name": "SEC_DELAY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customDelay_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void customDelay_init(void)",
+    "location": {
+      "column": "13",
+      "line": "17",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customdelay.h"
+    },
+    "name": "customDelay_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customDelay_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void customDelay_init(void)",
+    "location": {
+      "column": "13",
+      "line": "17",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customdelay.h"
+    },
+    "name": "customDelay_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customDelay",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void customDelay(uint32_t)",
+    "location": {
+      "column": "13",
+      "line": "18",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customdelay.h"
+    },
+    "name": "customDelay",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customDelay",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void customDelay(uint32_t)",
+    "location": {
+      "column": "13",
+      "line": "18",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customdelay.h"
+    },
+    "name": "customDelay",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32l0xx_it.h@940@macro@__STM32L0xx_IT_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__STM32L0xx_IT_H",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "__STM32L0xx_IT_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@NMI_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void NMI_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "NMI_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@NMI_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void NMI_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "NMI_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@HardFault_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void HardFault_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "35",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "HardFault_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@HardFault_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void HardFault_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "35",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "HardFault_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SVC_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SVC_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "36",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "SVC_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SVC_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SVC_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "36",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "SVC_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PendSV_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void PendSV_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "37",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "PendSV_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PendSV_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void PendSV_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "37",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "PendSV_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "38",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "SysTick_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "38",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
+    },
+    "name": "SysTick_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:customdelay.c@Tick",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "Tick",
+    "location": {
+      "column": "26",
+      "line": "9",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customdelay.c"
+    },
+    "name": "Tick",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customDelay_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void customDelay_init(void)",
+    "location": {
+      "column": "6",
+      "line": "12",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customdelay.c"
+    },
+    "name": "customDelay_init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customDelay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void customDelay(uint32_t)",
+    "location": {
+      "column": "6",
+      "line": "23",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customdelay.c"
+    },
+    "name": "customDelay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "42",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customdelay.c"
+    },
+    "name": "SysTick_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:customgpio.h@112@macro@CUSTOMGPIO_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CUSTOMGPIO_H",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customgpio.h"
+    },
+    "name": "CUSTOMGPIO_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customGPIO_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void customGPIO_init(void)",
+    "location": {
+      "column": "13",
+      "line": "14",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customgpio.h"
+    },
+    "name": "customGPIO_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customGPIO_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void customGPIO_init(void)",
+    "location": {
+      "column": "13",
+      "line": "14",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customgpio.h"
+    },
+    "name": "customGPIO_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@toggleLED2",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void toggleLED2(void)",
+    "location": {
+      "column": "13",
+      "line": "15",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customgpio.h"
+    },
+    "name": "toggleLED2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@toggleLED2",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void toggleLED2(void)",
+    "location": {
+      "column": "13",
+      "line": "15",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\customgpio.h"
+    },
+    "name": "toggleLED2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:customgpio.c@225@macro@RESET_VAL_PORTA_MODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RESET_VAL_PORTA_MODER",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customgpio.c"
+    },
+    "name": "RESET_VAL_PORTA_MODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:customgpio.c@267@macro@RESET_VAL_PORTA_PUPDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RESET_VAL_PORTA_PUPDR",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customgpio.c"
+    },
+    "name": "RESET_VAL_PORTA_PUPDR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:customgpio.c@309@macro@RESET_VAL_PORTA_SPEEDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RESET_VAL_PORTA_SPEEDR",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customgpio.c"
+    },
+    "name": "RESET_VAL_PORTA_SPEEDR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@customGPIO_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void customGPIO_init(void)",
+    "location": {
+      "column": "6",
+      "line": "24",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customgpio.c"
+    },
+    "name": "customGPIO_init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@toggleLED2",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void toggleLED2(void)",
+    "location": {
+      "column": "6",
+      "line": "50",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customgpio.c"
+    },
+    "name": "toggleLED2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@NMI_Handler",
     "What": "Function",
     "defdec": "Def",
@@ -97651,104 +98127,6 @@
     },
     "name": "PendSV_Handler",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SysTick_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "91",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\stm32l0xx_it.c"
-    },
-    "name": "SysTick_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32l0xx_it.h@940@macro@__STM32L0xx_IT_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__STM32L0xx_IT_H",
-    "location": {
-      "column": "9",
-      "line": "22",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
-    },
-    "name": "__STM32L0xx_IT_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@NMI_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void NMI_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "34",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
-    },
-    "name": "NMI_Handler",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@HardFault_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void HardFault_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "35",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
-    },
-    "name": "HardFault_Handler",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SVC_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SVC_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "36",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
-    },
-    "name": "SVC_Handler",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PendSV_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PendSV_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "37",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
-    },
-    "name": "PendSV_Handler",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SysTick_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "38",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Inc\\stm32l0xx_it.h"
-    },
-    "name": "SysTick_Handler",
-    "origin": "user_include",
     "scope": null
   },
   {
@@ -97954,7 +98332,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "26",
+      "line": "28",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\User\\main.c"
     },
     "name": "main",
