@@ -3,8 +3,5 @@
     <project>
         <path>$WS_DIR$\..\..\ADC\EWARM\ADC.ewp</path>
     </project>
-    <project>
-        <path>$WS_DIR$\RCCH.ewp</path>
-    </project>
     <batchBuild />
 </workspace>
