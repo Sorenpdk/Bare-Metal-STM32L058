@@ -41,7 +41,8 @@ void customGPIO_init(void)
         GPIOA->OTYPER &= ~GPIO_OTYPER_OT_5;  /* (3) PUSH PULL */
         GPIOA->PUPDR = (GPIOA->PUPDR & RESET_VAL_PORTA_PUPDR) | GPIO_PUPDR_PUPD5_0;  /* (4) PULL UP */
         GPIOA->OSPEEDR = (GPIOA->OSPEEDR & RESET_VAL_PORTA_SPEEDR) | GPIO_OSPEEDER_OSPEED15_0;   /* (5) MEDIUM SPEED */
-        GPIOA->AFR 
+        // AFR[0] = AFRL, AFR[1] = AFRH
+        GPIOA->AFR[0] |= 1UL << 1;
         // PORT B configs
  
 }

@@ -98066,7 +98066,7 @@
     "display": "void toggleLED2(void)",
     "location": {
       "column": "6",
-      "line": "50",
+      "line": "51",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\ADC\\Src\\customgpio.c"
     },
     "name": "toggleLED2",
