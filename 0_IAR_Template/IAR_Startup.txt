@@ -1,0 +1,8 @@
+
+
+Compiler settings.
+$PROJ_DIR$
+$PROJ_DIR$\..\Inc
+$PROJ_DIR$\..\CMSIS
+$PROJ_DIR$\..\User
+$PROJ_DIR$\..\Src
