@@ -1,0 +1,15 @@
+"Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armproc.dll" 
+
+"Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armstlink2.dll" 
+
+"C:\Users\soren\Desktop\Bare-Metal-STM32L058\2_CLKConfig\EWARM\Debug\Exe\CLKConfig.out" 
+
+--plugin="Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armbat.dll" 
+
+--device_macro="Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\debugger\ST\STM32L0xx.dmac" 
+
+--flash_loader="Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\flashloader\ST\FlashSTM32L0xxx8.board" 
+
+
+
+

@@ -1,0 +1,366 @@
+[
+  {
+    "ID": "c:system_stm32l0xx.c@1857@macro@HSE_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSE_VALUE",
+    "location": {
+      "column": "11",
+      "line": "51",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "HSE_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@2002@macro@MSI_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MSI_VALUE",
+    "location": {
+      "column": "11",
+      "line": "55",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "MSI_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@2146@macro@HSI_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSI_VALUE",
+    "location": {
+      "column": "11",
+      "line": "59",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "HSI_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@SystemCoreClock",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "SystemCoreClock",
+    "location": {
+      "column": "12",
+      "line": "128",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "SystemCoreClock",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@AHBPrescTable",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "AHBPrescTable",
+    "location": {
+      "column": "17",
+      "line": "129",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "AHBPrescTable",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@APBPrescTable",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "APBPrescTable",
+    "location": {
+      "column": "17",
+      "line": "130",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "APBPrescTable",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@PLLMulTable",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "PLLMulTable",
+    "location": {
+      "column": "17",
+      "line": "131",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "PLLMulTable",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemInit(void)",
+    "location": {
+      "column": "6",
+      "line": "154",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "SystemInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemCoreClockUpdate",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemCoreClockUpdate(void)",
+    "location": {
+      "column": "6",
+      "line": "200",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\Src\\system_stm32l0xx.c"
+    },
+    "name": "SystemCoreClockUpdate",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@731@macro@HSI_TIMEOUT_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSI_TIMEOUT_VALUE",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "HSI_TIMEOUT_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@801@macro@REGULATOR_TIMEOUT_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "REGULATOR_TIMEOUT_VALUE",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "REGULATOR_TIMEOUT_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@871@macro@CLOCKSWITCH_TIMEOUT_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CLOCKSWITCH_TIMEOUT_VALUE",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "CLOCKSWITCH_TIMEOUT_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@963@macro@SEC_DELAY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEC_DELAY",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "SEC_DELAY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1019@macro@ERROR_HSI_TIMEOUT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ERROR_HSI_TIMEOUT",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "ERROR_HSI_TIMEOUT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1048@macro@ERROR_REG_TIMEOUT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ERROR_REG_TIMEOUT",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "ERROR_REG_TIMEOUT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1077@macro@ERROR_CLKSWITCH_TIMEOUT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ERROR_CLKSWITCH_TIMEOUT",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "ERROR_CLKSWITCH_TIMEOUT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@Tick",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "Tick",
+    "location": {
+      "column": "26",
+      "line": "30",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "Tick",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@error",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "error",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "error",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ConfigureGPIO",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ConfigureGPIO(void)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "ConfigureGPIO",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemClock_Config",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SystemClock_Config(void)",
+    "location": {
+      "column": "6",
+      "line": "35",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "SystemClock_Config",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@systick_delayms",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void systick_delayms(int)",
+    "location": {
+      "column": "6",
+      "line": "36",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "systick_delayms",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "43",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemClock_Config",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemClock_Config(void)",
+    "location": {
+      "column": "6",
+      "line": "95",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "SystemClock_Config",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3978@F@SystemClock_Config@tickstart",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tickstart",
+    "location": {
+      "column": "19",
+      "line": "106",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "tickstart",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "168",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "SysTick_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@systick_delayms",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void systick_delayms(int)",
+    "location": {
+      "column": "6",
+      "line": "174",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\2_CLKConfig\\User\\main.c"
+    },
+    "name": "systick_delayms",
+    "origin": "project_file",
+    "scope": null
+  }
+]

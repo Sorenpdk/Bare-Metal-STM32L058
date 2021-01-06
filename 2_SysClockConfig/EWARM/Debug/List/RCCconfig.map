@@ -1,0 +1,222 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  15/Dec/2020  14:57:53
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\RCCconfig\EWARM\Debug\Exe\RCCconfig.out
+#    Map file     =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\RCCconfig\EWARM\Debug\List\RCCconfig.map
+#    Command line =
+#        -f C:\Users\soren\AppData\Local\Temp\EW5D7B.tmp
+#        (C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\RCCconfig\EWARM\Debug\Obj\main.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\RCCconfig\EWARM\Debug\Obj\system_stm32l0xx.o
+#        --no_out_extension -o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\RCCconfig\EWARM\Debug\Exe\RCCconfig.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\RCCconfig\EWARM\Debug\List\RCCconfig.map
+#        --config "Z:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\config\linker\ST\stm32l053x8.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  section .eeprom  in "P3"
+
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0x40
+  .intvec            ro code   0x800'0000   0x40  vector_table_M.o [3]
+                             - 0x800'0040   0x40
+
+"P1":                                      0x50c
+  .text              ro code   0x800'0040  0x21c  main.o [1]
+  .text              ro code   0x800'025c   0xae  I32DivModFast.o [3]
+  .text              ro code   0x800'030a    0x2  vector_table_M.o [3]
+  .text              ro code   0x800'030c   0xf0  system_stm32l0xx.o [1]
+  .text              ro code   0x800'03fc   0x5c  main.o [1]
+  .text              ro code   0x800'0458    0x2  IntDivZer.o [3]
+  .text              ro code   0x800'045a   0x30  copy_init3.o [3]
+  .text              ro code   0x800'048c   0x28  data_init.o [3]
+  .iar.init_table    const     0x800'04b4   0x14  - Linker created -
+  .text              ro code   0x800'04c8   0x1e  cmain.o [3]
+  .text              ro code   0x800'04e6    0x4  low_level_init.o [2]
+  .text              ro code   0x800'04ea    0x8  exit.o [2]
+  .text              ro code   0x800'04f4    0xa  cexit.o [3]
+  .text              ro code   0x800'0500   0x14  exit.o [4]
+  .rodata            const     0x800'0514   0x10  system_stm32l0xx.o [1]
+  Initializer bytes  const     0x800'0524   0x10  <for P2-1>
+  .rodata            const     0x800'0534    0xc  system_stm32l0xx.o [1]
+  .text              ro code   0x800'0540    0xc  cstartup_M.o [3]
+  .rodata            const     0x800'054c    0x0  copy_init3.o [3]
+                             - 0x800'054c  0x50c
+
+"P2", part 1 of 2:                          0x10
+  P2-1                        0x2000'0000    0xd  <Init block>
+    .data            inited   0x2000'0000    0x4  system_stm32l0xx.o [1]
+    .bss             inited   0x2000'0004    0x4  main.o [1]
+    .bss             inited   0x2000'0008    0x4  main.o [1]
+    .bss             inited   0x2000'000c    0x1  main.o [1]
+                            - 0x2000'000d    0xd
+
+"P2", part 2 of 2:                         0x400
+  CSTACK                      0x2000'0010  0x400  <Block>
+    CSTACK           uninit   0x2000'0010  0x400  <Block tail>
+                            - 0x2000'0410  0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'054c   0x800'ffff  0xfab4
+  0x2000'0410  0x2000'1fff  0x1bf0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10 (123% of destination):
+           0x800'0524  0x10
+    1 destination range, total size 0xd:
+          0x2000'0000   0xd
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data
+    ------              -------  -------  -------
+command line/config:
+    ---------------------------------------------
+    Total:
+
+C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\RCCconfig\EWARM\Debug\Obj: [1]
+    main.o                  632        9        9
+    system_stm32l0xx.o      240       32        4
+    ---------------------------------------------
+    Total:                  872       41       13
+
+dl6M_tln.a: [2]
+    exit.o                    8
+    low_level_init.o          4
+    ---------------------------------------------
+    Total:                   12
+
+rt6M_tl.a: [3]
+    I32DivModFast.o         174
+    IntDivZer.o               2
+    cexit.o                  10
+    cmain.o                  30
+    copy_init3.o             48
+    cstartup_M.o             12
+    data_init.o              40
+    vector_table_M.o         66
+    ---------------------------------------------
+    Total:                  382
+
+shb_l.a: [4]
+    exit.o                   20
+    ---------------------------------------------
+    Total:                   20
+
+    Gaps                      6
+    Linker created                    23    1'024
+-------------------------------------------------
+    Grand Total:          1'292       64    1'037
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base    0x800'04b4         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'04c8         --   Gb  - Linker created -
+?main                    0x800'04c9        Code  Gb  cmain.o [3]
+AHBPrescTable            0x800'0514  0x10  Data  Gb  system_stm32l0xx.o [1]
+CSTACK$$Base            0x2000'0010         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0410         --   Gb  - Linker created -
+ConfigureGPIO            0x800'03fd  0x5c  Code  Gb  main.o [1]
+NVIC_SetPriority         0x800'0041  0x8a  Code  Lc  main.o [1]
+PLLMulTable              0x800'0534   0xc  Data  Gb  system_stm32l0xx.o [1]
+Region$$Table$$Base      0x800'04b4         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'04c8         --   Gb  - Linker created -
+SysTick_Config           0x800'00cb  0x30  Code  Lc  main.o [1]
+SysTick_Handler          0x800'01fb   0xa  Code  Gb  main.o [1]
+SystemClock_Config       0x800'013b  0xc0  Code  Gb  main.o [1]
+SystemClock_Config::tickstart
+                        0x2000'0008   0x4  Data  Lc  main.o [1]
+SystemCoreClock         0x2000'0000   0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemCoreClockUpdate    0x800'030d  0xca  Code  Gb  system_stm32l0xx.o [1]
+Tick                    0x2000'0004   0x4  Data  Lc  main.o [1]
+__aeabi_idiv0            0x800'0459        Code  Gb  IntDivZer.o [3]
+__aeabi_uidiv            0x800'025d        Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod         0x800'025d        Code  Gb  I32DivModFast.o [3]
+__cmain                  0x800'04c9        Code  Gb  cmain.o [3]
+__exit                   0x800'0501  0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'045b  0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'048d  0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'0541        Code  Gb  cstartup_M.o [3]
+__low_level_init         0x800'04e7   0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000        Data  Gb  vector_table_M.o [3]
+_call_main               0x800'04d5        Code  Gb  cmain.o [3]
+_exit                    0x800'04f5        Code  Gb  cexit.o [3]
+_main                    0x800'04e3        Code  Gb  cmain.o [3]
+error                   0x2000'000c   0x1  Data  Gb  main.o [1]
+exit                     0x800'04eb   0x8  Code  Gb  exit.o [2]
+main                     0x800'00fb  0x40  Code  Gb  main.o [1]
+systick_delayms          0x800'0205  0x10  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\soren\Desktop\Bare-Metal-STM32L058-main\RCCconfig\EWARM\Debug\Obj
+[2] = dl6M_tln.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  1'292 bytes of readonly  code memory
+     64 bytes of readonly  data memory
+  1'037 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
