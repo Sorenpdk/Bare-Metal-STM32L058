@@ -97534,7 +97534,7 @@
     "display": "void customClock_init(void)",
     "location": {
       "column": "6",
-      "line": "23",
+      "line": "25",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\4_UARTTx\\Src\\customclock.c"
     },
     "name": "customClock_init",
@@ -98004,7 +98004,7 @@
     "scope": null
   },
   {
-    "ID": "c:customgpio.c@225@macro@RESET_VAL_PORTA_MODER",
+    "ID": "c:customgpio.c@201@macro@RESET_VAL_PORTA_MODER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RESET_VAL_PORTA_MODER",
@@ -98018,7 +98018,7 @@
     "scope": null
   },
   {
-    "ID": "c:customgpio.c@267@macro@RESET_VAL_PORTA_PUPDR",
+    "ID": "c:customgpio.c@243@macro@RESET_VAL_PORTA_PUPDR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RESET_VAL_PORTA_PUPDR",
@@ -98032,7 +98032,7 @@
     "scope": null
   },
   {
-    "ID": "c:customgpio.c@309@macro@RESET_VAL_PORTA_SPEEDR",
+    "ID": "c:customgpio.c@285@macro@RESET_VAL_PORTA_SPEEDR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RESET_VAL_PORTA_SPEEDR",
@@ -98066,7 +98066,7 @@
     "display": "void toggleLED2(void)",
     "location": {
       "column": "6",
-      "line": "51",
+      "line": "79",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\4_UARTTx\\Src\\customgpio.c"
     },
     "name": "toggleLED2",
@@ -98396,13 +98396,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@984@F@main@onechar",
+    "ID": "c:main.c@1123@F@main@onechar",
     "What": "Variable",
     "defdec": "Def",
     "display": "onechar",
     "location": {
       "column": "17",
-      "line": "33",
+      "line": "38",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\4_UARTTx\\User\\main.c"
     },
     "name": "onechar",
@@ -98410,13 +98410,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1016@F@main@message",
+    "ID": "c:main.c@1155@F@main@message",
     "What": "Variable",
     "defdec": "Def",
     "display": "message",
     "location": {
       "column": "15",
-      "line": "34",
+      "line": "39",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\4_UARTTx\\User\\main.c"
     },
     "name": "message",
@@ -98430,7 +98430,7 @@
     "display": "void UART_Send_Char(unsigned char)",
     "location": {
       "column": "6",
-      "line": "60",
+      "line": "58",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\4_UARTTx\\User\\main.c"
     },
     "name": "UART_Send_Char",
@@ -98444,7 +98444,7 @@
     "display": "void UART_Send_String(const char *)",
     "location": {
       "column": "6",
-      "line": "84",
+      "line": "82",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\4_UARTTx\\User\\main.c"
     },
     "name": "UART_Send_String",
@@ -98458,24 +98458,10 @@
     "display": "void Configure_USART1(void)",
     "location": {
       "column": "15",
-      "line": "101",
+      "line": "99",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\4_UARTTx\\User\\main.c"
     },
     "name": "Configure_USART1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Configure_GPIO_USART1",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Configure_GPIO_USART1(void)",
-    "location": {
-      "column": "15",
-      "line": "139",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\4_UARTTx\\User\\main.c"
-    },
-    "name": "Configure_GPIO_USART1",
     "origin": "project_file",
     "scope": null
   }

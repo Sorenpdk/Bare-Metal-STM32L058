@@ -2128,9 +2128,6 @@
         </file>
     </group>
     <group>
-        <name>EWARM</name>
-    </group>
-    <group>
         <name>Inc</name>
         <file>
             <name>$PROJ_DIR$\..\Inc\customclock.h</name>

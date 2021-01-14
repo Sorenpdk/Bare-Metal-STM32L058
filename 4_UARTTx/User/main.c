@@ -29,23 +29,21 @@ void UART_Send_String(const char* msg);
   */
 int main(void)
 {
-
-  unsigned char onechar = 'c';
-  const char* message = "hello world";
   customClock_init();
   SystemCoreClockUpdate();
   customDelay_init(); // SysTick_Config
   Configure_USART1();
-  
   customGPIO_init();
-  Configure_GPIO_USART1();
   
+  unsigned char onechar = 'c';
+  const char* message = "hello world";
 
   while (1)
   {
   
     UART_Send_String(message); 
-    customDelay(2);
+    toggleLED2();
+    customDelay(1000);
    
   }
 }
@@ -130,26 +128,6 @@ __INLINE void Configure_USART1(void)
 
 }
 
-/**
-  * Brief   This function :       
-             - Configures the USART1 Rx/Tx pins on GPIO PA9 PA10
-  * Param   None
-  * Retval  None
-  */
-__INLINE void Configure_GPIO_USART1(void)
-{
-  
-  /* (1) Select AF mode (10) on PA9 and PA10 */
-  /* (2) Select High Speed for PA9 (Tx) */
-  /* (3) AF4 (0b0000 0100) for USART1 Rx and Tx */
-  GPIOA->MODER &= ~(GPIO_MODER_MODE9|GPIO_MODER_MODE10)\
-                 | (GPIO_MODER_MODE9_1 | GPIO_MODER_MODE10_1); /* (1) */
-   
-  GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEED10_1 | GPIO_OSPEEDER_OSPEED10_0;   /* (2) */
-  
-  GPIOA->AFR[1] |= 4 << 0x4;                /* (3) */
-  GPIOA->AFR[1] |= 4 << 0x8; 
-}
 
 /** General Info during research 
 The commonly used baud rates are 2400 , 4800, 9600, 19.200, 56000, 115200 bauds.

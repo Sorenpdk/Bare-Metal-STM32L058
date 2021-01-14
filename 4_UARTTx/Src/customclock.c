@@ -17,6 +17,8 @@
   *         FLASH LATENCY = 1WS
   *         SYS_CLK is output for test purposes to MCO (PA8) with DIV2  
   *  ****** IMPORTANT to call SystemCoreClockUpdate() after configuring the SYS_CLK ******
+  * SystemCoreClockUpdate();
+  * SysTick_Config(SystemCoreClock/1000);
   * Param   None
   * Retval  None
   */
@@ -82,8 +84,8 @@ void customClock_init(void)
     
   }
   
-  // For testing purposes 
-  RCC->CFGR |= RCC_CFGR_MCOSEL_PLL; /* (11) */
+
+  
    
 }
 

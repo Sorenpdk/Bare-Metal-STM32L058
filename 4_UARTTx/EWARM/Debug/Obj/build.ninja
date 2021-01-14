@@ -1,4 +1,4 @@
-#Generating source browse information for project UART
+#Generating source browse information for project UARTTx
 
 
 #Abbreviations
@@ -26,10 +26,10 @@ build customgpio.pbi : index customgpio.xcl
 build stm32l0xx_it.pbi : index stm32l0xx_it.xcl
 build system_stm32l0xx.pbi : index system_stm32l0xx.xcl
 build main.pbi : index main.xcl
-build UART_part0.pbi : link customclock.pbi customdelay.pbi
-build UART_part1.pbi : link customgpio.pbi stm32l0xx_it.pbi
-build UART_part2.pbi : link system_stm32l0xx.pbi main.pbi
-build UART.pbd : link UART_part0.pbi UART_part1.pbi UART_part2.pbi
-build UART.pbw : browsedata UART.pbd
+build UARTTx_part0.pbi : link customclock.pbi customdelay.pbi
+build UARTTx_part1.pbi : link customgpio.pbi stm32l0xx_it.pbi
+build UARTTx_part2.pbi : link system_stm32l0xx.pbi main.pbi
+build UARTTx.pbd : link UARTTx_part0.pbi UARTTx_part1.pbi UARTTx_part2.pbi
+build UARTTx.pbw : browsedata UARTTx.pbd
 
 
