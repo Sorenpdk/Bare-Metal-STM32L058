@@ -59,11 +59,22 @@ void customGPIO_init(void)
   GPIOA->MODER &=  ~GPIO_MODER_MODE0_0;  /* (6) */
   GPIOA->AFR[0] |= 1UL << 1; /* (6) */  
     
-    
-    
-    
-    
-       
+   /**********************************************************************
+   ** 		USART1_TX Configurations PA9		 **
+   **********************************************************************/
+  GPIOA->MODER |= GPIO_MODER_MODE9_1; /* (6) ALTERNATE */
+  GPIOA->MODER &=  ~GPIO_MODER_MODE9_0;  /* (6) */
+  
+  GPIOA->AFR[1] |= 4UL << 4;                /* (3) */
+  
+  /**********************************************************************
+   ** 		USART1_RX Configurations PA10		 **
+   **********************************************************************/
+  GPIOA->MODER |= GPIO_MODER_MODE10_1; /* (6) ALTERNATE */
+  GPIOA->MODER &=  ~GPIO_MODER_MODE10_0;  /* (6) */
+  GPIOA->AFR[1] |= 4UL << 8;                /* (3) */
+ 
+  
 }
 
 /** TogglePort A Pin 5 (LD2) every second **/
