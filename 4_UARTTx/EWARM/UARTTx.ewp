@@ -2139,6 +2139,9 @@
             <name>$PROJ_DIR$\..\Inc\customgpio.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\Inc\customuart.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\Inc\stm32l053xx.h</name>
         </file>
         <file>
@@ -2161,6 +2164,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\Src\customgpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Src\customuart.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Src\stm32l0xx_it.c</name>
