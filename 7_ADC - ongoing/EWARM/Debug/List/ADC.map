@@ -1,0 +1,377 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  26/Jan/2021  14:34:34
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Exe\ADC.out
+#    Map file     =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\List\ADC.map
+#    Command line =
+#        -f C:\Users\soren\AppData\Local\Temp\EWDBB8.tmp
+#        ("C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Obj\customclock.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Obj\customdelay.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Obj\customgpio.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Obj\customuart.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Obj\main.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Obj\startup_stm32l053xx.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Obj\stm32l0xx_it.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Obj\system_stm32l0xx.o" --no_out_extension -o
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\Exe\ADC.out" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC -
+#        ongoing\EWARM\Debug\List\ADC.map" --config "Z:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench 8.4\arm\config\linker\ST\stm32l053x8.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  section .eeprom  in "P3"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xc0
+  .intvec            ro code   0x800'0000    0xc0  startup_stm32l053xx.o [1]
+                             - 0x800'00c0    0xc0
+
+"P1":                                      0x1fe1
+  .text              ro code   0x800'00c0  0x1054  xprintffull_nomb.o [2]
+  .text              ro code   0x800'1114    0x12  strchr.o [4]
+  .text              ro code   0x800'1126     0xa  stm32l0xx_it.o [1]
+  .text              ro code   0x800'1130    0x48  xfail_s.o [2]
+  .text              ro code   0x800'1178     0xe  strlen.o [4]
+  .text              ro code   0x800'1186     0xa  xsprout.o [2]
+  .text              ro code   0x800'1190    0x16  memchr.o [4]
+  .rodata            const     0x800'11a6     0x2  xlocale_c.o [2]
+  .text              ro code   0x800'11a8    0x4e  ABImemcpy.o [4]
+  .text              ro code   0x800'11f6    0x32  DblCmpLe.o [3]
+  .text              ro code   0x800'1228    0x32  DblCmpGe.o [3]
+  .text              ro code   0x800'125a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'125c    0x52  DblToI32.o [3]
+  .text              ro code   0x800'12ae     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'12b0    0x34  IxxToDbl.o [3]
+  .text              ro code   0x800'12e4   0x1a8  DblAddSub.o [3]
+  .text              ro code   0x800'148c    0xe0  I32DivModFast.o [4]
+  .text              ro code   0x800'156c    0xc2  DblDiv.o [3]
+  .text              ro code   0x800'162e   0x184  DblMul.o [3]
+  .text              ro code   0x800'17b2     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'17b4     0xc  xlocale_c.o [2]
+  .text              ro code   0x800'17c0    0x6a  I64DivMod.o [4]
+  .text              ro code   0x800'182a     0xa  abort.o [2]
+  .text              ro code   0x800'1834     0x2  IntDivZer.o [4]
+  .text              ro code   0x800'1836     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1838     0x2  I64DivZer.o [4]
+  .text              ro code   0x800'183a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'183c    0x14  exit.o [5]
+  .text              ro code   0x800'1850   0x198  main.o [1]
+  .text              ro code   0x800'19e8    0x94  customclock.o [1]
+  .text              ro code   0x800'1a7c    0xf0  system_stm32l0xx.o [1]
+  .text              ro code   0x800'1b6c   0x104  customdelay.o [1]
+  .text              ro code   0x800'1c70   0x104  customgpio.o [1]
+  .text              ro code   0x800'1d74    0x88  customuart.o [1]
+  .text              ro code   0x800'1dfc    0x14  main.o [1]
+  .text              ro code   0x800'1e10    0x3c  main.o [1]
+  .text              ro code   0x800'1e4c    0x3c  main.o [1]
+  .text              ro code   0x800'1e88    0x2c  main.o [1]
+  .text              ro code   0x800'1eb4    0x40  sprintf.o [2]
+  .rodata            const     0x800'1ef4    0x6a  xprintffull_nomb.o [2]
+  .text              ro code   0x800'1f5e    0x3c  packbits_init_single.o [4]
+  .text              ro code   0x800'1f9a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1f9c    0x28  data_init.o [4]
+  .iar.init_table    const     0x800'1fc4    0x10  - Linker created -
+  .text              ro code   0x800'1fd4    0x1e  cmain.o [4]
+  .text              ro code   0x800'1ff2     0x4  low_level_init.o [2]
+  .text              ro code   0x800'1ff6     0x8  exit.o [2]
+  .text              ro code   0x800'1ffe     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2000     0xa  cexit.o [4]
+  .text              ro code   0x800'200a     0x2  startup_stm32l053xx.o [1]
+  .rodata            const     0x800'200c    0x10  system_stm32l0xx.o [1]
+  .text              ro code   0x800'201c    0x10  startup_stm32l053xx.o [1]
+  .rodata            const     0x800'202c     0xc  system_stm32l0xx.o [1]
+  .text              ro code   0x800'2038     0xc  cstartup_M.o [4]
+  .text              ro code   0x800'2044     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2046     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2048     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'204a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'204c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'204e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2050     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2052     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2054     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2056     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2058     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'205a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'205c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'205e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2060     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2062     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2064     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2066     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'2068     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'206a     0x2  startup_stm32l053xx.o [1]
+  .rodata            const     0x800'206c     0x1  xlocale_c.o [2]
+  .rodata            const     0x800'206d     0x0  packbits_init_single.o [4]
+  Initializer bytes  const     0x800'206d    0x34  <for P2-1>
+                             - 0x800'20a1  0x1fe1
+
+"P2", part 1 of 2:                           0x55
+  P2-1                        0x2000'0000    0x55  <Init block>
+    .data            inited   0x2000'0000     0x4  system_stm32l0xx.o [1]
+    .data            inited   0x2000'0004    0x38  xlocale_c.o [2]
+    .bss             inited   0x2000'003c     0x4  customdelay.o [1]
+    .bss             inited   0x2000'0040    0x10  main.o [1]
+    .bss             inited   0x2000'0050     0x4  xfail_s.o [2]
+    .bss             inited   0x2000'0054     0x1  main.o [1]
+                            - 0x2000'0055    0x55
+
+"P2", part 2 of 2:                          0x400
+  CSTACK                      0x2000'0058   0x400  <Block>
+    CSTACK           uninit   0x2000'0058   0x400  <Block tail>
+                            - 0x2000'0458   0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'20a1   0x800'ffff  0xdf5f
+  0x2000'0055  0x2000'0057     0x3
+  0x2000'0458  0x2000'1fff  0x1ba8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x34 (61% of destination):
+           0x800'206d  0x34
+    1 destination range, total size 0x55:
+          0x2000'0000  0x55
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC - ongoing\EWARM\Debug\Obj: [1]
+    customclock.o               148
+    customdelay.o               260        3        4
+    customgpio.o                260
+    customuart.o                136
+    main.o                      592       10       17
+    startup_stm32l053xx.o       264
+    stm32l0xx_it.o               10
+    system_stm32l0xx.o          240       30        4
+    -------------------------------------------------
+    Total:                    1'910       43       25
+
+dl6M_tlf.a: [2]
+    abort.o                      10
+    exit.o                        8
+    low_level_init.o              4
+    sprintf.o                    64
+    xfail_s.o                    72        3        4
+    xlocale_c.o                  12       37       56
+    xprintffull_nomb.o        4'180      106
+    xsprout.o                    10
+    -------------------------------------------------
+    Total:                    4'360      146       60
+
+m6M_tl.a: [3]
+    DblAddSub.o                 424
+    DblCmpGe.o                   50
+    DblCmpLe.o                   50
+    DblDiv.o                    194
+    DblMul.o                    388
+    DblToI32.o                   82
+    IxxToDbl.o                   52
+    -------------------------------------------------
+    Total:                    1'240
+
+rt6M_tl.a: [4]
+    ABImemcpy.o                  78
+    I32DivModFast.o             224
+    I64DivMod.o                 106
+    I64DivZer.o                   2
+    IntDivZer.o                   2
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    memchr.o                     22
+    packbits_init_single.o       60
+    strchr.o                     18
+    strlen.o                     14
+    -------------------------------------------------
+    Total:                      618
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Linker created                        16    1'024
+-----------------------------------------------------
+    Grand Total:              8'148      205    1'109
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'1fc4          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'1fd4          --   Gb  - Linker created -
+?main                    0x800'1fd5         Code  Gb  cmain.o [4]
+AHBPrescTable            0x800'200c   0x10  Data  Gb  system_stm32l0xx.o [1]
+CSTACK$$Base            0x2000'0058          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0458          --   Gb  - Linker created -
+CalibrateADC             0x800'1e4d   0x3c  Code  Gb  main.o [1]
+ComputeTemperature       0x800'1981   0x30  Code  Gb  main.o [1]
+ConfigureADC             0x800'1e11   0x3c  Code  Gb  main.o [1]
+EnableADC                0x800'1e89   0x2c  Code  Gb  main.o [1]
+HardFault_Handler        0x800'1129    0x4  Code  Gb  stm32l0xx_it.o [1]
+NMI_Handler              0x800'1127    0x2  Code  Gb  stm32l0xx_it.o [1]
+NVIC_SetPriority         0x800'1b6d   0x8a  Code  Lc  customdelay.o [1]
+NVIC_SetPriority         0x800'1851   0x8a  Code  Lc  main.o [1]
+PLLMulTable              0x800'202c    0xc  Data  Gb  system_stm32l0xx.o [1]
+PendSV_Handler           0x800'112f    0x2  Code  Gb  stm32l0xx_it.o [1]
+Region$$Table$$Base      0x800'1fc4          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'1fd4          --   Gb  - Linker created -
+SVC_Handler              0x800'112d    0x2  Code  Gb  stm32l0xx_it.o [1]
+SetClockForADC           0x800'1dfd   0x14  Code  Gb  main.o [1]
+SysTick_Config           0x800'1bf7   0x30  Code  Lc  customdelay.o [1]
+SysTick_Config           0x800'18db   0x30  Code  Lc  main.o [1]
+SysTick_Handler          0x800'1c4b    0xa  Code  Gb  customdelay.o [1]
+SystemCoreClock         0x2000'0000    0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemCoreClockUpdate    0x800'1a7f   0xca  Code  Gb  system_stm32l0xx.o [1]
+SystemInit               0x800'1a7d    0x2  Code  Gb  system_stm32l0xx.o [1]
+Tick                    0x2000'003c    0x4  Data  Lc  customdelay.o [1]
+UART_Send_Char           0x800'1da5   0x12  Code  Gb  customuart.o [1]
+UART_Send_String         0x800'1dd1   0x2c  Code  Gb  customuart.o [1]
+_LitobFullNoMb           0x800'0f51  0x120  Code  Lc  xprintffull_nomb.o [2]
+_Locale_lconv           0x2000'0004   0x38  Data  Lc  xlocale_c.o [2]
+_PrintfFullNoMb          0x800'00c1  0xe90  Code  Gb  xprintffull_nomb.o [2]
+_PutcharFullNoMb         0x800'10bd   0x22  Code  Lc  xprintffull_nomb.o [2]
+_PutcharsFullNoMb        0x800'10df   0x36  Code  Lc  xprintffull_nomb.o [2]
+_SProut                  0x800'1187    0xa  Code  Gb  xsprout.o [2]
+__aeabi_cdcmple          0x800'11f7         Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple         0x800'1229         Code  Gb  DblCmpGe.o [3]
+__aeabi_d2iz             0x800'125d         Code  Gb  DblToI32.o [3]
+__aeabi_d2uiz            0x800'1281         Code  Gb  DblToI32.o [3]
+__aeabi_ddiv             0x800'156d         Code  Gb  DblDiv.o [3]
+__aeabi_dmul             0x800'162f         Code  Gb  DblMul.o [3]
+__aeabi_dsub             0x800'139f         Code  Gb  DblAddSub.o [3]
+__aeabi_i2d              0x800'12d1         Code  Gb  IxxToDbl.o [3]
+__aeabi_idiv             0x800'14b9         Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0            0x800'1835         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod          0x800'14b9         Code  Gb  I32DivModFast.o [4]
+__aeabi_ldiv0            0x800'1839         Code  Gb  I64DivZer.o [4]
+__aeabi_memcpy           0x800'11dd         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'11a9         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'11a9         Code  Gb  ABImemcpy.o [4]
+__aeabi_ui2d             0x800'12b1         Code  Gb  IxxToDbl.o [3]
+__aeabi_uidiv            0x800'14bf         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod         0x800'14bf         Code  Gb  I32DivModFast.o [4]
+__aeabi_uldivmod         0x800'17c1         Code  Gb  I64DivMod.o [4]
+__cmain                  0x800'1fd5         Code  Gb  cmain.o [4]
+__exit                   0x800'183d   0x14  Code  Gb  exit.o [5]
+__iar_Fail_s             0x800'1131   0x22  Code  Gb  xfail_s.o [2]
+__iar_Memchr             0x800'1191         Code  Gb  memchr.o [4]
+__iar_Memcpy             0x800'11e9         Code  Gb  ABImemcpy.o [4]
+__iar_Strchr             0x800'1115         Code  Gb  strchr.o [4]
+__iar_d2uiz              0x800'1285         Code  Gb  DblToI32.o [3]
+__iar_data_init3         0x800'1f9d   0x28  Code  Gb  data_init.o [4]
+__iar_packbits_init_single3
+                         0x800'1f5f   0x3c  Code  Gb  packbits_init_single.o [4]
+__iar_program_start      0x800'2039         Code  Gb  cstartup_M.o [4]
+__low_level_init         0x800'1ff3    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32l053xx.o [1]
+_call_main               0x800'1fe1         Code  Gb  cmain.o [4]
+_exit                    0x800'2001         Code  Gb  cexit.o [4]
+_main                    0x800'1fef         Code  Gb  cmain.o [4]
+abort                    0x800'182b    0xa  Code  Gb  abort.o [2]
+buffer                  0x2000'0040   0x10  Data  Gb  main.o [1]
+customClock_init         0x800'19e9   0x94  Code  Gb  customclock.o [1]
+customDelay              0x800'1c3b   0x10  Code  Gb  customdelay.o [1]
+customDelay_init         0x800'1c27   0x14  Code  Gb  customdelay.o [1]
+customGPIO_init          0x800'1c71   0xd0  Code  Gb  customgpio.o [1]
+customUSART1_Init        0x800'1d75   0x30  Code  Gb  customuart.o [1]
+exit                     0x800'1ff7    0x8  Code  Gb  exit.o [2]
+localeconv               0x800'17b5    0x4  Code  Gb  xlocale_c.o [2]
+main                     0x800'190b   0x76  Code  Gb  main.o [1]
+memchr                   0x800'1191         Code  Gb  memchr.o [4]
+scale                    0x800'1071   0x44  Code  Lc  xprintffull_nomb.o [2]
+sec_hand                0x2000'0050    0x4  Data  Lc  xfail_s.o [2]
+sprintf                  0x800'1eb5   0x40  Code  Gb  sprintf.o [2]
+strchr                   0x800'1115         Code  Gb  strchr.o [4]
+strlen                   0x800'1179         Code  Gb  strlen.o [4]
+temperature_C           0x2000'0054    0x1  Data  Gb  main.o [1]
+
+
+[1] = C:\Users\soren\Desktop\Bare-Metal-STM32L058\7_ADC - ongoing\EWARM\Debug\Obj
+[2] = dl6M_tlf.a
+[3] = m6M_tl.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  8'148 bytes of readonly  code memory
+    205 bytes of readonly  data memory
+  1'109 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

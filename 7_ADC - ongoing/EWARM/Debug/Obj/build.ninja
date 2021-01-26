@@ -1,0 +1,36 @@
+#Generating source browse information for project ADC
+
+
+#Abbreviations
+cc = Z$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = Z$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = Z$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build customclock.pbi : index customclock.xcl
+build customdelay.pbi : index customdelay.xcl
+build customgpio.pbi : index customgpio.xcl
+build customuart.pbi : index customuart.xcl
+build stm32l0xx_it.pbi : index stm32l0xx_it.xcl
+build system_stm32l0xx.pbi : index system_stm32l0xx.xcl
+build main.pbi : index main.xcl
+build ADC_part0.pbi : link customclock.pbi customdelay.pbi customgpio.pbi
+build ADC_part1.pbi : link customuart.pbi stm32l0xx_it.pbi system_stm32l0xx.pbi
+build ADC_part2.pbi : link main.pbi
+build ADC.pbd : link ADC_part0.pbi ADC_part1.pbi ADC_part2.pbi
+build ADC.pbw : browsedata ADC.pbd
+
+

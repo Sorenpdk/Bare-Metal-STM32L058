@@ -1,0 +1,280 @@
+
+
+/** 
+
+/**********************************************************************
+   ** 		ADC configuration	 **
+   **********************************************************************/
+Channel selection (CHSEL, SCANDIR)
+There are up to 19 multiplexed channels:
+• 16 analog inputs from GPIO pins (ADC_INx)
+• 3 internal analog inputs (Temperature Sensor, Internal Reference Voltage,
+LCD_VLCD1 channel)
+It is possible to convert a single channel or a sequence of channels.
+The sequence of the channels to be converted can be programmed in the ADC_CHSELR
+channel selection register: each analog input channel has a dedicated selection bit
+(CHSELx).
+The order in which the channels will be scanned can be configured by programming the bit
+SCANDIR bit in the ADC_CFGR1 register:
+• SCANDIR=0: forward scan Channel 0 to Channel 18
+• SCANDIR=1: backward scan Channel 18 to Channel 0
+Temperature sensor, VREFINT and LCD_VLCD1 internal channels
+The temperature sensor is connected to channel ADC_IN18.
+The internal voltage reference VREFINT is connected to channel ADC_IN17.
+The LCD_VLCD1 channel is connected to channel ADC_IN16.
+
+Single conversion mode (CONT=0)
+In Single conversion mode, the ADC performs a single sequence of conversions, converting
+all the channels once. This mode is selected when CONT=0 in the ADC_CFGR1 register.
+Conversion is started by either:
+• Setting the ADSTART bit in the ADC_CR register
+• Hardware trigger event
+Inside the sequence, after each conversion is complete:
+• The converted data are stored in the 16-bit ADC_DR register
+• The EOC (end of conversion) flag is set
+• An interrupt is generated if the EOCIE bit is set
+After the sequence of conversions is complete:
+• The EOS (end of sequence) flag is set
+• An interrupt is generated if the EOSIE bit is set
+Then the ADC stops until a new external trigger event occurs or the ADSTART bit is set
+again.
+Note: To convert a single channel, program a sequence with a length of 1.
+
+Continuous conversion mode (CONT=1)
+In continuous conversion mode, when a software or hardware trigger event occurs, the ADC
+performs a sequence of conversions, converting all the channels once and then
+automatically re-starts and continuously performs the same sequence of conversions. This
+mode is selected when CONT=1 in the ADC_CFGR1 register. Conversion is started by
+either:
+• Setting the ADSTART bit in the ADC_CR register
+• Hardware trigger event
+Inside the sequence, after each conversion is complete:
+• The converted data are stored in the 16-bit ADC_DR register
+• The EOC (end of conversion) flag is set
+• An interrupt is generated if the EOCIE bit is set
+After the sequence of conversions is complete:
+• The EOS (end of sequence) flag is set
+• An interrupt is generated if the EOSIE bit is set
+Then, a new sequence restarts immediately and the ADC continuously repeats the
+conversion sequence.
+Note: To convert a single channel, program a sequence with a length of 1.
+It is not possible to have both discontinuous mode and continuous mode enabled: it is
+forbidden to set both bits DISCEN=1 and CONT=1.
+
+Starting conversions (ADSTART)
+Software starts ADC conversions by setting ADSTART=1.
+When ADSTART is set, the conversion:
+• Starts immediately if EXTEN = 00 (software trigger)
+• At the next active edge of the selected hardware trigger if EXTEN ? 00
+The ADSTART bit is also used to indicate whether an ADC operation is currently ongoing. It
+is possible to re-configure the ADC while ADSTART=0, indicating that the ADC is idle.
+The ADSTART bit is cleared by hardware:
+• In single mode with software trigger (CONT=0, EXTEN=00)
+– At any end of conversion sequence (EOS=1)
+• In discontinuous mode with software trigger (CONT=0, DISCEN=1, EXTEN=00)
+– At end of conversion (EOC=1)
+• In all cases (CONT=x, EXTEN=XX)
+– After execution of the ADSTP procedure invoked by software (see
+Section 14.3.13: Stopping an ongoing conversion (ADSTP) on page 308)
+Note: In continuous mode (CONT=1), the ADSTART bit is not cleared by hardware when the EOS
+flag is set because the sequence is automatically relaunched.
+When hardware trigger is selected in single mode (CONT=0 and EXTEN = 01), ADSTART is
+not cleared by hardware when the EOS flag is set. This avoids the need for software having
+to set the ADSTART bit again and ensures the next trigger event is not missed.
+
+End of conversion, end of sampling phase (EOC, EOSMP flags)
+The ADC indicates each end of conversion (EOC) event.
+The ADC sets the EOC flag in the ADC_ISR register as soon as a new conversion data
+result is available in the ADC_DR register. An interrupt can be generated if the EOCIE bit is
+set in the ADC_IER register. The EOC flag is cleared by software either by writing 1 to it, or
+by reading the ADC_DR register.
+The ADC also indicates the end of sampling phase by setting the EOSMP flag in the
+ADC_ISR register. The EOSMP flag is cleared by software by writing1 to it. An interrupt can
+be generated if the EOSMPIE bit is set in the ADC_IER register.
+The aim of this interrupt is to allow the processing to be synchronized with the conversions.
+Typically, an analog multiplexer can be accessed in hidden time during the conversion
+phase, so that the multiplexer is positioned when the next sampling starts.
+Note: As there is only a very short time left between the end of the sampling and the end of the
+conversion, it is recommenced to use polling or a WFE instruction rather than an interrupt
+and a WFI instruction.
+
+Data register and data alignment (ADC_DR, ALIGN)
+At the end of each conversion (when an EOC event occurs), the result of the converted data
+is stored in the ADC_DR data register which is 16-bit wide.
+The format of the ADC_DR depends on the configured data alignment and resolution.
+The ALIGN bit in the ADC_CFGR1 register selects the alignment of the data stored after
+conversion. Data can be right-aligned (ALIGN=0) or left-aligned (ALIGN=1) as shown in
+Figure 43
+
+End of conversion sequence (EOS flag)
+The ADC notifies the application of each end of sequence (EOS) event.
+The ADC sets the EOS flag in the ADC_ISR register as soon as the last data result of a
+conversion sequence is available in the ADC_DR register. An interrupt can be generated if
+the EOSIE bit is set in the ADC_IER register. The EOS flag is cleared by software by writing
+1 to it.
+
+ /**********************************************************************
+   ** 		ADC fun stuff??		 **
+   **********************************************************************/
+
+Low frequency
+When selecting an analog ADC clock frequency lower than 3.5 MHz, it is mandatory to first
+enable the Low Frequency Mode by setting bit LFMEN=1 into the ADC_CCR register
+
+  /**********************************************************************
+   ** 		ADC Calibration		 **
+   **********************************************************************/
+Software must write to the ADCAL and ADEN bits in the ADC_CR register if the ADC is
+disabled (ADEN must be 0)
+
+Software must only write to the ADSTART and ADDIS bits in the ADC_CR register only if
+the ADC is enabled and there is no pending request to disable the ADC (ADEN = 1 and
+ADDIS = 0). 
+
+Software must only write to the ADSTP bit in the ADC_CR register if the ADC is enabled
+(and possibly converting) and there is no pending request to disable the ADC (ADSTART =
+1 and ADDIS = 0).
+
+
+The ADC has a calibration feature. During the procedure, the ADC calculates a calibration
+factor which is internally applied to the ADC until the next ADC power-off. The application
+must not use the ADC during calibration and must wait until it is complete.
+Calibration should be performed before starting A/D conversion. It removes the offset error
+which may vary from chip to chip due to process variation.
+
+Software calibration procedure
+1. Ensure that ADEN=0 and DMAEN=0.
+2. Set ADCAL=1.
+3. Wait until ADCAL=0 (or until EOCAL=1). This can be handled by interrupt if the
+interrupt is enabled by setting the EOCALIE bit in the ADC_IER register. The ADCAL
+bit can remain set for some time even after EOCAL has been set. As a result, the
+software must wait for ADCAL=0 after EOCAL=1 to be able to set ADEN=1 for next
+ADC conversions.
+4. The calibration factor can be read from bits 6:0 of ADC_DR or ADC_CALFACT
+registers.
+
+If the ADC voltage regulator was not previously set, it will be automatically enabled when
+setting ADCAL=1 (bit ADVREGEN is automatically set by hardware).
+At the end of the calibration, the ADC voltage regulator remains enabled.
+
+ /**********************************************************************
+   ** 		ADC conversion timing		 **
+   **********************************************************************/
+
+
+The total conversion time is calculated as follows:
+tCONV = Sampling time + 12.5 x ADC clock cycles
+Example:
+With ADC_CLK = 16 MHz and a sampling time of 1.5 ADC clock cycles:
+tCONV = 1.5 + 12.5 = 14 ADC clock cycles = 0.875 µs
+
+ /**********************************************************************
+   ** 		ADC voltage regulator		 **
+   **********************************************************************/
+
+ADC voltage regulator (ADVREGEN)
+The ADC has a specific internal voltage regulator which must be enabled and stable before
+using the ADC. The ADC voltage regulator stabilization time is entirely managed by the hardware and
+software does not need to care about it.
+
+ADVREG enable sequence
+There are three ways to enable the voltage regulator:
+• by writing ADVREGEN=1.
+• by launching the calibration by writing by ADCAL=1 (the ADVREGEN bit will be
+automatically set to 1)
+• by enabling the ADC by writing ADEN=1
+
+/**********************************************************************
+   ** 		ADC enable / disable		 **
+   **********************************************************************/
+
+Follow this procedure to enable the ADC:
+1. Clear the ADRDY bit in ADC_ISR register by programming this bit to 1.
+2. Set ADEN=1 in the ADC_CR register.
+3. Wait until ADRDY=1 in the ADC_ISR register (ADRDY is set after the ADC startup
+time). This can be handled by interrupt if the interrupt is enabled by setting the
+ADRDYIE bit in the ADC_IER register.
+
+Follow this procedure to disable the ADC:
+1. Check that ADSTART=0 in the ADC_CR register to ensure that no conversion is
+ongoing. If required, stop any ongoing conversion by writing 1 to the ADSTP bit in the
+ADC_CR register and waiting until this bit is read at 0.
+2. Set ADDIS=1 in the ADC_CR register.
+3. If required by the application, wait until ADEN=0 in the ADC_CR register, indicating that
+the ADC is fully disabled (ADDIS is automatically reset once ADEN=0).
+4. Clear the ADRDY bit in ADC_ISR register by programming this bit to 1 (optional).
+
+ /**********************************************************************
+   ** 		ADC clock		 **
+   **********************************************************************/
+
+The ADC clock can be derived from the APB clock of the ADC bus interface,
+divided by a programmable factor (2 or 4) according to bits CKMODE[1:0].
+To select this scheme, bits CKMODE[1:0] of the ADC_CFGR2 register must be
+different from “00”. 
+CKMODE[1:0] = 11 for
+
+• 16 analog inputs from GPIO pins (ADC_INx)
+
+ /**********************************************************************
+   ** 		ADC programmable sampling time		 **
+   **********************************************************************/
+
+Programmable sampling time (SMP)
+This programmable sampling time is common to all channels. If required by the application,
+the software can change and adapt this sampling time between each conversions.
+The total conversion time is calculated as follows:
+tCONV = Sampling time + 12.5 x ADC clock cycles
+Example:
+With ADC_CLK = 16 MHz and a sampling time of 1.5 ADC clock cycles:
+tCONV = 1.5 + 12.5 = 14 ADC clock cycles = 0.875 µs
+The ADC indicates the end of the sampling phase by setting the EOSMP flag.
+
+ /**********************************************************************
+   ** 		ADC specs		 **
+   **********************************************************************/
+
+High performance
+– 12-bit, 10-bit, 8-bit or 6-bit configurable resolution
+– ADC conversion time: 0.87 µs for 12-bit resolution (1.14 MHz), 0.81 µs conversion
+time for 10-bit resolution, faster conversion times can be obtained by lowering
+resolution.
+– Self-calibration
+– Programmable sampling time
+– Data alignment with built-in data coherency
+– DMA support
+• Low-power
+– Application can reduce PCLK frequency for low-power operation while still
+keeping optimum ADC performance. For example, 0.87 µs conversion time is
+kept, whatever the frequency of PCLK)
+– Wait mode: prevents ADC overrun in applications with low frequency PCLK
+– Auto off mode: ADC is automatically powered off except during the active
+conversion phase. This dramatically reduces the power consumption of the ADC.
+• Analog input channels
+– 16 external analog inputs
+– 1 channel for internal temperature sensor (VSENSE)
+– 1 channel for internal reference voltage (VREFINT)
+– 1 channel for monitoring external VLCD power supply pin.
+• Start-of-conversion can be initiated:
+– By software
+– By hardware triggers with configurable polarity (internal timer events or GPIO
+input events)
+• Conversion modes
+– Can convert a single channel or can scan a sequence of channels.
+– Single mode converts selected inputs once per trigger
+– Continuous mode converts selected inputs continuously
+– Discontinuous mode
+• Interrupt generation at the end of sampling, end of conversion, end of sequence
+conversion, and in case of analog watchdog or overrun events
+• Analog watchdog
+• Oversampler
+– 16-bit data register
+– Oversampling ratio adjustable from 2 to 256x
+– Programmable data shift up to 8-bits
+• ADC supply requirements: 1.65 to 3.6 V
+• ADC input range: VSSA = VIN = VDDA
+
+
+
+
+*/
