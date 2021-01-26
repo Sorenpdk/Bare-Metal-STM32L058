@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\5_UARTRx\EWARM\settings\UARTRx.Debug.general.xcl" --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\5_UARTRx\EWARM\settings\UARTRx.Debug.driver.xcl" 
+& "Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\5_UARTRx - ongoing\EWARM\settings\UARTRx.Debug.general.xcl" --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\5_UARTRx - ongoing\EWARM\settings\UARTRx.Debug.driver.xcl" 
 }
 else
 {
-& "Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\5_UARTRx\EWARM\settings\UARTRx.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\5_UARTRx\EWARM\settings\UARTRx.Debug.driver.xcl" 
+& "Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\5_UARTRx - ongoing\EWARM\settings\UARTRx.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\5_UARTRx - ongoing\EWARM\settings\UARTRx.Debug.driver.xcl" 
 }

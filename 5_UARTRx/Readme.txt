@@ -3,6 +3,11 @@ Using an internal oscilator may not be the best choice, as they are inaccurate, 
 The data sheet provides tolerance of the USART receiver to clock deviation at page 773
 The HSI in our project is not calibrated, but it still works as intended.
 
+Lots of error handling is required for USART communication, we have no control over what a user/system might input to the RX,
+overflows / out of bounds will happen quite easily if we are not very specific with the data width and length.
+
+A better approach is most likely a shared resource like a circular buffer for both the RX and TX. This handles the overflow problems, 
+
 ------------ USART TX ---------------
 Baud rate = number of bits / second so 115200 is a bit every 1*10^6/115200 = 8.68 uS
 As long as we stay below our clock speed we will be fine.

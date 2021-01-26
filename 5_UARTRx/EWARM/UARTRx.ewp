@@ -607,7 +607,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state></state>
+                    <state>$FILE_BNAME$.o</state>
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -2129,6 +2129,9 @@
     </group>
     <group>
         <name>EWARM</name>
+        <file>
+            <name>$PROJ_DIR$\startup_stm32l053xx.s</name>
+        </file>
     </group>
     <group>
         <name>Inc</name>
