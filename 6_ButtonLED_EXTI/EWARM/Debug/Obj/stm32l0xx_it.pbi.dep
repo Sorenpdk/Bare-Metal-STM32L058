@@ -1,0 +1,3 @@
+stm32l0xx_it.pbi: \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\ -\ ongoing\Src\stm32l0xx_it.c \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\ -\ ongoing\EWARM\..\Inc\stm32l0xx_it.h
