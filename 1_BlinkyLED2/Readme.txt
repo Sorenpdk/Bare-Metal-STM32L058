@@ -3,14 +3,13 @@
 *******************************************************************************
 
 --------- Clock / registers ---------
-By default the system clock is the MSI at 2 MHz
-byte/word/half word/bit write access to specific register - Check which can be used to access!
-BSRR - Bit Set Reset Register is used for Atomic write - This is interrupt safe, as it is done in one clock cycle and therefore cannot be preempted.
-These bits are write-only. A read to these bits returns the value 0x0000.
+* By default the system clock is the MSI at 2 MHz
+* Some registers have a reset value - This is to ensure functionalities such as SWD/JTAG is always enabled.
+* PA13 and PA14 is used for SWDIO SWDCLK, therefor specific reset values for PORTA in GPIOA->MODER and GPIOA->PUPDR and GPIA->SPEEDR etc.
+* Some registers have a specific format they accept byte/word/half word/bit  - Check which can be used to access!
 
-Reset values for certain registers -  The reset value is basically the default value for that register. When it's not specified, you should assume it resets to a random value and needs to be initialized - luckily ST initializes the registers.
-PA13 and PA14 is used for SWDIO SWDCLK, therefor specific reset values for PORTA in GPIOA->MODER and GPIOA->PUPDR and GPIA->SPEEDR etc.
-Also PA4 seems to have an ALTF0 which is SPI1_NSS which i think is Nucleo Slave Select, however it is PA15 that is also ALTF0 for SPI1_NSS that is pulled HIGH as default, somewhere PA4 is remapped to PA15 ?????
+* BSRR - Bit Set Reset Register is used for Atomic write - This is interrupt safe, as it is done in one clock cycle and therefore cannot be preempted.
+  These bits are write-only. A read to these bits returns the value 0x0000.
 
 
 --------- CM0+ / STM32 --------- 
@@ -51,7 +50,8 @@ Lets look at 0x4000 0000 up to 0x6000 0000 = 0x2000 0000 -> 536870912 -> 536.870
 1 MB = 1 Megabyte = 1024 * 1 KB = 1,048,576 bytes.
 536.870.912 / 2^20 = 512 MB
 
-So, Capacity = Last Address - First Address + 1.
+So, 
+Capacity = Last Address - First Address + 1.
 
 
 --------- Protocol ---------
@@ -67,7 +67,7 @@ number ^= 1UL << n;
 
 
 --------- IAR ---------
-Register view
+
 
 
 
