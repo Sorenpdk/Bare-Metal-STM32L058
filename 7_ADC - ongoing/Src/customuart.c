@@ -110,6 +110,8 @@ void UART_Send_String(uint8_t msg[], size_t len)
   for(uint8_t i = 0; i < len; i++){
     UART_Send_Char(msg[i]);
   }
+  UART_Send_Char(0xF8);
+  UART_Send_Char(0x43);
   UART_Send_Char(0x0D); // CR
   UART_Send_Char(0x0A); // LF
 }

@@ -22,8 +22,8 @@
 /* Temperature sensor calibration value address */
 #define TEMP130_CAL_ADDR ((uint16_t*) ((uint32_t) 0x1FF8007E))
 #define TEMP30_CAL_ADDR ((uint16_t*) ((uint32_t) 0x1FF8007A))
-#define VDD_CALIB ((uint16_t) (300))
-#define VDD_APPLI ((uint16_t) (330))
+#define VDD_CALIB ((uint16_t) (300)) // Device was calibrated at 3V
+#define VDD_APPLI ((uint16_t) (330)) // actual VDDA is measured to 3.3V
    
 /* Private variables ---------------------------------------------------------*/      
 uint8_t temperature_C; //contains the computed temperature
@@ -60,8 +60,9 @@ int main(void)
   {
      while ((ADC1->ISR & ADC_ISR_EOC) == 0); /* Wait end of conversion */
     temperature_C = ComputeTemperature((uint8_t)ADC1->DR);  
-    sprintf(buffer, "%d", temperature_C);
-    UART_Send_String((uint8_t*)buffer,sizeof(buffer));
+    sprintf(buffer, "%d", temperature_C);   
+    UART_Send_String((uint8_t*)buffer, sizeof(buffer));
+    
     customDelay(1000);
   }
   
@@ -77,6 +78,7 @@ int main(void)
 __INLINE void SetClockForADC(void)
 {
   /* (1) Enable the peripheral clock of the ADC */
+  
   RCC->APB2ENR |= RCC_APB2ENR_ADC1EN; /* (1) */
 }
 
@@ -94,7 +96,7 @@ __INLINE void  CalibrateADC(void)
   /* (4) Wait until EOCAL=1 */
   /* (5) Clear EOCAL */
   if ((ADC1->CR & ADC_CR_ADEN) != 0) /* (1) */
-{
+  {
     ADC1->CR &= (uint32_t)(~ADC_CR_ADEN);  /* (2) */  
   }
   ADC1->CR |= ADC_CR_ADCAL; /* (3) */
@@ -116,13 +118,23 @@ __INLINE void  CalibrateADC(void)
   */
 __INLINE void ConfigureADC(void)
 {
-  /* (1) Select HSI16 by writing 00 in CKMODE (reset value) */ 
+  /* (1) Select HSI16 by writing 00 in CKMODE (reset value) The software is allowed to write these bits only when the ADC is disabled (ADCAL=0,
+      ADSTART=0, ADSTP=0, ADDIS=0 and ADEN=0). */ 
   /* (2) Select continuous mode */
   /* (3) Select CHSEL18 for temperature sensor */
-  /* (4) Select a sampling mode of 111 i.e. 239.5 ADC clk to be greater than 2.2us */
+  /* (4) Select a sampling mode of 111 */
+  /* with 16MHz clock the total conversion time is
+    1/16*10^6 = 6.25*10^-8 -> 6.25*10^-2 = 0.0625 uS between clock cycles
+    tconv = sampling time + 12.5 x ADC clock cycles 
+    this is not a multiply sign!
+    tconv = ADC cycles * samplingstime ->
+    tconv = 160.5 + 12.5 = 173 * 0.0625 = 10.81 uS 
+    so our sampling frequency would be about 92.5 KHz */
   /* (5) Wake-up the Temperature sensor (only for VLCD, Temp sensor and VRefInt) */
   //ADC1->CFGR2 &= ~ADC_CFGR2_CKMODE; /* (1) */   
-  ADC1->CFGR1 |= ADC_CFGR1_CONT; /* (2) */
+  
+    ADC1->CFGR1 |= ADC_CFGR1_CONT; /* (2) */
+  
   ADC1->CHSELR = ADC_CHSELR_CHSEL18; /* (3) */
   ADC1->SMPR |= ADC_SMPR_SMP; /* (4) */
   ADC->CCR |= ADC_CCR_TSEN; /* (5) */
@@ -196,7 +208,7 @@ uint8_t ComputeTemperature(uint8_t measure)
   temperature = ((measure * VDD_APPLI / VDD_CALIB) - (int32_t) *TEMP30_CAL_ADDR ) ;	
   temperature = temperature * (int32_t)(130 - 30);                      
   temperature = temperature / (int32_t)(*TEMP130_CAL_ADDR - *TEMP30_CAL_ADDR);                 
-  temperature = temperature + 14;
+  temperature = temperature + 30;
   return(temperature);
 }
 

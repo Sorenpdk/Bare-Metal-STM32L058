@@ -1,6 +1,24 @@
-disable the ADC in the CR
-start the calibration in the CR
-wait for the cal bit to become 0
+*******************************************************************************
+*  				Lessons Learned        
+*******************************************************************************
+
+--------- Clock / registers ---------
+
+
+--------- CM0+ / STM32 --------- 
+Each MCU is individually factory-calibrated by ST. The temperature sensor factory calibration data are
+stored by ST in the system memory area, accessible in read-only mode. 
+
+to access the value we provide a pointer to the specific memory adress 
+/* Temperature sensor calibration value address */
+#define TEMP130_CAL_ADDR ((uint16_t*) ((uint32_t) 0x1FF8007E))
+
+when used, we dereference the pointer as such value = *TEMP130_CAL_ADDR
+this can then be typecasted to whatever, as the value is only around 600 in our case a 16 bit integer is suffcient.
+--------- Protocol ---------
+
+
+--------- Software / Basic operations ---------
 
 
 
@@ -9,6 +27,8 @@ wait for the cal bit to become 0
 
 
 
+
+--------- IAR ---------
 /CMSIS contains all core files
 - CortexM0+ core <core_cm0plus.h>
 - CortexMFunctions <core_cmFunc.h>

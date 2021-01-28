@@ -99018,90 +99018,6 @@
     "scope": null
   },
   {
-    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_YSIZET_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_YSIZET_H",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@277@macro@_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "16",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STD_USING_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "17",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_STD_USING_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Sizet",
-    "location": {
-      "column": "18",
-      "line": "18",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DATA_PTR_MEM_HELPER1__",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__DATA_PTR_MEM_HELPER1__",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@__data_size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned int",
-    "location": {
-      "column": "1",
-      "line": "23",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__data_size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:@F@customUSART1_Init",
     "What": "Function",
     "defdec": "Def",
@@ -99183,6 +99099,90 @@
     },
     "name": "i",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_YSIZET_H",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_YSIZET_H",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@277@macro@_SIZE_T",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_SIZE_T",
+    "location": {
+      "column": "11",
+      "line": "16",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_SIZE_T",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_STD_USING_SIZE_T",
+    "location": {
+      "column": "11",
+      "line": "17",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_STD_USING_SIZE_T",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@T@size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "_Sizet",
+    "location": {
+      "column": "18",
+      "line": "18",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "size_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DATA_PTR_MEM_HELPER1__",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "__DATA_PTR_MEM_HELPER1__",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@T@__data_size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int",
+    "location": {
+      "column": "1",
+      "line": "23",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "__data_size_t",
+    "origin": "system_include",
     "scope": null
   },
   {
@@ -100838,7 +100838,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@951@macro@VDD_APPLI",
+    "ID": "c:main.c@982@macro@VDD_APPLI",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "VDD_APPLI",
@@ -100984,7 +100984,7 @@
     "display": "void SetClockForADC(void)",
     "location": {
       "column": "15",
-      "line": "77",
+      "line": "78",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\7_ADC - ongoing\\User\\main.c"
     },
     "name": "SetClockForADC",
@@ -100998,7 +100998,7 @@
     "display": "void CalibrateADC(void)",
     "location": {
       "column": "16",
-      "line": "89",
+      "line": "91",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\7_ADC - ongoing\\User\\main.c"
     },
     "name": "CalibrateADC",
@@ -101012,7 +101012,7 @@
     "display": "void ConfigureADC(void)",
     "location": {
       "column": "15",
-      "line": "117",
+      "line": "119",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\7_ADC - ongoing\\User\\main.c"
     },
     "name": "ConfigureADC",
@@ -101026,7 +101026,7 @@
     "display": "void EnableADC(void)",
     "location": {
       "column": "15",
-      "line": "137",
+      "line": "149",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\7_ADC - ongoing\\User\\main.c"
     },
     "name": "EnableADC",
@@ -101040,7 +101040,7 @@
     "display": "void DisableADC(void)",
     "location": {
       "column": "15",
-      "line": "157",
+      "line": "169",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\7_ADC - ongoing\\User\\main.c"
     },
     "name": "DisableADC",
@@ -101054,7 +101054,7 @@
     "display": "uint8_t ComputeTemperature(uint8_t)",
     "location": {
       "column": "9",
-      "line": "192",
+      "line": "204",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\7_ADC - ongoing\\User\\main.c"
     },
     "name": "ComputeTemperature",
@@ -101062,13 +101062,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5939@F@ComputeTemperature@temperature",
+    "ID": "c:main.c@6488@F@ComputeTemperature@temperature",
     "What": "Variable",
     "defdec": "Def",
     "display": "temperature",
     "location": {
       "column": "11",
-      "line": "194",
+      "line": "206",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\7_ADC - ongoing\\User\\main.c"
     },
     "name": "temperature",
