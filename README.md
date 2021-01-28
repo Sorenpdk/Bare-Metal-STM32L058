@@ -8,8 +8,8 @@ Projects to complete
 - [x] General Purpose Timer in PWM mode.
 - General Purpose Timer in PWM mode on LD2.
 - [x] Refresh knowledge and implement USART Tx/Rx.
-- Implement interrupt driven USART Tx/Rx.
-- Interrupt driven Blinky/Pushbutton.
+- [x] Implement interrupt driven USART Tx/Rx.
+- [x] Interrupt driven Blinky/Pushbutton.
 - General Purpose Timer in Input Capture mode.
 - Interrupt driven ADC.
 - Update USART project with a ring buffer. 
