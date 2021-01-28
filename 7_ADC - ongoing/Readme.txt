@@ -15,12 +15,15 @@ to access the value we provide a pointer to the specific memory adress
 
 when used, we dereference the pointer as such value = *TEMP130_CAL_ADDR
 this can then be typecasted to whatever, as the value is only around 600 in our case a 16 bit integer is suffcient.
+***** The calibration by ST is performed at 3V ! ******
+The current VDDA voltage is 3.3V so we need to scale accordingly, at least for our temperature measurements.
+
 --------- Protocol ---------
 
 
 --------- Software / Basic operations ---------
 
-
+The ADC is quite complicated! I need to make a "white paper" to understand it all.
 
 
 
