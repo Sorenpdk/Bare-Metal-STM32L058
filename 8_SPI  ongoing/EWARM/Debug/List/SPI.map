@@ -1,0 +1,250 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  29/Jan/2021  12:37:24
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\Exe\SPI.out
+#    Map file     =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\List\SPI.map
+#    Command line =
+#        -f C:\Users\soren\AppData\Local\Temp\EWA767.tmp
+#        ("C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\Obj\customclock.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\Obj\customgpio.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\Obj\customuart.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\Obj\main.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\Obj\stm32l0xx_it.o"
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\Obj\system_stm32l0xx.o" --no_out_extension -o
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\Exe\SPI.out" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI
+#        ongoing\EWARM\Debug\List\SPI.map" --config "Z:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench 8.4\arm\config\linker\ST\stm32l053x8.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  section .eeprom  in "P3"
+
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0x40
+  .intvec            ro code   0x800'0000   0x40  vector_table_M.o [3]
+                             - 0x800'0040   0x40
+
+"P1":                                      0x544
+  .text              ro code   0x800'0040  0x204  main.o [1]
+  .text              ro code   0x800'0244   0xbc  main.o [1]
+  .text              ro code   0x800'0300   0x40  main.o [1]
+  .text              ro code   0x800'0340   0x64  main.o [1]
+  .text              ro code   0x800'03a4   0x40  main.o [1]
+  .text              ro code   0x800'03e4   0x30  main.o [1]
+  .text              ro code   0x800'0414   0x38  main.o [1]
+  .text              ro code   0x800'044c   0x1c  main.o [1]
+  .text              ro code   0x800'0468   0x3c  main.o [1]
+  .text              ro code   0x800'04a4   0x30  copy_init3.o [3]
+  .text              ro code   0x800'04d4   0x28  data_init.o [3]
+  .iar.init_table    const     0x800'04fc   0x14  - Linker created -
+  .text              ro code   0x800'0510   0x1e  cmain.o [3]
+  .text              ro code   0x800'052e    0x4  low_level_init.o [2]
+  .text              ro code   0x800'0532    0x8  exit.o [2]
+  .text              ro code   0x800'053a    0xa  stm32l0xx_it.o [1]
+  .text              ro code   0x800'0544    0xa  cexit.o [3]
+  .text              ro code   0x800'054e    0x2  vector_table_M.o [3]
+  .text              ro code   0x800'0550   0x14  exit.o [4]
+  Initializer bytes  const     0x800'0564   0x14  <for P2-1>
+  .text              ro code   0x800'0578    0xc  cstartup_M.o [3]
+  .rodata            const     0x800'0584    0x0  copy_init3.o [3]
+                             - 0x800'0584  0x544
+
+"P2", part 1 of 2:                          0x14
+  P2-1                        0x2000'0000   0x14  <Init block>
+    .data            inited   0x2000'0000    0x4  main.o [1]
+    .data            inited   0x2000'0004    0x4  main.o [1]
+    .bss             inited   0x2000'0008    0x4  main.o [1]
+    .bss             inited   0x2000'000c    0x2  main.o [1]
+    .bss             inited   0x2000'000e    0x2  main.o [1]
+    .bss             inited   0x2000'0010    0x1  main.o [1]
+    .bss             inited   0x2000'0011    0x1  main.o [1]
+    .bss             inited   0x2000'0012    0x1  main.o [1]
+    .bss             inited   0x2000'0013    0x1  main.o [1]
+                            - 0x2000'0014   0x14
+
+"P2", part 2 of 2:                         0x400
+  CSTACK                      0x2000'0018  0x400  <Block>
+    CSTACK           uninit   0x2000'0018  0x400  <Block tail>
+                            - 0x2000'0418  0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'0584   0x800'ffff  0xfa7c
+  0x2000'0014  0x2000'0017     0x4
+  0x2000'0418  0x2000'1fff  0x1be8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x14:
+           0x800'0564  0x14
+    1 destination range, total size 0x14:
+          0x2000'0000  0x14
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI  ongoing\EWARM\Debug\Obj: [1]
+    main.o              1'124       20       20
+    stm32l0xx_it.o         10
+    -------------------------------------------
+    Total:              1'134       20       20
+
+dl6M_tlf.a: [2]
+    exit.o                  8
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                 12
+
+rt6M_tl.a: [3]
+    cexit.o                10
+    cmain.o                30
+    copy_init3.o           48
+    cstartup_M.o           12
+    data_init.o            40
+    vector_table_M.o       66
+    -------------------------------------------
+    Total:                206
+
+shb_l.a: [4]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Linker created                  20    1'024
+-----------------------------------------------
+    Grand Total:        1'372       40    1'044
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base    0x800'04fc         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0510         --   Gb  - Linker created -
+?main                    0x800'0511        Code  Gb  cmain.o [3]
+CSTACK$$Base            0x2000'0018         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0418         --   Gb  - Linker created -
+Configure_EXTI           0x800'0469  0x3c  Code  Gb  main.o [1]
+Configure_GPIO_Button    0x800'044d  0x1c  Code  Gb  main.o [1]
+Configure_GPIO_LED       0x800'0301  0x40  Code  Gb  main.o [1]
+Configure_GPIO_SPI1      0x800'0341  0x64  Code  Gb  main.o [1]
+Configure_GPIO_SPI2      0x800'03e5  0x30  Code  Gb  main.o [1]
+Configure_SPI1           0x800'03a5  0x40  Code  Gb  main.o [1]
+Configure_SPI2           0x800'0415  0x38  Code  Gb  main.o [1]
+HardFault_Handler        0x800'053d   0x4  Code  Gb  stm32l0xx_it.o [1]
+NMI_Handler              0x800'053b   0x2  Code  Gb  stm32l0xx_it.o [1]
+NVIC_EnableIRQ           0x800'0041   0xe  Code  Lc  main.o [1]
+NVIC_SetPriority         0x800'004f  0x8a  Code  Lc  main.o [1]
+PendSV_Handler           0x800'0543   0x2  Code  Gb  stm32l0xx_it.o [1]
+Region$$Table$$Base      0x800'04fc         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0510         --   Gb  - Linker created -
+SPI1_ByteReceived       0x2000'0012   0x1  Data  Gb  main.o [1]
+SPI1_Data               0x2000'0010   0x1  Data  Gb  main.o [1]
+SPI2_ByteReceived       0x2000'0013   0x1  Data  Gb  main.o [1]
+SPI2_Data               0x2000'0011   0x1  Data  Gb  main.o [1]
+SVC_Handler              0x800'0541   0x2  Code  Gb  stm32l0xx_it.o [1]
+SysTick_Config           0x800'00d9  0x30  Code  Lc  main.o [1]
+SysTick_Handler          0x800'017f  0x78  Code  Gb  main.o [1]
+SysTick_Handler::error_temp
+                        0x2000'000e   0x2  Data  Lc  main.o [1]
+SysTick_Handler::long_counter
+                        0x2000'0000   0x4  Data  Lc  main.o [1]
+SysTick_Handler::short_counter
+                        0x2000'0004   0x4  Data  Lc  main.o [1]
+SystemClock_Config       0x800'0245  0xbc  Code  Gb  main.o [1]
+Tick                    0x2000'0008   0x4  Data  Lc  main.o [1]
+__cmain                  0x800'0511        Code  Gb  cmain.o [3]
+__exit                   0x800'0551  0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'04a5  0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'04d5  0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'0579        Code  Gb  cstartup_M.o [3]
+__low_level_init         0x800'052f   0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000        Data  Gb  vector_table_M.o [3]
+_call_main               0x800'051d        Code  Gb  cmain.o [3]
+_exit                    0x800'0545        Code  Gb  cexit.o [3]
+_main                    0x800'052b        Code  Gb  cmain.o [3]
+error                   0x2000'000c   0x2  Data  Gb  main.o [1]
+exit                     0x800'0533   0x8  Code  Gb  exit.o [2]
+main                     0x800'0109  0x76  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI  ongoing\EWARM\Debug\Obj
+[2] = dl6M_tlf.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  1'372 bytes of readonly  code memory
+     40 bytes of readonly  data memory
+  1'044 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
