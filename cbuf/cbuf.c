@@ -1,57 +1,59 @@
-/**  
- *              * Lessons learned *
- * To loop back to the beginning of a buffer use the (X % Y) method 
- *  if X and Y is equal the result will become 0
- *  say X is our headptr which is 1 and Y is our max buffer size of 8
- *  0 mod 8 = 0
- *  1 mod 8 = 1
- *  2 mod 8 = 2
- *   ....
- * 8 mod 8 = 0
- * 9 mod 8 = 1
- * 10 mod 8 = 2
- * 
- * 
- * if you dont declare arrays static, we will have garbage values when we assign the arrays to the internal buffer
- * static will always initialize all values to zero, if you assign some values the rest will still be 0.
- * 
- * Always memset buffers unless they are static.
-**/
-
-
 #include <stdio.h>
 #include <stdlib.h> // malloc
 #include <stdint.h> // uint8_t
 #include <string.h> // memset
+#include <stdbool.h> 
 
-#define BUF_SIZE 8
+/**************************************************************************
+ *                      Private defines
+ * ************************************************************************/
+
+#define BUFFER_SIZE 8
 #define DEBUG 0
+
+/**************************************************************************
+ *                      Private typedefines
+ * ************************************************************************/
 
 typedef struct
 {
   uint8_t head;
   uint8_t tail;
-  uint8_t max;
-  uint8_t isFull;
+  uint8_t bufferSize;
+  uint8_t bufferCapacity;
+  bool bufferFull;
   uint8_t* buffer;
   
 }circularBuf_t;
 
 typedef circularBuf_t* cbuf_handle_t;
 
-cbuf_handle_t circular_buf_init(uint8_t* buffer, size_t size);
+/**************************************************************************
+ *                      Function prototypes
+ * ************************************************************************/
+cbuf_handle_t circular_buf_init(uint8_t* extBuffer, size_t extBufferSize);
 void circular_buf_reset(cbuf_handle_t cbuf);
-void circular_buf_free(cbuf_handle_t cbuf, uint8_t* buffer);
-void circular_buf_print(cbuf_handle_t cbuf);
-void circular_buf_print_buffer(cbuf_handle_t cbuf, size_t len);
-void circular_buf_put_byte(cbuf_handle_t cbuf, uint8_t data, size_t len);
-uint8_t circular_buf_read_byte(cbuf_handle_t cbuf, uint8_t *data, size_t len);
-void writetest(cbuf_handle_t cbuf);
+void circular_buf_free(cbuf_handle_t cbuf, uint8_t* extBuffer);
+void circular_buf_print_buffer(cbuf_handle_t cbuf);
+uint8_t circular_buf_write(cbuf_handle_t cbuf, uint8_t *data, size_t length);
+uint8_t circular_buf_read(cbuf_handle_t cbuf, uint8_t *data, size_t length);
+void testprogram1(cbuf_handle_t cbuf);
+
+/**************************************************************************
+ *                      Main application
+ * ************************************************************************/
+
+/*
+ 0) Evaluate what you need for buffer size, head/tail size etc.
+ 1) Make an external buffer, of BUFFER_SIZE
+ 2) Create the circular buffer by calling init. and call the functions via the return cbuf_handle_t
+ 3) Remember to destroy the circular buffer and external buffer.
+*/
 
 int main()
 {
     
-    uint8_t* buffer  = calloc(BUF_SIZE, sizeof *buffer);
+    uint8_t* buffer  = calloc(BUFFER_SIZE, sizeof *buffer);
     
     if(buffer == NULL)
     {
@@ -63,19 +65,18 @@ int main()
     #endif  
         
     }
+    cbuf_handle_t cbuf = circular_buf_init(buffer, BUFFER_SIZE);
     
-    cbuf_handle_t cbuf = circular_buf_init(buffer, BUF_SIZE);
-    
-    static uint8_t rxbuf[8];
-    
-    //writetest(cbuf);
-   
     circular_buf_free(cbuf, buffer);
     return 0;
 }
 
 
-cbuf_handle_t circular_buf_init(uint8_t* buffer, size_t size)
+/**************************************************************************
+ *                      Functions
+ * ************************************************************************/
+
+cbuf_handle_t circular_buf_init(uint8_t* extBuffer, size_t extBufferSize)
 {
     cbuf_handle_t cbuf = malloc(sizeof(circularBuf_t));
 
@@ -88,9 +89,11 @@ cbuf_handle_t circular_buf_init(uint8_t* buffer, size_t size)
      printf("\r\n");
     #endif  
     }
-    memset(buffer,0,BUF_SIZE);
-    cbuf->buffer = buffer;
-    cbuf->max = size;
+    memset(extBuffer,0,extBufferSize);
+    cbuf->buffer = extBuffer;
+    cbuf->bufferSize = extBufferSize;
+    cbuf->bufferCapacity = extBufferSize;
+   
  
     circular_buf_reset(cbuf);
     
@@ -101,9 +104,8 @@ void circular_buf_reset(cbuf_handle_t cbuf)
 {
     cbuf->head = 0;
     cbuf->tail = 0;
-    cbuf->isFull = 0;
-    memset(cbuf->buffer,0,BUF_SIZE);
-    
+    cbuf->bufferFull = false;
+
     #if DEBUG
      printf("=========  DEBUG  =======\r\n");
      printf("Buffer has been reset by");
@@ -112,9 +114,9 @@ void circular_buf_reset(cbuf_handle_t cbuf)
     #endif 
 }
 
-void circular_buf_free(cbuf_handle_t cbuf, uint8_t *buffer)
+void circular_buf_free(cbuf_handle_t cbuf, uint8_t* extBuffer)
 {
- free(buffer);
+ free(extBuffer);
  free(cbuf);
  
   #if DEBUG
@@ -125,75 +127,148 @@ void circular_buf_free(cbuf_handle_t cbuf, uint8_t *buffer)
     #endif 
 }
 
-void circular_buf_print(cbuf_handle_t cbuf)
+uint8_t circular_buf_write(cbuf_handle_t cbuf, uint8_t *data, size_t length)
 {
-  
-   printf("Head value: %d\r\n", cbuf->head);
-   printf("Tail value: %d\r\n", cbuf->tail);
-   printf("Buffer status, isFull: %d\r\n", cbuf->isFull);
-   
-}
-
-void circular_buf_print_buffer(cbuf_handle_t cbuf, size_t len)
-{
-    printf("Transmit buffer: \r\n");
-    
-    for(uint8_t i = 0; i < 8; i++)
+    if(cbuf->bufferFull)
     {
-        printf("%d\t", cbuf->buffer[i]); 
+        return 0;
+    }
+    else
+    {
+        for(uint8_t i = 0; i < length; i++)
+        {
+            memcpy(&cbuf->buffer[cbuf->head], &data[i], 1);
+            cbuf->head = (cbuf->head + 1) % cbuf->bufferSize;
+            cbuf->bufferCapacity = (cbuf->bufferCapacity - 1) % cbuf->bufferSize;
+                if((cbuf->head == cbuf->tail || cbuf->head == cbuf->bufferSize) && cbuf->bufferCapacity == 0)
+                    {
+                        cbuf->bufferFull = true;
+                    }
+        }  
+    }
+    
+    return 1;
+}
+
+uint8_t circular_buf_read(cbuf_handle_t cbuf, uint8_t *data, size_t length)
+{
+    if(cbuf->bufferCapacity > 0 && cbuf->head == 0 && cbuf->tail == 0 && !cbuf->bufferFull)
+    {
+        return 0;
+    }
+    else
+    {
+        for(uint8_t i = 0; i < length; i++)
+        {
+            memcpy(&data[cbuf->tail], &cbuf->buffer[cbuf->tail], 1);
+            memset(&cbuf->buffer[cbuf->tail], 0, 1);
+            cbuf->tail = (cbuf->tail + 1) % cbuf->bufferSize;
+            
+            if(cbuf->head > 0 && cbuf->tail > 0 && cbuf->head == cbuf->tail)
+            {
+                cbuf->bufferCapacity = cbuf->bufferSize;
+            }
+            else
+            {
+                cbuf->bufferCapacity = (cbuf->bufferCapacity + 1) % cbuf->bufferSize;
+                if(cbuf->bufferCapacity > 0)
+                    {
+                        cbuf->bufferFull = false;
+                    } 
+            }
+        }
+    }
+    
+    return 1;
+}
+
+
+
+/**************************************************************************
+ *                      Test functions
+ * ************************************************************************/
+
+
+void circular_buf_print_buffer(cbuf_handle_t cbuf)
+{
+    printf("\r\n");
+    printf("Head position %d\r\n", cbuf->head);
+    printf("Tail position %d\r\n", cbuf->tail);
+    printf("Buffer capacity %d\r\n", cbuf->bufferCapacity);
+    printf("Buffer full? %d\r\n", cbuf->bufferFull);
+    printf("\r\n");
+}
+
+
+void testprogram1(cbuf_handle_t cbuf)
+{
+    
+    static uint8_t txbuffer[BUFFER_SIZE] = {1,2,3,4,5,6,7,8};
+    static uint8_t txbuffer2[BUFFER_SIZE] = {7,8};
+    static uint8_t rxbuffer[BUFFER_SIZE];
+
+    
+    circular_buf_write(cbuf, txbuffer, 8);
+    
+    
+    printf("print internal buffer after writing to it\r\n");
+    for(uint8_t i = 0; i < BUFFER_SIZE; i++)
+    {
+        printf("%d\t",cbuf->buffer[i]);
+    }
+    printf("\r\n");
+    circular_buf_print_buffer(cbuf);
+    printf("\r\n");
+    
+    circular_buf_read(cbuf, rxbuffer, 2);
+    
+    printf("print external buffer after reading from internal buffer\r\n");
+    for(uint8_t i = 0; i < BUFFER_SIZE ; i++)
+    {
+        printf("%d\t", rxbuffer[i]);
+    }
+     printf("\r\n");
      
+    printf("print internal buffer after reading to check if zeroed\r\n");
+   for(uint8_t i = 0; i < BUFFER_SIZE; i++)
+    {
+        printf("%d\t",cbuf->buffer[i]);
     }
-   printf("\r\n");
-}
-
-void circular_buf_put_byte(cbuf_handle_t cbuf, uint8_t data, size_t len)
-{
-        cbuf->buffer[cbuf->head] = data;
-        cbuf->head = (cbuf->head + 1) % cbuf->max;
-}
-
-
-uint8_t circular_buf_read_byte(cbuf_handle_t cbuf, uint8_t *data, size_t len)
-{
-    
-    data = cbuf->buffer;
-    printf("%d\r\n", *data);
-    cbuf->tail = (cbuf->tail + 1) % cbuf->max;
+    printf("\r\n");
    
+   
+    circular_buf_print_buffer(cbuf);
+   
+   
+    circular_buf_write(cbuf, txbuffer2, 2);
+    
+    printf("print internal buffer after writing new values from a new array\r\n");
+    for(uint8_t i = 0; i < BUFFER_SIZE; i++)
+    {
+        printf("%d\t",cbuf->buffer[i]);
+    }
+
+    circular_buf_print_buffer(cbuf);
   
-   return *data;
-}
-
-
-void writetest(cbuf_handle_t cbuf)
-{
+     printf("\r\n");
+ 
+    circular_buf_read(cbuf, rxbuffer, 1);
     
-    printf("==== Write Test ===== \r\n");
-    printf("\r\n");
-    uint8_t txbuf[5] = {1,2,3,4,5};
-    printf("Write 5 values 1..5, headptr = 5 \r\n");
-    for(uint8_t i = 0; i < 5; i++){
-    circular_buf_put_byte(cbuf, txbuf[i], 1);
+    printf("print external buffer after reading values from internal buffer\r\n");
+    for(uint8_t i = 0; i < BUFFER_SIZE ; i++)
+    {
+        printf("%d\t", rxbuffer[i]);
     }
-    circular_buf_print_buffer(cbuf, 8);
-    
     printf("\r\n");
-    printf("Write 5 more values 9..13, headptr = 2  \r\n");
-    uint8_t txxbuf[5] = {9,10,11,12,13};
-    for(uint8_t i = 0; i < 5; i++){
-    circular_buf_put_byte(cbuf, txxbuf[i], 1);
-    }
-    circular_buf_print_buffer(cbuf, 8);
-    
-    printf("\r\n");
-    printf("Write 7 more values 21..27, headptr = 1  \r\n");
-    uint8_t txxxbuf[7] = {21,22,23,24,25,26,27};
-    for(uint8_t i = 0; i < 7; i++){
-    circular_buf_put_byte(cbuf, txxxbuf[i], 1);
+     
+    printf("print internal buffer after reading to check if zeroed\r\n");
+   for(uint8_t i = 0; i < BUFFER_SIZE; i++)
+    {
+        printf("%d\t",cbuf->buffer[i]);
     }
     
-    circular_buf_print_buffer(cbuf, 8);
-    printf("\r\n");
-    printf("Buffer status \r\n");
-    circular_buf_print(cbuf);
+    // make sure tail has caught up to head.
+    circular_buf_print_buffer(cbuf);
+  
+  
 }
