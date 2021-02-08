@@ -1,0 +1,47 @@
+1 Project -> Create a new project
+1.1 Toolchain Arm - C main.
+2 Right click project name -> Options
+3 Set the target and other settings
+4 Library Configuration -> Select library functions to full select Semihosting, use CMSIS
+4.1 Select other options if you want such as heap selection etc.
+5 Click C/C++ Compiler options select c++ inline semantics
+5.1 select optimization etc. or processor mode, arm/thumb etc.
+5.2 Click preprocessor and tell the compiler where to find includes.
+
+Compiler settings.
+$PROJ_DIR$
+$PROJ_DIR$\..\Inc
+$PROJ_DIR$\..\CMSIS
+$PROJ_DIR$\..\User
+$PROJ_DIR$\..\Src
+
+
+6 Setup the debugger
+6.1 verify download and use flash loaders
+
+7. Create folders and import the folders and files into the project by right click in the folder viewer 
+
+/CMSIS contains all core files
+- CortexM0+ core <core_cm0plus.h>
+- CortexMFunctions <core_cmFunc.h>
+- CortexMInstructions <core_cmInstr>
+
+/EWARM contains all project files
+- MCU startup assembly instructions <startup_stm32l053xx.s>
+- Linker file for flash <stm32l053xx_flash.icf>
+- Linker file for SRAM <stm32l053xx_sram>
+
+
+/Inc contains all include files MCU specific
+- stm32l0xx.h
+- stm32l0xx_it.h
+- stm32l053xx.h
+- system_stm32l0xx.h
+
+/Src contains all source files MCU specific
+- stm32l0xx_it.c
+- system_stm32l0xx
+
+/User contains application code
+- main.c
+
