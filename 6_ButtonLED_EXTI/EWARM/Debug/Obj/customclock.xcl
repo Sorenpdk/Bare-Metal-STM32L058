@@ -1,25 +1,25 @@
-"C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\Src\customclock.c"
+"C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\Src\customclock.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\Debug\Obj\customclock.pbi.dep
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj\customclock.pbi.dep
 -o
 customclock.pbi
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\Src
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\Src
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\..\Inc\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\..\Inc\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\..\CMSIS\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\..\CMSIS\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\..\User\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\..\User\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\..\Src\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\..\Src\
 -I
 Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include\
 -I
@@ -29,15 +29,15 @@ Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
 Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\Inc
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\Inc
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\CMSIS
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\CMSIS
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\User
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\User
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\Src
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\Src
 -I
 Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I

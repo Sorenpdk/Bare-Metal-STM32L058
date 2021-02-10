@@ -1,36 +1,27 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.6.265/W32 for ARM                  15/Jan/2021  14:26:43
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  09/Feb/2021  08:52:09
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
-#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Exe\BottomEXTI.out
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Exe\BottomEXTI.out
 #    Map file     =
-#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\List\BottomEXTI.map
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\List\BottomEXTI.map
 #    Command line =
-#        -f C:\Users\soren\AppData\Local\Temp\EW409D.tmp
-#        ("C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Obj\customclock.o"
-#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Obj\customdelay.o"
-#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Obj\customgpio.o"
-#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Obj\main.o"
-#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Obj\startup_stm32l053xx.o"
-#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Obj\stm32l0xx_it.o"
-#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Obj\system_stm32l0xx.o" --no_out_extension -o
-#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\Exe\BottomEXTI.out" --redirect
-#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
-#        "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI -
-#        ongoing\EWARM\Debug\List\BottomEXTI.map" --config "Z:\Program Files
-#        (x86)\IAR Systems\Embedded Workbench
+#        -f C:\Users\soren\AppData\Local\Temp\EW27E2.tmp
+#        (C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj\customclock.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj\customdelay.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj\customgpio.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj\main.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj\startup_stm32l053xx.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj\stm32l0xx_it.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj\system_stm32l0xx.o
+#        --no_out_extension -o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Exe\BottomEXTI.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\List\BottomEXTI.map
+#        --config "Z:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        8.4\arm\config\linker\ST\stm32l053x8.icf" --semihosting --entry
 #        __iar_program_start --vfe --text_out locale)
 #
@@ -172,7 +163,7 @@ command line/config:
     ------------------------------------------------
     Total:
 
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI - ongoing\EWARM\Debug\Obj: [1]
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj: [1]
     customclock.o              148
     customdelay.o              244        4        4
     customgpio.o               272
@@ -261,7 +252,7 @@ main                     0x800'0189  0x5a  Code  Gb  main.o [1]
 toggleLED2               0x800'0539   0xc  Code  Gb  customgpio.o [1]
 
 
-[1] = C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_BottomLED_EXTI - ongoing\EWARM\Debug\Obj
+[1] = C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\Debug\Obj
 [2] = dl6M_tln.a
 [3] = rt6M_tl.a
 [4] = shb_l.a

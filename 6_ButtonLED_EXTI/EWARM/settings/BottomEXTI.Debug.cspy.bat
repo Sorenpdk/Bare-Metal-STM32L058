@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\settings\BottomEXTI.Debug.general.xcl" --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\settings\BottomEXTI.Debug.driver.xcl" 
+"Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\settings\BottomEXTI.Debug.general.xcl" --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\settings\BottomEXTI.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\settings\BottomEXTI.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI - ongoing\EWARM\settings\BottomEXTI.Debug.driver.xcl" 
+"Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\settings\BottomEXTI.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\6_ButtonLED_EXTI\EWARM\settings\BottomEXTI.Debug.driver.xcl" 
 
 @echo off 
 :end
