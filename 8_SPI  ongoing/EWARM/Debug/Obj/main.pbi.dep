@@ -13,4 +13,13 @@ main.pbi: \
   Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\cmsis_iar.h \
   Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c/iccarm_builtin.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\CMSIS\core_cmFunc.h \
-  C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc/system_stm32l0xx.h
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc/system_stm32l0xx.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc\customclock.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc/stm32l0xx.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc/customdelay.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc/stm32l0xx_it.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc\customdelay.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc\customgpio.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdlib.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ysizet.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_stdlib.h

@@ -3,9 +3,7 @@
 
 
 /* Private define ------------------------------------------------------------*/
-#define RESET_VAL_PORTA_MODER 0xEBFFFCFF
-#define RESET_VAL_PORTA_PUPDR 0x24000000
-#define RESET_VAL_PORTA_SPEEDR 0x0C000000 
+
 /* Private variables ---------------------------------------------------------*/
 
 /* Private function prototypes -----------------------------------------------*/
@@ -32,7 +30,7 @@ void customGPIO_init(void)
     /* (7) Select GPIO input */
     
   
-    RCC->IOPENR |= RCC_IOPENR_IOPAEN; /* (1) */
+    RCC->IOPENR |= RCC_IOPENR_IOPAEN | RCC_IOPENR_IOPBEN; /* (1) */
     
    /********************************************************************
    ** 				  LED2 Configurations PA5	**
@@ -45,8 +43,8 @@ void customGPIO_init(void)
   /**********************************************************************
    ** 		  MCO Configurations PA8			 **
    **********************************************************************/
-  GPIOA->MODER |= GPIO_MODER_MODE8_1; /* (2) ALTERNATE */ 
-  GPIOA->MODER &= ~GPIO_MODER_MODE8_0; /* (2) */
+  GPIOA->MODER |= GPIO_MODER_MODE8_1; /* (6) ALTERNATE */ 
+  GPIOA->MODER &= ~GPIO_MODER_MODE8_0; /* (6) */
   GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEED8_1; /* (5) */
   
   /* MCO Prescaler DIV8 */
@@ -75,6 +73,73 @@ void customGPIO_init(void)
   GPIOA->AFR[1] |= 4UL << 8;                /* (3) */
  
   
+  /**********************************************************************
+   ** 		SPI MISO Configurations PB4		 **
+   **********************************************************************/
+    
+  // input mode
+  // push pull
+  // pull down (not needed but good practice, the input is floating and operated by the slave)
+  // Check what happens with MISO when you drive the chip select high / low
+ 
+  
+  /**********************************************************************
+   ** 		SPI MOSI Configurations PB5		 **
+   **********************************************************************/
+   GPIOB->MODER |= GPIO_MODER_MODE5_1; /* (2) Alternate function */
+   GPIOB->MODER &= ~GPIO_MODER_MODE5_0; /* (2) Clear bit */ 
+   GPIOB->OTYPER &= ~GPIO_OTYPER_OT_5;  /* (3) PUSH PULL */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED5_1;   /* (5) Very High */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED5_0;
+   GPIOB->PUPDR |= GPIO_PUPDR_PUPD5_1; // pull down
+   GPIOB->AFR[0] |= 0UL << 20;          // AF0 is reset value
+  
+  /**********************************************************************
+   ** 		SPI SCLK Configurations PB3		 **
+   **********************************************************************/
+ 
+   GPIOB->MODER |= GPIO_MODER_MODE3_1;  /* (2) Alternate function */
+   GPIOB->MODER &= ~GPIO_MODER_MODE3_0; /* (2) Clear bit */ 
+   GPIOB->OTYPER &= ~GPIO_OTYPER_OT_3;  /* (3) PUSH PULL */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED3_1;   /* (5) Very High */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED3_0;   
+   
+   GPIOB->PUPDR |= GPIO_PUPDR_PUPD13_0; // pull up
+   // GPIOB->AFR[0]                AF0 is reset value
+  /**********************************************************************
+   ** 		SPI WP Configurations 	PB13	 **
+   **********************************************************************/
+  
+   GPIOB->MODER |= GPIO_MODER_MODE13_0;                 /* (2) GENERAL OUTPUT  */
+   GPIOB->MODER &= ~GPIO_MODER_MODE13_1;                /* (2) GENERAL OUTPUT */ 
+   GPIOB->OTYPER &= ~GPIO_OTYPER_OT_13;                 /* (3) PUSH PULL */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED13_1;          /* (5) Very High */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED13_0; 
+   GPIOB->PUPDR |= GPIO_PUPDR_PUPD13_0;
+   GPIOB->PUPDR &= ~(GPIO_PUPDR_PUPD13_1);
+  
+  /**********************************************************************
+   ** 		SPI HOLD Configurations PB14		 **
+   **********************************************************************/
+   GPIOB->MODER |= GPIO_MODER_MODE14_0; /* (2) GENERAL OUTPUT  */
+   GPIOB->MODER &= ~GPIO_MODER_MODE14_1; /* (2) GENERAL OUTPUT */ 
+   GPIOB->OTYPER &= ~GPIO_OTYPER_OT_14;  /* (3) PUSH PULL */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED14_1; /* (5) Very High */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED14_0;   
+   GPIOB->PUPDR |= GPIO_PUPDR_PUPD14_0;
+   GPIOB->PUPDR &= ~(GPIO_PUPDR_PUPD14_1);
+  /**********************************************************************
+   ** 		SPI CS Configurations PA4 		 **
+   **********************************************************************/
+   // from slave perspective - When the device is not in operation and CS# is high, it is put in standby mode.
+   GPIOA->MODER |= GPIO_MODER_MODE4_0; /* (2) GENERAL OUTPUT  */
+   GPIOA->MODER &= ~GPIO_MODER_MODE4_1; /* (2) GENERAL OUTPUT */ 
+   GPIOA->OTYPER &= ~GPIO_OTYPER_OT_4;  /* (3) PUSH PULL */
+   GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEED4_1; /* (5) Very High */
+   GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEED4_0;   
+   GPIOA->PUPDR |= GPIO_PUPDR_PUPD4_0;
+   GPIOA->PUPDR &= ~(GPIO_PUPDR_PUPD4_1);
+   
 }
 
 /** TogglePort A Pin 5 (LD2) every second **/
