@@ -6,14 +6,16 @@ Projects to complete
 - [x] Bare metal - Blinky STM32 CMSIS Hello World .
 - [x] Configuring and learn about the SysCLK and AHB/APBs.
 - [x] General Purpose Timer in PWM mode.
-- General Purpose Timer in PWM mode on LD2.
+- [x] Up counting Timer.
 - [x] Refresh knowledge and implement USART Tx/Rx.
 - [x] Implement interrupt driven USART Tx/Rx.
 - [x] Interrupt driven Blinky/Pushbutton.
+- [x] Measure internal chip temperature w/ ADC.
+- [x] Custom circular buffer.
+- General Purpose Timer in PWM mode on LD2.
 - General Purpose Timer in Input Capture mode.
 - Interrupt driven ADC.
-- Update USART project with a ring buffer. 
-- Refresh knowledge and implement + other peripheral.
+- Update USART project with a circular buffer. 
 - Learn about flash memory.
 - Refresh knowledge and implement - Independant Watch Dog Timer.
 - SPI.
@@ -22,4 +24,4 @@ Projects to complete
 - RTOS driven Blinky/Pushbutton.
 - Custom Boot loader.
 
-- STM32WB55 ...
+- TI CC2640 BLE ...
