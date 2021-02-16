@@ -77,11 +77,13 @@ void customGPIO_init(void)
    ** 		SPI MISO Configurations PB4		 **
    **********************************************************************/
     
-  // input mode
-  // push pull
-  // pull down (not needed but good practice, the input is floating and operated by the slave)
-  // Check what happens with MISO when you drive the chip select high / low
- 
+   GPIOB->MODER |= GPIO_MODER_MODE4_1; /* (2) Alternate function */
+   GPIOB->MODER &= ~GPIO_MODER_MODE4_0; /* (2) Clear bit */ 
+   GPIOB->OTYPER &= ~GPIO_OTYPER_OT_4;  /* (3) PUSH PULL */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED4_1;   /* (5) Very High */
+   GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEED4_0;
+   
+   //GPIOB->AFR[0] |= 0UL << 20;          // AF0 is reset value
   
   /**********************************************************************
    ** 		SPI MOSI Configurations PB5		 **

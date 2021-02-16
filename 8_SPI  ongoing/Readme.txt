@@ -81,6 +81,31 @@ Inserting delays or making the data length 9 instead of 8 fixed the problem, but
 
 checking the SPI_BSY flag was the best solution.
 
+-----------------------------------------------------------------------------------------------
+/**
+Data received or to be transmitted.
+The data register is split into 2 buffers - one for writing (Transmit Buffer) and another one for
+reading (Receive buffer). A write to the data register will write into the Tx buffer and a read
+from the data register will return the value held in the Rx buffer.
+For an 8-bit data frame, the buffers are 8-bit and only the LSB of the register
+(SPI_DR[7:0]) is used for transmission/reception. 
+When in reception mode, the MSB of the register (SPI_DR[15:8]) is forced to 0.
+For a 16-bit data frame, the buffers are 16-bit and the entire register, SPI_DR[15:0] is
+used for transmission/reception.
+**/
+     // Tell the compiler to force this the register to be 8 bit wide
+     // take the address of the dataregister, cast that into a byte pointer and take the value of that pointer.
+    	
+	*(volatile uint8_t *)&(SPI1->DR) = txData[i];
+
+The dissasembly code is the same as;
+
+			SPI1->DR = txData[i];
+
+The compiler is smart enough to know this is a single byte .. I don't know if its a mistake to not enforce the single byte.
+from a portability aspect, I can see the reason to be very explicit.
+-----------------------------------------------------------------------------------------------------------------------------------
+
 --------- Clock / registers ---------
 
 

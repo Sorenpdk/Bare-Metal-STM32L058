@@ -16,6 +16,7 @@
 #include "customdelay.h"
 #include "customgpio.h"
 #include "stdlib.h"
+#include <string.h> // memcpy
 
 /* Private define ------------------------------------------------------------*/
 
@@ -29,12 +30,14 @@
 #define SPI_DUMMY_8_BIT         0x00
 #define SPI_DUMMY_16_BIT        0x0000
 
+#define RES 0xAB
+#define REMS 0x90
 /* Private function prototypes -----------------------------------------------*/
 
 void SPI_GPIO(uint8_t pin, uint8_t pinState);
 void SPI_init();
 void SPI_Transmit(uint8_t *txData, uint8_t dataLen);
-
+void SPI_TransmitReceive(uint8_t *txData, uint8_t *rxData, uint8_t dataLen);
 /**
   * Brief   Main program.
   * Param   None
@@ -48,16 +51,20 @@ int main(void)
   customDelay_init(); // SysTick_Config
   customGPIO_init();
   SPI_init();
- 
   
-  uint8_t TX_Array[BUFFER_SIZE] = {0x53,0x50,0x49,0x48,0x45,0x4C,0x4C,0x4F};
+  SPI_GPIO(SPI_WP,SPI_SET_LOW);
+  SPI_GPIO(SPI_HOLD,SPI_SET_LOW);
+  SPI_GPIO(SPI_CS,SPI_SET_HIGH);
+  
+  static uint8_t TX_Array[BUFFER_SIZE] = {REMS,SPI_DUMMY_8_BIT,SPI_DUMMY_8_BIT,0x00};
+  static uint8_t RX_Array[BUFFER_SIZE] = {0};
   
   while (1)
-  {  
+  { 
+    customDelay(1000); // To avoid 1mil cycles to the flash
     SPI_GPIO(SPI_CS,SPI_SET_LOW);
-    SPI_Transmit(TX_Array, 8);
+    SPI_TransmitReceive(TX_Array,RX_Array,8);
     SPI_GPIO(SPI_CS,SPI_SET_HIGH);
-    
    
   }
 }
@@ -81,17 +88,43 @@ void SPI_init()
   
   SPI1->CR1 |= SPI_CR1_SPE; // Enable SPI
   
-} 
+}
+
+
+
+void SPI_TransmitReceive(uint8_t *txData, uint8_t *rxData, uint8_t dataLen)
+{
+    static uint8_t temp[8];
+    
+    for(uint8_t i = 0; i < dataLen; i++)
+    {
+      SPI1->DR = txData[i];
+      while(!(SPI1->SR & SPI_SR_TXE));
+       
+      while(SPI1->SR & SPI_SR_BSY);
+      
+    }
+    temp[0] = SPI1->DR;
+    temp[1] = SPI1->DR;
+    temp[2] = SPI1->DR;
+    //memcpy(&temp, &rxData,8);
+}
+
+
 void SPI_Transmit(uint8_t *txData, uint8_t dataLen)
 {
 
     for(uint8_t i = 0; i < dataLen; i++)
     {
-    *(uint8_t *)&(SPI1->DR) = txData[i];
+
+      SPI1->DR = txData[i];
       while(!(SPI1->SR & SPI_SR_TXE));
       while(SPI1->SR & SPI_SR_BSY); 
     }
-  }
+}
+
+
+
 
 void SPI_GPIO(uint8_t pin, uint8_t pinState)
 {
