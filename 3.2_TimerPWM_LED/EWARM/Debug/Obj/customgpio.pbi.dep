@@ -1,0 +1,17 @@
+customgpio.pbi: \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.2_TimerPWM_LED\Src\customgpio.c \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.2_TimerPWM_LED\EWARM\..\Inc\customgpio.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.2_TimerPWM_LED\EWARM\..\Inc/stm32l0xx.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.2_TimerPWM_LED\EWARM\..\Inc/stm32l053xx.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.2_TimerPWM_LED\EWARM\..\CMSIS\core_cm0plus.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Full.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.2_TimerPWM_LED\EWARM\..\CMSIS\core_cmInstr.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\cmsis_iar.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c/iccarm_builtin.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.2_TimerPWM_LED\EWARM\..\CMSIS\core_cmFunc.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.2_TimerPWM_LED\EWARM\..\Inc/system_stm32l0xx.h
