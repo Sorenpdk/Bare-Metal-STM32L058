@@ -98200,30 +98200,58 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1040@macro@RES",
+    "ID": "c:main.c@1040@macro@MX25_READ_CMD",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "RES",
+    "display": "MX25_READ_CMD",
     "location": {
       "column": "9",
       "line": "33",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
-    "name": "RES",
+    "name": "MX25_READ_CMD",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@1058@macro@REMS",
+    "ID": "c:main.c@1068@macro@MX25_RES_CMD",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "REMS",
+    "display": "MX25_RES_CMD",
     "location": {
       "column": "9",
       "line": "34",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
-    "name": "REMS",
+    "name": "MX25_RES_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1095@macro@MX25_REMS_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_REMS_CMD",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_REMS_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1123@macro@MX25_RDID_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_RDID_CMD",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_RDID_CMD",
     "origin": "project_file",
     "scope": null
   },
@@ -98234,7 +98262,7 @@
     "display": "void SPI_GPIO(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "37",
+      "line": "40",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_GPIO",
@@ -98248,7 +98276,7 @@
     "display": "void SPI_init(void)",
     "location": {
       "column": "6",
-      "line": "38",
+      "line": "41",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_init",
@@ -98262,7 +98290,7 @@
     "display": "void SPI_Transmit(uint8_t *, uint8_t)",
     "location": {
       "column": "6",
-      "line": "39",
+      "line": "42",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_Transmit",
@@ -98273,13 +98301,27 @@
     "ID": "c:@F@SPI_TransmitReceive",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void SPI_TransmitReceive(uint8_t *, uint8_t *, uint8_t)",
+    "display": "void SPI_TransmitReceive(uint8_t *, uint8_t)",
     "location": {
       "column": "6",
-      "line": "40",
+      "line": "43",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_TransmitReceive",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@cmd_rx",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "cmd_rx",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "cmd_rx",
     "origin": "project_file",
     "scope": null
   },
@@ -98290,7 +98332,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "46",
+      "line": "47",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "main",
@@ -98298,44 +98340,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1688@F@main@TX_Array",
+    "ID": "c:main.c@1602@F@main@k",
     "What": "Variable",
     "defdec": "Def",
-    "display": "TX_Array",
+    "display": "k",
     "location": {
-      "column": "18",
-      "line": "59",
+      "column": "10",
+      "line": "55",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
-    "name": "TX_Array",
+    "name": "k",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@1775@F@main@RX_Array",
+    "ID": "c:main.c@1620@F@main@cmd_tx",
     "What": "Variable",
     "defdec": "Def",
-    "display": "RX_Array",
+    "display": "cmd_tx",
     "location": {
       "column": "18",
-      "line": "60",
+      "line": "56",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
-    "name": "RX_Array",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_init(void)",
-    "location": {
-      "column": "6",
-      "line": "72",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
-    },
-    "name": "SPI_init",
+    "name": "cmd_tx",
     "origin": "project_file",
     "scope": null
   },
@@ -98343,10 +98371,10 @@
     "ID": "c:@F@SPI_TransmitReceive",
     "What": "Function",
     "defdec": "Def",
-    "display": "void SPI_TransmitReceive(uint8_t *, uint8_t *, uint8_t)",
+    "display": "void SPI_TransmitReceive(uint8_t *, uint8_t)",
     "location": {
       "column": "6",
-      "line": "95",
+      "line": "81",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_TransmitReceive",
@@ -98354,13 +98382,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2675@F@SPI_TransmitReceive@temp",
+    "ID": "c:main.c@2132@F@SPI_TransmitReceive@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
     "location": {
       "column": "20",
-      "line": "97",
+      "line": "83",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "temp",
@@ -98368,13 +98396,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2714@F@SPI_TransmitReceive@i",
+    "ID": "c:main.c@2181@F@SPI_TransmitReceive@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "17",
-      "line": "99",
+      "line": "85",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "i",
@@ -98388,7 +98416,7 @@
     "display": "void SPI_Transmit(uint8_t *, uint8_t)",
     "location": {
       "column": "6",
-      "line": "114",
+      "line": "100",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_Transmit",
@@ -98396,16 +98424,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3066@F@SPI_Transmit@i",
+    "ID": "c:main.c@2552@F@SPI_Transmit@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "17",
-      "line": "117",
+      "line": "103",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI_init(void)",
+    "location": {
+      "column": "6",
+      "line": "116",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "SPI_init",
     "origin": "project_file",
     "scope": null
   },
@@ -98416,7 +98458,7 @@
     "display": "void SPI_GPIO(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "129",
+      "line": "137",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_GPIO",
