@@ -12,13 +12,13 @@ Projects to complete
 - [x] Interrupt driven Blinky/Pushbutton.
 - [x] Measure internal chip temperature w/ ADC.
 - [x] Custom circular buffer.
-- General Purpose Timer in PWM mode on LD2.
+- [x] General Purpose Timer in PWM mode on LED.
 - General Purpose Timer in Input Capture mode.
 - Interrupt driven ADC.
 - Update USART project with a circular buffer. 
 - Learn about flash memory.
 - Refresh knowledge and implement - Independant Watch Dog Timer.
-- SPI.
+- [x] SPI.
 - RTC.
 - Refresh Free RTOS tasks and schedueling. 
 - RTOS driven Blinky/Pushbutton.
