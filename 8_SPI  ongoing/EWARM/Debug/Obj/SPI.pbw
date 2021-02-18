@@ -98088,13 +98088,209 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@723@macro@BUFFER_SIZE",
+    "ID": "c:system_stm32l0xx.c@1857@macro@HSE_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSE_VALUE",
+    "location": {
+      "column": "11",
+      "line": "51",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "HSE_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@2002@macro@MSI_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MSI_VALUE",
+    "location": {
+      "column": "11",
+      "line": "55",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "MSI_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@2146@macro@HSI_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSI_VALUE",
+    "location": {
+      "column": "11",
+      "line": "59",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "HSI_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@SystemCoreClock",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "SystemCoreClock",
+    "location": {
+      "column": "12",
+      "line": "128",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "SystemCoreClock",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@AHBPrescTable",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "AHBPrescTable",
+    "location": {
+      "column": "17",
+      "line": "129",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "AHBPrescTable",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@APBPrescTable",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "APBPrescTable",
+    "location": {
+      "column": "17",
+      "line": "130",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "APBPrescTable",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@PLLMulTable",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "PLLMulTable",
+    "location": {
+      "column": "17",
+      "line": "131",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "PLLMulTable",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemInit(void)",
+    "location": {
+      "column": "6",
+      "line": "154",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "SystemInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemCoreClockUpdate",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemCoreClockUpdate(void)",
+    "location": {
+      "column": "6",
+      "line": "200",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "SystemCoreClockUpdate",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@tmp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tmp",
+    "location": {
+      "column": "12",
+      "line": "202",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "tmp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@pllmul",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "pllmul",
+    "location": {
+      "column": "22",
+      "line": "202",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "pllmul",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@plldiv",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "plldiv",
+    "location": {
+      "column": "35",
+      "line": "202",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "plldiv",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@pllsource",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "pllsource",
+    "location": {
+      "column": "48",
+      "line": "202",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "pllsource",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@msirange",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "msirange",
+    "location": {
+      "column": "64",
+      "line": "202",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
+    },
+    "name": "msirange",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@702@macro@BUFFER_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "BUFFER_SIZE",
     "location": {
       "column": "9",
-      "line": "23",
+      "line": "22",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "BUFFER_SIZE",
@@ -98102,13 +98298,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@750@macro@SPI_SET_LOW",
+    "ID": "c:main.c@729@macro@SPI_SET_LOW",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SPI_SET_LOW",
     "location": {
       "column": "9",
-      "line": "24",
+      "line": "23",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_SET_LOW",
@@ -98116,13 +98312,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@778@macro@SPI_SET_HIGH",
+    "ID": "c:main.c@757@macro@SPI_SET_HIGH",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SPI_SET_HIGH",
     "location": {
       "column": "9",
-      "line": "25",
+      "line": "24",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_SET_HIGH",
@@ -98130,13 +98326,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@828@macro@SPI_WP",
+    "ID": "c:main.c@807@macro@SPI_WP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SPI_WP",
     "location": {
       "column": "9",
-      "line": "26",
+      "line": "25",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_WP",
@@ -98144,13 +98340,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@878@macro@SPI_HOLD",
+    "ID": "c:main.c@857@macro@SPI_HOLD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SPI_HOLD",
     "location": {
       "column": "9",
-      "line": "27",
+      "line": "26",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_HOLD",
@@ -98158,13 +98354,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@927@macro@SPI_CS",
+    "ID": "c:main.c@906@macro@SPI_CS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SPI_CS",
     "location": {
       "column": "9",
-      "line": "28",
+      "line": "27",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_CS",
@@ -98172,13 +98368,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@960@macro@SPI_DUMMY_8_BIT",
+    "ID": "c:main.c@939@macro@SPI_DUMMY_8_BIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SPI_DUMMY_8_BIT",
     "location": {
       "column": "9",
-      "line": "30",
+      "line": "29",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_DUMMY_8_BIT",
@@ -98186,13 +98382,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@998@macro@SPI_DUMMY_16_BIT",
+    "ID": "c:main.c@977@macro@SPI_DUMMY_16_BIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SPI_DUMMY_16_BIT",
     "location": {
       "column": "9",
-      "line": "31",
+      "line": "30",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_DUMMY_16_BIT",
@@ -98200,13 +98396,41 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1040@macro@MX25_READ_CMD",
+    "ID": "c:main.c@1019@macro@MX25_WRSR_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_WRSR_CMD",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_WRSR_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1103@macro@MX25_PAGEPROG_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_PAGEPROG_CMD",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_PAGEPROG_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1181@macro@MX25_READ_CMD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "MX25_READ_CMD",
     "location": {
       "column": "9",
-      "line": "33",
+      "line": "34",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "MX25_READ_CMD",
@@ -98214,13 +98438,97 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1068@macro@MX25_RES_CMD",
+    "ID": "c:main.c@1249@macro@MX25_WRDI_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_WRDI_CMD",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_WRDI_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1334@macro@MX25_RDSR_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_RDSR_CMD",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_RDSR_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1419@macro@MX25_WREN_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_WREN_CMD",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_WREN_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1502@macro@MX25_SECTERASE_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_SECTERASE_CMD",
+    "location": {
+      "column": "9",
+      "line": "38",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_SECTERASE_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1582@macro@MX25_BLOCKERASE_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_BLOCKERASE_CMD",
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_BLOCKERASE_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1661@macro@MX25_CHIPERASE_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MX25_CHIPERASE_CMD",
+    "location": {
+      "column": "9",
+      "line": "40",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25_CHIPERASE_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1732@macro@MX25_RES_CMD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "MX25_RES_CMD",
     "location": {
       "column": "9",
-      "line": "34",
+      "line": "42",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "MX25_RES_CMD",
@@ -98228,13 +98536,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1095@macro@MX25_REMS_CMD",
+    "ID": "c:main.c@1791@macro@MX25_REMS_CMD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "MX25_REMS_CMD",
     "location": {
       "column": "9",
-      "line": "35",
+      "line": "43",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "MX25_REMS_CMD",
@@ -98242,13 +98550,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1123@macro@MX25_RDID_CMD",
+    "ID": "c:main.c@1906@macro@MX25_RDID_CMD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "MX25_RDID_CMD",
     "location": {
       "column": "9",
-      "line": "36",
+      "line": "44",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "MX25_RDID_CMD",
@@ -98262,7 +98570,7 @@
     "display": "void SPI_GPIO(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "40",
+      "line": "48",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_GPIO",
@@ -98276,7 +98584,7 @@
     "display": "void SPI_init(void)",
     "location": {
       "column": "6",
-      "line": "41",
+      "line": "49",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_init",
@@ -98284,30 +98592,72 @@
     "scope": null
   },
   {
-    "ID": "c:@F@SPI_Transmit",
+    "ID": "c:@F@SPI_TransmitReceive",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void SPI_Transmit(uint8_t *, uint8_t)",
+    "display": "void SPI_TransmitReceive(uint8_t *, uint8_t *, uint8_t)",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "51",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
-    "name": "SPI_Transmit",
+    "name": "SPI_TransmitReceive",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@SPI_TransmitReceive",
+    "ID": "c:@F@MX25L20_WRDI",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void SPI_TransmitReceive(uint8_t *, uint8_t)",
+    "display": "void MX25L20_WRDI(void)",
     "location": {
       "column": "6",
-      "line": "43",
+      "line": "52",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
-    "name": "SPI_TransmitReceive",
+    "name": "MX25L20_WRDI",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MX25L20_WREN",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void MX25L20_WREN(void)",
+    "location": {
+      "column": "6",
+      "line": "53",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25L20_WREN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MX25L20_RDID",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t MX25L20_RDID(void)",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25L20_RDID",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MX25L20_RDSR",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t MX25L20_RDSR(void)",
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25L20_RDSR",
     "origin": "project_file",
     "scope": null
   },
@@ -98318,7 +98668,7 @@
     "display": "cmd_rx",
     "location": {
       "column": "9",
-      "line": "45",
+      "line": "57",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "cmd_rx",
@@ -98332,7 +98682,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "47",
+      "line": "59",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "main",
@@ -98340,27 +98690,125 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1602@F@main@k",
-    "What": "Variable",
+    "ID": "c:@F@MX25L20_WRDI",
+    "What": "Function",
     "defdec": "Def",
-    "display": "k",
+    "display": "void MX25L20_WRDI(void)",
     "location": {
-      "column": "10",
-      "line": "55",
+      "column": "6",
+      "line": "82",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
-    "name": "k",
+    "name": "MX25L20_WRDI",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@1620@F@main@cmd_tx",
+    "ID": "c:main.c@2772@F@MX25L20_WRDI@cmd_tx",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "cmd_tx",
+    "location": {
+      "column": "19",
+      "line": "84",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "cmd_tx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MX25L20_RDSR",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t MX25L20_RDSR(void)",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25L20_RDSR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3003@F@MX25L20_RDSR@cmd_tx",
     "What": "Variable",
     "defdec": "Def",
     "display": "cmd_tx",
     "location": {
       "column": "18",
-      "line": "56",
+      "line": "98",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "cmd_tx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MX25L20_WREN",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void MX25L20_WREN(void)",
+    "location": {
+      "column": "6",
+      "line": "114",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25L20_WREN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3325@F@MX25L20_WREN@cmd_rx",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "cmd_rx",
+    "location": {
+      "column": "20",
+      "line": "116",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "cmd_rx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3366@F@MX25L20_WREN@cmd_tx",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "cmd_tx",
+    "location": {
+      "column": "20",
+      "line": "117",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "cmd_tx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MX25L20_RDID",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t MX25L20_RDID(void)",
+    "location": {
+      "column": "9",
+      "line": "128",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
+    },
+    "name": "MX25L20_RDID",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3595@F@MX25L20_RDID@cmd_tx",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "cmd_tx",
+    "location": {
+      "column": "18",
+      "line": "131",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "cmd_tx",
@@ -98371,10 +98819,10 @@
     "ID": "c:@F@SPI_TransmitReceive",
     "What": "Function",
     "defdec": "Def",
-    "display": "void SPI_TransmitReceive(uint8_t *, uint8_t)",
+    "display": "void SPI_TransmitReceive(uint8_t *, uint8_t *, uint8_t)",
     "location": {
       "column": "6",
-      "line": "81",
+      "line": "146",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_TransmitReceive",
@@ -98382,13 +98830,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2132@F@SPI_TransmitReceive@temp",
+    "ID": "c:main.c@3972@F@SPI_TransmitReceive@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
     "location": {
       "column": "20",
-      "line": "83",
+      "line": "148",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "temp",
@@ -98396,41 +98844,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2181@F@SPI_TransmitReceive@i",
+    "ID": "c:main.c@4021@F@SPI_TransmitReceive@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "17",
-      "line": "85",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI_Transmit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI_Transmit(uint8_t *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "100",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
-    },
-    "name": "SPI_Transmit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@2552@F@SPI_Transmit@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "17",
-      "line": "103",
+      "line": "150",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "i",
@@ -98444,7 +98864,7 @@
     "display": "void SPI_init(void)",
     "location": {
       "column": "6",
-      "line": "116",
+      "line": "166",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_init",
@@ -98458,955 +98878,11 @@
     "display": "void SPI_GPIO(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "137",
+      "line": "186",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\User\\main.c"
     },
     "name": "SPI_GPIO",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@102@macro@_STDLIB",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STDLIB",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "_STDLIB",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_Mbcurmax",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "size_t __iar_Mbcurmax(void)",
-    "location": {
-      "column": "25",
-      "line": "29",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "__iar_Mbcurmax",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@691@macro@MB_CUR_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MB_CUR_MAX",
-    "location": {
-      "column": "11",
-      "line": "31",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "MB_CUR_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@780@macro@NULL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "NULL",
-    "location": {
-      "column": "11",
-      "line": "37",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "NULL",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@811@macro@EXIT_FAILURE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EXIT_FAILURE",
-    "location": {
-      "column": "9",
-      "line": "40",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "EXIT_FAILURE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@838@macro@EXIT_SUCCESS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EXIT_SUCCESS",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "EXIT_SUCCESS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@892@macro@RAND_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "RAND_MAX",
-    "location": {
-      "column": "11",
-      "line": "44",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "RAND_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@1018@macro@_WCHART",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_WCHART",
-    "location": {
-      "column": "11",
-      "line": "51",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "_WCHART",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@T@wchar_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Wchart",
-    "location": {
-      "column": "19",
-      "line": "52",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "wchar_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@div_t",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "55",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@div_t@FI@quot",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "quot",
-        "location": {
-          "column": "7",
-          "line": "57",
-          "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-        },
-        "name": "quot",
-        "origin": "system_include",
-        "scope": "_anonymous_stdlib_h_55_9"
-      },
-      {
-        "ID": "c:@SA@div_t@FI@rem",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "rem",
-        "location": {
-          "column": "7",
-          "line": "58",
-          "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-        },
-        "name": "rem",
-        "origin": "system_include",
-        "scope": "_anonymous_stdlib_h_55_9"
-      }
-    ],
-    "name": "",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@div_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct div_t",
-    "location": {
-      "column": "3",
-      "line": "59",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "div_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@ldiv_t",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "61",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@ldiv_t@FI@quot",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "quot",
-        "location": {
-          "column": "8",
-          "line": "63",
-          "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-        },
-        "name": "quot",
-        "origin": "system_include",
-        "scope": "_anonymous_stdlib_h_61_9"
-      },
-      {
-        "ID": "c:@SA@ldiv_t@FI@rem",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "rem",
-        "location": {
-          "column": "8",
-          "line": "64",
-          "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-        },
-        "name": "rem",
-        "origin": "system_include",
-        "scope": "_anonymous_stdlib_h_61_9"
-      }
-    ],
-    "name": "",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ldiv_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct ldiv_t",
-    "location": {
-      "column": "3",
-      "line": "65",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "ldiv_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@lldiv_t",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "11",
-      "line": "68",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@lldiv_t@FI@quot",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "quot",
-        "location": {
-          "column": "15",
-          "line": "70",
-          "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-        },
-        "name": "quot",
-        "origin": "system_include",
-        "scope": "_anonymous_stdlib_h_68_11"
-      },
-      {
-        "ID": "c:@SA@lldiv_t@FI@rem",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "rem",
-        "location": {
-          "column": "15",
-          "line": "71",
-          "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-        },
-        "name": "rem",
-        "origin": "system_include",
-        "scope": "_anonymous_stdlib_h_68_11"
-      }
-    ],
-    "name": "",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@lldiv_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct lldiv_t",
-    "location": {
-      "column": "5",
-      "line": "72",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "lldiv_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@atexit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int atexit(void (*)(void))",
-    "location": {
-      "column": "32",
-      "line": "89",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "atexit",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@at_quick_exit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int at_quick_exit(void (*)(void))",
-    "location": {
-      "column": "32",
-      "line": "91",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "at_quick_exit",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@_Exit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void _Exit(int)",
-    "location": {
-      "column": "32",
-      "line": "92",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "_Exit",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@quick_exit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void quick_exit(int)",
-    "location": {
-      "column": "32",
-      "line": "93",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "quick_exit",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@exit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void exit(int)",
-    "location": {
-      "column": "32",
-      "line": "95",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "exit",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@getenv",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * getenv(const char *)",
-    "location": {
-      "column": "32",
-      "line": "96",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "getenv",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@system",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int system(const char *)",
-    "location": {
-      "column": "32",
-      "line": "97",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "system",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@aligned_alloc",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * aligned_alloc(size_t, size_t)",
-    "location": {
-      "column": "39",
-      "line": "102",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "aligned_alloc",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@abort",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void abort(void)",
-    "location": {
-      "column": "39",
-      "line": "104",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "abort",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@abs",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int abs(int)",
-    "location": {
-      "column": "39",
-      "line": "105",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "abs",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@calloc",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * calloc(size_t, size_t)",
-    "location": {
-      "column": "39",
-      "line": "106",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "calloc",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@div",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "div_t div(int, int)",
-    "location": {
-      "column": "39",
-      "line": "107",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "div",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@free",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void free(void *)",
-    "location": {
-      "column": "39",
-      "line": "108",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "free",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@labs",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "long labs(long)",
-    "location": {
-      "column": "39",
-      "line": "109",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "labs",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ldiv",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "ldiv_t ldiv(long, long)",
-    "location": {
-      "column": "39",
-      "line": "110",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "ldiv",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@llabs",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "long long llabs(long long)",
-    "location": {
-      "column": "39",
-      "line": "112",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "llabs",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lldiv",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "lldiv_t lldiv(long long, long long)",
-    "location": {
-      "column": "39",
-      "line": "113",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "lldiv",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@malloc",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * malloc(size_t)",
-    "location": {
-      "column": "39",
-      "line": "115",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "malloc",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@mblen",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int mblen(const char *, size_t)",
-    "location": {
-      "column": "39",
-      "line": "116",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "mblen",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@mbstowcs",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "size_t mbstowcs(wchar_t *restrict, const char *restrict, size_t)",
-    "location": {
-      "column": "40",
-      "line": "118",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "mbstowcs",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@mbtowc",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int mbtowc(wchar_t *restrict, const char *restrict, size_t)",
-    "location": {
-      "column": "40",
-      "line": "120",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "mbtowc",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@rand",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int rand(void)",
-    "location": {
-      "column": "36",
-      "line": "123",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "rand",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@srand",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void srand(unsigned int)",
-    "location": {
-      "column": "36",
-      "line": "124",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "srand",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@realloc",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * realloc(void *, size_t)",
-    "location": {
-      "column": "36",
-      "line": "125",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "realloc",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_realloc_in_place",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * __iar_realloc_in_place(void *, size_t)",
-    "location": {
-      "column": "36",
-      "line": "127",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "__iar_realloc_in_place",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtol",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "long strtol(const char *restrict, char **restrict, int)",
-    "location": {
-      "column": "43",
-      "line": "129",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "strtol",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtoul",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "unsigned long strtoul(const char *, char **, int)",
-    "location": {
-      "column": "43",
-      "line": "131",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "strtoul",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@wcstombs",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "size_t wcstombs(char *restrict, const wchar_t *restrict, size_t)",
-    "location": {
-      "column": "40",
-      "line": "133",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "wcstombs",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@wctomb",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int wctomb(char *, wchar_t)",
-    "location": {
-      "column": "40",
-      "line": "136",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "wctomb",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtoll",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "long long strtoll(const char *, char **, int)",
-    "location": {
-      "column": "41",
-      "line": "139",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "strtoll",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtoull",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "unsigned long long strtoull(const char *, char **, int)",
-    "location": {
-      "column": "50",
-      "line": "140",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "strtoull",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdlib.h@T@_Cmpfun",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "int (const void *, const void *)",
-    "location": {
-      "column": "15",
-      "line": "164",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "_Cmpfun",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@bsearch",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * bsearch(const void *, const void *, size_t, size_t, _Cmpfun *)",
-    "location": {
-      "column": "48",
-      "line": "165",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "bsearch",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@qsort",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void qsort(void *, size_t, size_t, _Cmpfun *)",
-    "location": {
-      "column": "48",
-      "line": "168",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "qsort",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__qsortbbl",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void __qsortbbl(void *, size_t, size_t, _Cmpfun *)",
-    "location": {
-      "column": "48",
-      "line": "170",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "__qsortbbl",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@atof",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "double atof(const char *)",
-    "location": {
-      "column": "48",
-      "line": "172",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "atof",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@atoi",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int atoi(const char *)",
-    "location": {
-      "column": "48",
-      "line": "173",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "atoi",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@atol",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "long atol(const char *)",
-    "location": {
-      "column": "48",
-      "line": "174",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "atol",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@atoll",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "long long atoll(const char *)",
-    "location": {
-      "column": "46",
-      "line": "176",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "atoll",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtof",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "float strtof(const char *restrict, char **restrict)",
-    "location": {
-      "column": "46",
-      "line": "177",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "strtof",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtold",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "long double strtold(const char *, char **)",
-    "location": {
-      "column": "46",
-      "line": "179",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "strtold",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtod",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "double strtod(const char *restrict, char **restrict)",
-    "location": {
-      "column": "46",
-      "line": "181",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "strtod",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_DLib_library_version",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int __iar_DLib_library_version(void)",
-    "location": {
-      "column": "46",
-      "line": "184",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "__iar_DLib_library_version",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@abs",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int abs(int)",
-    "location": {
-      "column": "7",
-      "line": "191",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "abs",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@labs",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "long labs(long)",
-    "location": {
-      "column": "8",
-      "line": "197",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "labs",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@llabs",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "long long llabs(long long)",
-    "location": {
-      "column": "15",
-      "line": "204",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdlib.h"
-    },
-    "name": "llabs",
-    "origin": "system_include",
     "scope": null
   },
   {
@@ -99420,6 +98896,20 @@
       "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
     },
     "name": "_STRING",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:string.h@344@macro@NULL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NULL",
+    "location": {
+      "column": "11",
+      "line": "20",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "NULL",
     "origin": "system_include",
     "scope": null
   },
@@ -99798,314 +99288,6 @@
       "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
     },
     "name": "strstr",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_stm32l0xx.c@1857@macro@HSE_VALUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HSE_VALUE",
-    "location": {
-      "column": "11",
-      "line": "51",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "HSE_VALUE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_stm32l0xx.c@2002@macro@MSI_VALUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MSI_VALUE",
-    "location": {
-      "column": "11",
-      "line": "55",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "MSI_VALUE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_stm32l0xx.c@2146@macro@HSI_VALUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HSI_VALUE",
-    "location": {
-      "column": "11",
-      "line": "59",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "HSI_VALUE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@SystemCoreClock",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "SystemCoreClock",
-    "location": {
-      "column": "12",
-      "line": "128",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "SystemCoreClock",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@AHBPrescTable",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "AHBPrescTable",
-    "location": {
-      "column": "17",
-      "line": "129",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "AHBPrescTable",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@APBPrescTable",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "APBPrescTable",
-    "location": {
-      "column": "17",
-      "line": "130",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "APBPrescTable",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@PLLMulTable",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "PLLMulTable",
-    "location": {
-      "column": "17",
-      "line": "131",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "PLLMulTable",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SystemInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SystemInit(void)",
-    "location": {
-      "column": "6",
-      "line": "154",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "SystemInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SystemCoreClockUpdate",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SystemCoreClockUpdate(void)",
-    "location": {
-      "column": "6",
-      "line": "200",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "SystemCoreClockUpdate",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@tmp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "tmp",
-    "location": {
-      "column": "12",
-      "line": "202",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "tmp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@pllmul",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "pllmul",
-    "location": {
-      "column": "22",
-      "line": "202",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "pllmul",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@plldiv",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "plldiv",
-    "location": {
-      "column": "35",
-      "line": "202",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "plldiv",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@pllsource",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "pllsource",
-    "location": {
-      "column": "48",
-      "line": "202",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "pllsource",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_stm32l0xx.c@7463@F@SystemCoreClockUpdate@msirange",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "msirange",
-    "location": {
-      "column": "64",
-      "line": "202",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\8_SPI  ongoing\\Src\\system_stm32l0xx.c"
-    },
-    "name": "msirange",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product_stdlib.h@251@macro@_DLIB_PRODUCTS_STDLIB_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCTS_STDLIB_H_",
-    "location": {
-      "column": "9",
-      "line": "10",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    },
-    "name": "_DLIB_PRODUCTS_STDLIB_H_",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__aeabi_idivmod",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "div_t __aeabi_idivmod(int, int)",
-    "location": {
-      "column": "7",
-      "line": "23",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    },
-    "name": "__aeabi_idivmod",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__aeabi_ldivmod",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "lldiv_t __aeabi_ldivmod(long long, long long)",
-    "location": {
-      "column": "11",
-      "line": "27",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    },
-    "name": "__aeabi_ldivmod",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@div",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "div_t div(int, int)",
-    "location": {
-      "column": "7",
-      "line": "32",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    },
-    "name": "div",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ldiv",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "ldiv_t ldiv(long, long)",
-    "location": {
-      "column": "8",
-      "line": "48",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    },
-    "name": "ldiv",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product_stdlib.h@1083@F@ldiv@d",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "d",
-    "location": {
-      "column": "9",
-      "line": "57",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    },
-    "name": "d",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product_stdlib.h@1119@F@ldiv@ld",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "ld",
-    "location": {
-      "column": "10",
-      "line": "58",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    },
-    "name": "ld",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lldiv",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "lldiv_t lldiv(long long, long long)",
-    "location": {
-      "column": "11",
-      "line": "68",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    },
-    "name": "lldiv",
     "origin": "system_include",
     "scope": null
   },

@@ -1,10 +1,8 @@
 main.pbi: \
   Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_string.h \
   Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
-  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\string.h \
-  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_stdlib.h \
   Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ysizet.h \
-  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdlib.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\string.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc\customgpio.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc\stm32l0xx_it.h \
   C:\Users\soren\Desktop\Bare-Metal-STM32L058\8_SPI\ \ ongoing\EWARM\..\Inc\customdelay.h \

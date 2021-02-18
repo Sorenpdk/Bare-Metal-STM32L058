@@ -15,7 +15,6 @@
 #include "customclock.h"
 #include "customdelay.h"
 #include "customgpio.h"
-#include "stdlib.h"
 #include <string.h> // memcpy
 
 /* Private define ------------------------------------------------------------*/
@@ -30,17 +29,30 @@
 #define SPI_DUMMY_8_BIT         0x00
 #define SPI_DUMMY_16_BIT        0x0000
 
-#define MX25_READ_CMD 0x03
-#define MX25_RES_CMD 0xAB
-#define MX25_REMS_CMD 0x90
-#define MX25_RDID_CMD 0x9f
+#define MX25_WRSR_CMD 0x01 // (write status register) to write new status register
+#define MX25_PAGEPROG_CMD 0x02 // (Page Program)to program the selected page
+#define MX25_READ_CMD 0x03 // n bytes read out until CS# goes high
+#define MX25_WRDI_CMD 0x04 // (write disable) reset the(WEL) write enable latch bit
+#define MX25_RDSR_CMD 0x05 // (read status register) to read outthe status register
+#define MX25_WREN_CMD 0x06 //(write Enable) sets the (WEL) write enable latch bit
+#define MX25_SECTERASE_CMD 0x20 // (Sector Erase) to erase the selected sector
+#define MX25_BLOCKERASE_CMD 0x52 // (Block Erase) to erase the selected block
+#define MX25_CHIPERASE_CMD 0x60 // (Chip Erase) to erase whole chip
+
+#define MX25_RES_CMD 0xAB // to read out 1-byte Device ID
+#define MX25_REMS_CMD 0x90 // (Read Electronic Manufacturer & Device ID) Output the manufacturer ID and device ID
+#define MX25_RDID_CMD 0x9f // (read identification) output the manufacturer ID and 2-byte device ID
 
 /* Private function prototypes -----------------------------------------------*/
 
 void SPI_GPIO(uint8_t pin, uint8_t pinState);
 void SPI_init();
-void SPI_Transmit(uint8_t *txData, uint8_t dataLen);
-void SPI_TransmitReceive(uint8_t *txData, uint8_t dataLen);
+
+void SPI_TransmitReceive(uint8_t *txData, uint8_t *rxData, uint8_t dataLen);
+void MX25L20_WRDI();
+void MX25L20_WREN();
+uint8_t MX25L20_RDID();
+uint8_t MX25L20_RDSR();
 
 uint8_t cmd_rx[BUFFER_SIZE] = {0};
 
@@ -52,33 +64,86 @@ int main(void)
   customGPIO_init();
   SPI_init();
   
- uint8_t k = 0;
-  static uint8_t cmd_tx[] = 
-  {
-   MX25_RDID_CMD,
-   SPI_DUMMY_8_BIT,
-   SPI_DUMMY_8_BIT,
-   SPI_DUMMY_8_BIT
-  };
  
   while (1)
   { 
-    SPI_GPIO(SPI_CS,SPI_SET_LOW);  
-    SPI_TransmitReceive(cmd_tx,4);
-    SPI_GPIO(SPI_CS,SPI_SET_HIGH);
-    /* arr[i] == i[arr] == *(arr + i) == *(i + arr) */
-    if(cmd_rx[0] == 0xC2)
-    {
-      k++;
-    }
-    
-   
+    MX25L20_RDID();
+    customDelay(1);
+    MX25L20_WREN();
+    MX25L20_RDSR();
+    MX25L20_WRDI();
+    MX25L20_RDSR();
+     
     customDelay(3000); // To avoid 1mil cycles to the flash
  
   }
 }
 
-void SPI_TransmitReceive(uint8_t *txData, uint8_t dataLen)
+void MX25L20_WRDI()
+{
+   static uint8_t cmd_tx[] = 
+    {
+      MX25_WRDI_CMD,   
+    };
+    
+    SPI_GPIO(SPI_CS,SPI_SET_LOW); 
+    SPI_TransmitReceive(cmd_tx, cmd_rx, 1);
+    SPI_GPIO(SPI_CS,SPI_SET_HIGH);
+  
+}
+
+
+uint8_t MX25L20_RDSR()
+{
+  static uint8_t cmd_tx[] = 
+    {
+      MX25_RDSR_CMD,
+      SPI_DUMMY_8_BIT,
+      SPI_DUMMY_8_BIT
+    };
+      
+    // Check status register
+    SPI_GPIO(SPI_CS,SPI_SET_LOW);
+    SPI_TransmitReceive(cmd_tx, cmd_rx, 3);
+    SPI_GPIO(SPI_CS,SPI_SET_HIGH);
+    
+    return 1;
+}
+
+
+void MX25L20_WREN()
+{
+    static uint8_t cmd_rx[BUFFER_SIZE];
+    static uint8_t cmd_tx[] = 
+    {
+      MX25_WREN_CMD,
+    };
+   
+    SPI_GPIO(SPI_CS,SPI_SET_LOW); 
+    SPI_TransmitReceive(cmd_tx, cmd_rx, 1);
+    SPI_GPIO(SPI_CS,SPI_SET_HIGH);
+  
+}
+
+uint8_t MX25L20_RDID()
+{
+  
+  static uint8_t cmd_tx[] = 
+  {
+   MX25_RDID_CMD,
+   SPI_DUMMY_8_BIT,
+   SPI_DUMMY_8_BIT,
+   SPI_DUMMY_8_BIT   
+  };
+  
+  SPI_GPIO(SPI_CS,SPI_SET_LOW);  
+  SPI_TransmitReceive(cmd_tx, cmd_rx, sizeof(cmd_tx)/sizeof(cmd_tx[0]));
+  SPI_GPIO(SPI_CS,SPI_SET_HIGH);
+   
+  return 1;
+}
+
+void SPI_TransmitReceive(uint8_t *txData, uint8_t *rxData, uint8_t dataLen)
 {
     static uint8_t temp[BUFFER_SIZE];
     
@@ -93,31 +158,15 @@ void SPI_TransmitReceive(uint8_t *txData, uint8_t dataLen)
     
     while(SPI1->SR & SPI_SR_BSY);
     
-    memcpy(&cmd_rx,&temp, dataLen * sizeof(uint8_t)); 
+    memcpy(&rxData, &temp, BUFFER_SIZE * sizeof(uint8_t)); 
 }
 
-
-void SPI_Transmit(uint8_t *txData, uint8_t dataLen)
-{
-
-    for(uint8_t i = 0; i < dataLen; i++)
-    {
-
-      SPI1->DR = txData[i];
-      while(!(SPI1->SR & SPI_SR_TXE));
-      while(SPI1->SR & SPI_SR_BSY); 
-    }
-}
-
-  
-  
 
 
 void SPI_init()
 {
   RCC->APB2ENR |= RCC_APB2ENR_SPI1EN;
 
-  //SPI1->CR1 |= SPI_CR1_BIDIMODE; // Full duplex
   SPI1->CR1 |= SPI_CR1_BIDIOE; // Output enabled (transmit-only mode)
   
   SPI1->CR1 |= SPI_CR1_MSTR; 
