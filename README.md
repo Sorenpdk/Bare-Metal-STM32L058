@@ -13,15 +13,15 @@ Projects to complete
 - [x] Measure internal chip temperature w/ ADC.
 - [x] Custom circular buffer.
 - [x] General Purpose Timer in PWM mode on LED.
-- General Purpose Timer in Input Capture mode.
+- [x] General Purpose Timer in Input Capture mode.
 - Interrupt driven ADC.
 - Update USART project with a circular buffer. 
 - Learn about flash memory.
 - Refresh knowledge and implement - Independant Watch Dog Timer.
 - [x] SPI.
 - RTC.
-- Refresh Free RTOS tasks and schedueling. 
-- RTOS driven Blinky/Pushbutton.
+- [x] Refresh Free RTOS tasks and schedueling. 
+- [x] RTOS Hello world.
 - Custom Boot loader.
 
 - TI CC2640 BLE ...
