@@ -1,0 +1,25 @@
+tasks.pbi: \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS\tasks.c \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdlib.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Full.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ysizet.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_stdlib.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\string.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_string.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/FreeRTOS.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stddef.h \
+  Z:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/FreeRTOSConfig.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/projdefs.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/portable.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/deprecated_definitions.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/portmacro.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/mpu_wrappers.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/task.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/list.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/timers.h \
+  C:\Users\soren\Desktop\Bare-Metal-STM32L058\10.\ freeRTOS\FreeRTOS/stack_macros.h
