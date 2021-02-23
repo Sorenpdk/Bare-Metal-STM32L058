@@ -1,0 +1,248 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  23/Feb/2021  11:09:02
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Exe\LCD.out
+#    Map file     =
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\List\LCD.map
+#    Command line =
+#        -f C:\Users\soren\AppData\Local\Temp\EWF5DE.tmp
+#        (C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\customclock.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\customdelay.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\customgpio.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\customuart.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\main.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\stm32l0xx_it.o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\system_stm32l0xx.o
+#        --no_out_extension -o
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Exe\LCD.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\List\LCD.map
+#        --config "Z:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\config\linker\ST\stm32l053x8.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  section .eeprom  in "P3"
+
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0x40
+  .intvec            ro code   0x800'0000   0x40  vector_table_M.o [3]
+                             - 0x800'0040   0x40
+
+"P1":                                      0x9b0
+  .text              ro code   0x800'0040  0x3a4  main.o [1]
+  .text              ro code   0x800'03e4   0x94  customclock.o [1]
+  .text              ro code   0x800'0478   0xf0  system_stm32l0xx.o [1]
+  .text              ro code   0x800'0568   0xae  I32DivModFast.o [3]
+  .text              ro code   0x800'0616    0xa  stm32l0xx_it.o [1]
+  .text              ro code   0x800'0620  0x1d8  customgpio.o [1]
+  .text              ro code   0x800'07f8  0x104  customdelay.o [1]
+  .text              ro code   0x800'08fc    0x2  IntDivZer.o [3]
+  .text              ro code   0x800'08fe   0x30  copy_init3.o [3]
+  .text              ro code   0x800'092e    0x2  vector_table_M.o [3]
+  .text              ro code   0x800'0930   0x28  data_init.o [3]
+  .iar.init_table    const     0x800'0958   0x14  - Linker created -
+  .text              ro code   0x800'096c   0x1e  cmain.o [3]
+  .text              ro code   0x800'098a    0x4  low_level_init.o [2]
+  .text              ro code   0x800'098e    0x8  exit.o [2]
+  .text              ro code   0x800'0998    0xa  cexit.o [3]
+  .text              ro code   0x800'09a4   0x14  exit.o [4]
+  .rodata            const     0x800'09b8   0x10  system_stm32l0xx.o [1]
+  Initializer bytes  const     0x800'09c8   0x10  <for P2-1>
+  .rodata            const     0x800'09d8    0xc  system_stm32l0xx.o [1]
+  .text              ro code   0x800'09e4    0xc  cstartup_M.o [3]
+  .rodata            const     0x800'09f0    0x0  copy_init3.o [3]
+                             - 0x800'09f0  0x9b0
+
+"P2", part 1 of 2:                          0x10
+  P2-1                        0x2000'0000   0x10  <Init block>
+    .data            inited   0x2000'0000    0x4  system_stm32l0xx.o [1]
+    .bss             inited   0x2000'0004    0x4  customdelay.o [1]
+    .bss             inited   0x2000'0008    0x4  main.o [1]
+    .bss             inited   0x2000'000c    0x4  main.o [1]
+                            - 0x2000'0010   0x10
+
+"P2", part 2 of 2:                         0x400
+  CSTACK                      0x2000'0010  0x400  <Block>
+    CSTACK           uninit   0x2000'0010  0x400  <Block tail>
+                            - 0x2000'0410  0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'09f0   0x800'ffff  0xf610
+  0x2000'0410  0x2000'1fff  0x1bf0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+           0x800'09c8  0x10
+    1 destination range, total size 0x10:
+          0x2000'0000  0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data
+    ------              -------  -------  -------
+command line/config:
+    ---------------------------------------------
+    Total:
+
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj: [1]
+    customclock.o           148
+    customdelay.o           260        4        4
+    customgpio.o            472
+    main.o                  932        8        8
+    stm32l0xx_it.o           10
+    system_stm32l0xx.o      240       32        4
+    ---------------------------------------------
+    Total:                2'062       44       16
+
+dl6M_tlf.a: [2]
+    exit.o                    8
+    low_level_init.o          4
+    ---------------------------------------------
+    Total:                   12
+
+rt6M_tl.a: [3]
+    I32DivModFast.o         174
+    IntDivZer.o               2
+    cexit.o                  10
+    cmain.o                  30
+    copy_init3.o             48
+    cstartup_M.o             12
+    data_init.o              40
+    vector_table_M.o         66
+    ---------------------------------------------
+    Total:                  382
+
+shb_l.a: [4]
+    exit.o                   20
+    ---------------------------------------------
+    Total:                   20
+
+    Gaps                      4
+    Linker created                    20    1'024
+-------------------------------------------------
+    Grand Total:          2'480       64    1'040
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'0958          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'096c          --   Gb  - Linker created -
+?main                    0x800'096d         Code  Gb  cmain.o [3]
+AHBPrescTable            0x800'09b8   0x10  Data  Gb  system_stm32l0xx.o [1]
+CSTACK$$Base            0x2000'0010          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0410          --   Gb  - Linker created -
+HardFault_Handler        0x800'0619    0x4  Code  Gb  stm32l0xx_it.o [1]
+LCD_GPIO                 0x800'0163   0x1e  Code  Gb  main.o [1]
+LCD_Init                 0x800'01a5  0x136  Code  Gb  main.o [1]
+NMI_Handler              0x800'0617    0x2  Code  Gb  stm32l0xx_it.o [1]
+NVIC_SetPriority         0x800'07f9   0x8a  Code  Lc  customdelay.o [1]
+NVIC_SetPriority         0x800'0041   0x8a  Code  Lc  main.o [1]
+PLLMulTable              0x800'09d8    0xc  Data  Gb  system_stm32l0xx.o [1]
+PendSV_Handler           0x800'061f    0x2  Code  Gb  stm32l0xx_it.o [1]
+Region$$Table$$Base      0x800'0958          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'096c          --   Gb  - Linker created -
+SVC_Handler              0x800'061d    0x2  Code  Gb  stm32l0xx_it.o [1]
+SysTick_Config           0x800'0883   0x30  Code  Lc  customdelay.o [1]
+SysTick_Config           0x800'00cb   0x30  Code  Lc  main.o [1]
+SysTick_Handler          0x800'08d7    0xa  Code  Gb  customdelay.o [1]
+SystemCoreClock         0x2000'0000    0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemCoreClockUpdate    0x800'0479   0xca  Code  Gb  system_stm32l0xx.o [1]
+Tick                    0x2000'0004    0x4  Data  Lc  customdelay.o [1]
+__aeabi_idiv0            0x800'08fd         Code  Gb  IntDivZer.o [3]
+__aeabi_uidiv            0x800'0569         Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod         0x800'0569         Code  Gb  I32DivModFast.o [3]
+__cmain                  0x800'096d         Code  Gb  cmain.o [3]
+__exit                   0x800'09a5   0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'08ff   0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'0931   0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'09e5         Code  Gb  cstartup_M.o [3]
+__low_level_init         0x800'098b    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  vector_table_M.o [3]
+_call_main               0x800'0979         Code  Gb  cmain.o [3]
+_exit                    0x800'0999         Code  Gb  cexit.o [3]
+_main                    0x800'0987         Code  Gb  cmain.o [3]
+clear                    0x800'02db   0x24  Code  Gb  main.o [1]
+col                     0x2000'000c    0x4  Data  Gb  main.o [1]
+customClock_init         0x800'03e5   0x94  Code  Gb  customclock.o [1]
+customDelay              0x800'08c7   0x10  Code  Gb  customdelay.o [1]
+customDelay_init         0x800'08b3   0x14  Code  Gb  customdelay.o [1]
+customGPIO_init          0x800'0621  0x18e  Code  Gb  customgpio.o [1]
+exit                     0x800'098f    0x8  Code  Gb  exit.o [2]
+lcd_put_cur              0x800'032d   0x24  Code  Gb  main.o [1]
+lcd_send_cmd             0x800'03b9    0xc  Code  Gb  main.o [1]
+lcd_send_data            0x800'03c5   0x20  Code  Gb  main.o [1]
+main                     0x800'00fb   0x68  Code  Gb  main.o [1]
+pulse                    0x800'02ff   0x2e  Code  Gb  main.o [1]
+row                     0x2000'0008    0x4  Data  Gb  main.o [1]
+send_to_lcd              0x800'0351   0x68  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj
+[2] = dl6M_tlf.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  2'480 bytes of readonly  code memory
+     64 bytes of readonly  data memory
+  1'040 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
