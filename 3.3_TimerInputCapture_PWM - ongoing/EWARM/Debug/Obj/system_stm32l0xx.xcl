@@ -1,13 +1,13 @@
-"C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\Src\customgpio.c"
+"C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\Src\system_stm32l0xx.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\Debug\Obj\customgpio.pbi.dep
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\Debug\Obj\system_stm32l0xx.pbi.dep
 -o
-customgpio.pbi
+system_stm32l0xx.pbi
 -I
 C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\Src
 -I

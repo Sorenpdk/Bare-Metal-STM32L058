@@ -1,25 +1,25 @@
-"C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\Src\customclock.c"
+"C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\Src\customclock.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\Debug\Obj\customclock.pbi.dep
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\Debug\Obj\customclock.pbi.dep
 -o
 customclock.pbi
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\Src
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\Src
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\..\Inc\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\..\Inc\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\..\CMSIS\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\..\CMSIS\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\..\User\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\..\User\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\..\Src\
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\..\Src\
 -I
 Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include\
 -I
@@ -29,15 +29,15 @@ Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
 Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\Inc
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\Inc
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\CMSIS
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\CMSIS
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\User
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\User
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\Src
+C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\Src
 -I
 Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I

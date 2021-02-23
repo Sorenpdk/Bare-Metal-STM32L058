@@ -28,11 +28,12 @@
   * Retval  None
   */
     
-uint32_t Period = 0; // Period of the signal applied on TI1 based on 48MHz clock
-uint32_t DutyCycle = 0; // High signal time based on 48MHz clock
+volatile uint32_t Period = 0; // Period of the signal applied on TI1 based on 48MHz clock
+volatile uint32_t DutyCycle = 0; // High signal time based on 48MHz clock
+volatile uint32_t uwDutyCycle = 0;
+volatile uint32_t uwFrequency = 0;
 volatile uint16_t error = 0xFF;  //initialized at 0 and modified by the functions 
-volatile uint16_t realduty = 0;
-volatile uint16_t freq = 0;
+
 
 void PWM_Init();
  
@@ -45,10 +46,10 @@ int main (void)
   PWM_Init();
   
   error = 0;
+  
   while(1)
   { 
-    realduty = (DutyCycle*100)/Period;
-    freq = (SystemCoreClock/DutyCycle)/1000;
+    
     
   }
   
@@ -77,14 +78,14 @@ void PWM_Init()
   TIM21->SMCR |= TIM_SMCR_TS_2 | TIM_SMCR_TS_0 \
               | TIM_SMCR_SMS_2; /* (2) */
   TIM21->PSC = 12;
+  TIM21->ARR = 0xffff-1;
   TIM21->CCER |= TIM_CCER_CC1E | TIM_CCER_CC2E | TIM_CCER_CC2P; /* (3) */  
-  TIM21->DIER |= TIM_DIER_CC1IE; /* (4) */
+  TIM21->DIER |= TIM_DIER_CC1IE | TIM_DIER_UIE; /* (4) */
   TIM21->CR1 |= TIM_CR1_CEN; /* (5) */
   
  
    
 }
-
 
 
 void TIM21_IRQHandler(void)
@@ -95,6 +96,8 @@ if ((TIM21->SR & (TIM_SR_CC1IF | TIM_SR_CC1OF) ) == TIM_SR_CC1IF)
     {
       Period = TIM21->CCR1;
       DutyCycle = TIM21->CCR2;
+      uwDutyCycle = ((TIM21->CCR2 + 1) * 100) / (TIM21->CCR1 + 1);
+      uwFrequency = (187500 / TIM21->PSC) / (TIM21->CCR1);
       error = 0;
     }
   }
@@ -110,3 +113,32 @@ if ((TIM21->SR & (TIM_SR_CC1IF | TIM_SR_CC1OF) ) == TIM_SR_CC1IF)
     error = ERROR_UNEXPECTED_IT; /* Report an error */
   }
 }
+
+
+
+
+/*
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
+{
+  if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2)
+  {
+    // Get the Input Capture value 
+    uwIC2Value = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
+    
+    if (uwIC2Value != 0)
+    {
+      // Duty cycle computation 
+      uwDutyCycle = ((HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1) + 1) * 100) / (uwIC2Value + 1);
+      
+      // uwFrequency computation
+      // TIM2 counter clock = RCC_Clocks.HCLK_Frequency     
+      uwFrequency = HAL_RCC_GetHCLKFreq()/ (uwIC2Value + 1);
+    }
+    else
+    {
+      uwDutyCycle = 0;
+      uwFrequency = 0;
+    }
+  }
+}
+*/

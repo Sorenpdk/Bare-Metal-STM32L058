@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\settings\TimerInputCapture.Debug.general.xcl" --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\settings\TimerInputCapture.Debug.driver.xcl" 
+& "Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\settings\TimerInputCapture.Debug.general.xcl" --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\settings\TimerInputCapture.Debug.driver.xcl" 
 }
 else
 {
-& "Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\settings\TimerInputCapture.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM\EWARM\settings\TimerInputCapture.Debug.driver.xcl" 
+& "Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\settings\TimerInputCapture.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\soren\Desktop\Bare-Metal-STM32L058\3.3_TimerInputCapture_PWM - ongoing\EWARM\settings\TimerInputCapture.Debug.driver.xcl" 
 }
