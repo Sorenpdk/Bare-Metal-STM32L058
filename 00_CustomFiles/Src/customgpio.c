@@ -1,6 +1,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "customgpio.h"
 
+/** TODO - Make a struct ? 
+initialize the struct
+send that struct to a handler that makes the assignments to the various registers.
+which is better??
+**/
 
 /* Private define ------------------------------------------------------------*/
 
@@ -218,7 +223,7 @@ void customGPIO_init(void)
 	
 } 
 
-
+// Good candidate for inline (might change speed of I/O)
 void toggleLED2(void)
 {
 	GPIOA->ODR ^= GPIO_ODR_OD5;
