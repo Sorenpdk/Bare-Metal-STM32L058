@@ -1,1 +1,2 @@
-Up to date with UART_RX project
+28/01-21 Up to date with UART_RX project
+26/02-21 Updated customgpio.c to fit all projects and cleaned everything.

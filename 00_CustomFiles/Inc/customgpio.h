@@ -11,7 +11,7 @@ extern "C" {
 
 
 
-extern void customGPIO_init(void);
+extern void customGPIO_init(void)
 extern void toggleLED2(void);
 
 
