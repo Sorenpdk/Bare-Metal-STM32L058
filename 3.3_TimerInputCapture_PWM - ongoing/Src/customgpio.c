@@ -82,8 +82,9 @@ void customGPIO_init(void)
   /* (5) Select AF6 on PB13 in AFRH for TIM21_CH1 */
   
   RCC->APB2ENR |= RCC_APB2ENR_TIM21EN; /* (1) */
-  RCC->CFGR |=  RCC_CFGR_PPRE2 | RCC_CFGR_HPRE_3
-             | RCC_CFGR_HPRE_1 | RCC_CFGR_HPRE_0; /* (2) */
+  /*
+RCC->CFGR |=  RCC_CFGR_PPRE2 | RCC_CFGR_HPRE_3
+             | RCC_CFGR_HPRE_1 | RCC_CFGR_HPRE_0; (2) */
   RCC->IOPENR |= RCC_IOPENR_GPIOBEN; /* (3) */
   GPIOB->MODER = (GPIOB->MODER & ~(GPIO_MODER_MODE13)) \
                | (GPIO_MODER_MODE13_1); /* (4) */  

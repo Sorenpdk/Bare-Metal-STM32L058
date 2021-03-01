@@ -81,7 +81,7 @@ uint8_t UART_Receive_Char()
   */
 void UART_Send_Char(uint8_t c)
 {
- 
+ //if((USART1->ISR & USART_ISR_TXE) == USART_ISR_TXE)
       USART1->TDR = c;
      
       while(!(USART1->ISR & USART_ISR_TC))

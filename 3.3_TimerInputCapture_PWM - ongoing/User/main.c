@@ -15,9 +15,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l0xx.h"
 #include "customgpio.h"
+#include "customuart.h"
 #include "customdelay.h"
 #include "customclock.h"
-   
+#include "string.h"
+#include "stdio.h"
 
 /* Error codes used to make the red led blinking */
 #define ERROR_OVERFLOW 0x01
@@ -28,10 +30,9 @@
   * Retval  None
   */
     
-volatile uint32_t Period = 0; // Period of the signal applied on TI1 based on 48MHz clock
-volatile uint32_t DutyCycle = 0; // High signal time based on 48MHz clock
-volatile uint32_t uwDutyCycle = 0;
-volatile uint32_t uwFrequency = 0;
+
+static volatile uint32_t uwDutyCycle;
+static volatile uint32_t uwFrequency;
 volatile uint16_t error = 0xFF;  //initialized at 0 and modified by the functions 
 
 
@@ -43,14 +44,18 @@ int main (void)
   SystemCoreClockUpdate();
   SysTick_Config(SystemCoreClock/1000);
   customGPIO_init();
+  customUSART1_Init();
   PWM_Init();
-  
+
   error = 0;
-  
+  // 1 enable interrupt 
+  NVIC_EnableIRQ(USART1_IRQn);
+  NVIC_SetPriority(USART1_IRQn,1);
+ 
   while(1)
-  { 
-    
-    
+  {   
+   toggleLED2();
+   customDelay(100);
   }
   
 }
@@ -61,8 +66,8 @@ void PWM_Init()
   /* Configure NVIC for TIMx */
   /* (1) Enable Interrupt on TIMx */
   /* (2) Set priority for TIMx*/
-  NVIC_EnableIRQ(TIM21_IRQn); /* (1) */
-  NVIC_SetPriority(TIM21_IRQn,0); /* (2) */
+    NVIC_EnableIRQ(TIM21_IRQn);
+    NVIC_SetPriority(TIM21_IRQn,0); /* (2) */
   
     /* (1) Select the active input TI1 for TIMx_CCR1 (CC1S = 01), 
          select the active input TI1 for TIMx_CCR2 (CC2S = 10) */ 
@@ -80,13 +85,42 @@ void PWM_Init()
   TIM21->PSC = 12;
   TIM21->ARR = 0xffff-1;
   TIM21->CCER |= TIM_CCER_CC1E | TIM_CCER_CC2E | TIM_CCER_CC2P; /* (3) */  
-  TIM21->DIER |= TIM_DIER_CC1IE | TIM_DIER_UIE; /* (4) */
+  //TIM21->DIER |= TIM_DIER_CC1IE | TIM_DIER_CC2IE | TIM_DIER_UIE; /* (4) */
+  TIM21->DIER |= TIM_DIER_CC1IE | TIM_DIER_CC2IE; /* (4) */
+  
+  
   TIM21->CR1 |= TIM_CR1_CEN; /* (5) */
   
  
    
 }
 
+void USART1_IRQHandler(void)
+{
+  /* This needs to be done better */
+  
+  static char buffer[16];
+  if((USART1->ISR & USART_ISR_TXE) == USART_ISR_TXE)
+  {
+    uint8_t message[] = "Duty Cycle: ";
+    UART_Send_String(message,sizeof(message));
+    sprintf(buffer, "%d", uwDutyCycle);   
+    UART_Send_String((uint8_t*)buffer,2);
+    UART_Send_Char(0x0D); // CR
+    UART_Send_Char(0x0A); // LF
+    
+    
+    
+    uint8_t message2[] = "Frequency: ";
+    UART_Send_String(message2,sizeof(message2));
+    sprintf(buffer, "%d", uwFrequency);   
+    UART_Send_String((uint8_t*)buffer,4);
+    UART_Send_Char(0x0D); // CR
+    UART_Send_Char(0x0A); // LF
+  }
+ 
+   
+}
 
 void TIM21_IRQHandler(void)
 {
@@ -94,11 +128,16 @@ if ((TIM21->SR & (TIM_SR_CC1IF | TIM_SR_CC1OF) ) == TIM_SR_CC1IF)
   {
     if (TIM21->CCR1 != 0)
     {
-      Period = TIM21->CCR1;
-      DutyCycle = TIM21->CCR2;
-      uwDutyCycle = ((TIM21->CCR2 + 1) * 100) / (TIM21->CCR1 + 1);
-      uwFrequency = (187500 / TIM21->PSC) / (TIM21->CCR1);
+      /* To please the compiler because the order of operands are important when you declare a variable volatile */
+      /* uwDutyCycle = ((TIM21->CCR2 + 1) * 100) / (TIM21->CCR1 + 1) ---> results in undefined behaviour */
+      uint32_t temp = ((TIM21->CCR2 + 1) * 100);
+      
+      uwDutyCycle = temp / (TIM21->CCR1 + 1);
+      //uwFrequency = (187500 / TIM21->PSC) / (TIM21->CCR1);
+      uwFrequency = 5 * (187500 / 1) / (TIM21->CCR1);
       error = 0;
+    
+     
     }
   }
   else if ((TIM21->SR & TIM_SR_CC1OF) != 0)  /* Check the overflow */
@@ -111,34 +150,12 @@ if ((TIM21->SR & (TIM_SR_CC1IF | TIM_SR_CC1OF) ) == TIM_SR_CC1IF)
   else
   {
     error = ERROR_UNEXPECTED_IT; /* Report an error */
+ 
   }
+   TIM21->SR &= ~(1 << 0); 
+   /* Clear the IT pending Bit */
+  TIM21->SR &= ~(1 << 9); 
 }
 
 
 
-
-/*
-void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
-{
-  if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2)
-  {
-    // Get the Input Capture value 
-    uwIC2Value = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
-    
-    if (uwIC2Value != 0)
-    {
-      // Duty cycle computation 
-      uwDutyCycle = ((HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1) + 1) * 100) / (uwIC2Value + 1);
-      
-      // uwFrequency computation
-      // TIM2 counter clock = RCC_Clocks.HCLK_Frequency     
-      uwFrequency = HAL_RCC_GetHCLKFreq()/ (uwIC2Value + 1);
-    }
-    else
-    {
-      uwDutyCycle = 0;
-      uwFrequency = 0;
-    }
-  }
-}
-*/
