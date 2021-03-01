@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.6.265/W32 for ARM                  22/Jan/2021  10:11:09
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  01/Mar/2021  13:20:45
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
@@ -8,7 +8,7 @@
 #    Map file     =
 #        C:\Users\soren\Desktop\Bare-Metal-STM32L058\4_UARTTx\EWARM\Debug\List\UARTTx.map
 #    Command line =
-#        -f C:\Users\soren\AppData\Local\Temp\EWB533.tmp
+#        -f C:\Users\soren\AppData\Local\Temp\EW352F.tmp
 #        (C:\Users\soren\Desktop\Bare-Metal-STM32L058\4_UARTTx\EWARM\Debug\Obj\customclock.o
 #        C:\Users\soren\Desktop\Bare-Metal-STM32L058\4_UARTTx\EWARM\Debug\Obj\customdelay.o
 #        C:\Users\soren\Desktop\Bare-Metal-STM32L058\4_UARTTx\EWARM\Debug\Obj\customgpio.o
