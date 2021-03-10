@@ -97828,7 +97828,7 @@
     "display": "Tick",
     "location": {
       "column": "26",
-      "line": "9",
+      "line": "8",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customdelay.c"
     },
     "name": "Tick",
@@ -97842,7 +97842,7 @@
     "display": "void customDelay_init(void)",
     "location": {
       "column": "6",
-      "line": "12",
+      "line": "11",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customdelay.c"
     },
     "name": "customDelay_init",
@@ -97856,7 +97856,7 @@
     "display": "void customDelay(uint32_t)",
     "location": {
       "column": "6",
-      "line": "23",
+      "line": "22",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customdelay.c"
     },
     "name": "customDelay",
@@ -97870,7 +97870,7 @@
     "display": "void SysTick_Handler(void)",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "41",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customdelay.c"
     },
     "name": "SysTick_Handler",
@@ -98962,90 +98962,6 @@
     "scope": null
   },
   {
-    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_YSIZET_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_YSIZET_H",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@277@macro@_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "16",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STD_USING_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "17",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_STD_USING_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Sizet",
-    "location": {
-      "column": "18",
-      "line": "18",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DATA_PTR_MEM_HELPER1__",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__DATA_PTR_MEM_HELPER1__",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@__data_size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned int",
-    "location": {
-      "column": "1",
-      "line": "23",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__data_size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:@F@customUSART1_Init",
     "What": "Function",
     "defdec": "Def",
@@ -99066,7 +98982,7 @@
     "display": "uint8_t UART_Receive_Char(void)",
     "location": {
       "column": "9",
-      "line": "61",
+      "line": "74",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customuart.c"
     },
     "name": "UART_Receive_Char",
@@ -99074,13 +98990,13 @@
     "scope": null
   },
   {
-    "ID": "c:customuart.c@2203@F@UART_Receive_Char@chartoreceive",
+    "ID": "c:customuart.c@2614@F@UART_Receive_Char@chartoreceive",
     "What": "Variable",
     "defdec": "Def",
     "display": "chartoreceive",
     "location": {
       "column": "19",
-      "line": "64",
+      "line": "77",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customuart.c"
     },
     "name": "chartoreceive",
@@ -99094,7 +99010,7 @@
     "display": "void UART_Send_Char(uint8_t)",
     "location": {
       "column": "6",
-      "line": "82",
+      "line": "95",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customuart.c"
     },
     "name": "UART_Send_Char",
@@ -99108,7 +99024,7 @@
     "display": "void UART_Send_String(uint8_t *, size_t)",
     "location": {
       "column": "6",
-      "line": "108",
+      "line": "114",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customuart.c"
     },
     "name": "UART_Send_String",
@@ -99116,13 +99032,13 @@
     "scope": null
   },
   {
-    "ID": "c:customuart.c@3445@F@UART_Send_String@i",
+    "ID": "c:customuart.c@3613@F@UART_Send_String@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "15",
-      "line": "110",
+      "line": "116",
       "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\Src\\customuart.c"
     },
     "name": "i",
@@ -99564,591 +99480,87 @@
     "scope": null
   },
   {
-    "ID": "c:string.h@100@macro@_STRING",
+    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_STRING",
+    "display": "_YSIZET_H",
     "location": {
       "column": "9",
-      "line": "4",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+      "line": "5",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
     },
-    "name": "_STRING",
+    "name": "_YSIZET_H",
     "origin": "system_include",
     "scope": null
   },
   {
-    "ID": "c:@F@memcmp",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int memcmp(const void *, const void *, size_t)",
-    "location": {
-      "column": "45",
-      "line": "38",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "memcmp",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@memcpy",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * memcpy(void *restrict, const void *restrict, size_t)",
-    "location": {
-      "column": "45",
-      "line": "40",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "memcpy",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@memmove",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * memmove(void *, const void *, size_t)",
-    "location": {
-      "column": "45",
-      "line": "43",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "memmove",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@memset",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * memset(void *, int, size_t)",
-    "location": {
-      "column": "45",
-      "line": "45",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "memset",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strcat",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strcat(char *restrict, const char *restrict)",
-    "location": {
-      "column": "45",
-      "line": "46",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strcat",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strcmp",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int strcmp(const char *, const char *)",
-    "location": {
-      "column": "45",
-      "line": "48",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strcmp",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strcoll",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int strcoll(const char *, const char *)",
-    "location": {
-      "column": "45",
-      "line": "49",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strcoll",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strcpy",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strcpy(char *restrict, const char *restrict)",
-    "location": {
-      "column": "45",
-      "line": "50",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strcpy",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strcspn",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "unsigned int strcspn(const char *, const char *)",
-    "location": {
-      "column": "45",
-      "line": "52",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strcspn",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strerror",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strerror(int)",
-    "location": {
-      "column": "45",
-      "line": "53",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strerror",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strlen",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "unsigned int strlen(const char *)",
-    "location": {
-      "column": "45",
-      "line": "54",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strlen",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strncat",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strncat(char *restrict, const char *restrict, size_t)",
-    "location": {
-      "column": "45",
-      "line": "55",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strncat",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strncmp",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int strncmp(const char *, const char *, size_t)",
-    "location": {
-      "column": "45",
-      "line": "58",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strncmp",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strncpy",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strncpy(char *restrict, const char *restrict, size_t)",
-    "location": {
-      "column": "45",
-      "line": "60",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strncpy",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strspn",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "unsigned int strspn(const char *, const char *)",
-    "location": {
-      "column": "45",
-      "line": "63",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strspn",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtok",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strtok(char *restrict, const char *restrict)",
-    "location": {
-      "column": "45",
-      "line": "64",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strtok",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strxfrm",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "unsigned int strxfrm(char *restrict, const char *restrict, size_t)",
-    "location": {
-      "column": "45",
-      "line": "66",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strxfrm",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strdup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strdup(const char *)",
-    "location": {
-      "column": "45",
-      "line": "70",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strdup",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strcasecmp",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int strcasecmp(const char *, const char *)",
-    "location": {
-      "column": "45",
-      "line": "71",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strcasecmp",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strncasecmp",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int strncasecmp(const char *, const char *, size_t)",
-    "location": {
-      "column": "45",
-      "line": "73",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strncasecmp",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strtok_r",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strtok_r(char *, const char *, char **)",
-    "location": {
-      "column": "45",
-      "line": "75",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strtok_r",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strnlen",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "size_t strnlen(const char *, size_t)",
-    "location": {
-      "column": "45",
-      "line": "77",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strnlen",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@memchr",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * memchr(const void *, int, size_t)",
-    "location": {
-      "column": "37",
-      "line": "171",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "memchr",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strchr",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strchr(const char *, int)",
-    "location": {
-      "column": "37",
-      "line": "172",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strchr",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strpbrk",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strpbrk(const char *, const char *)",
-    "location": {
-      "column": "37",
-      "line": "173",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strpbrk",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strrchr",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strrchr(const char *, int)",
-    "location": {
-      "column": "37",
-      "line": "174",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strrchr",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@strstr",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * strstr(const char *, const char *)",
-    "location": {
-      "column": "37",
-      "line": "175",
-      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
-    },
-    "name": "strstr",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@737@macro@ERROR_OVERFLOW",
+    "ID": "c:ysizet.h@277@macro@_SIZE_T",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "ERROR_OVERFLOW",
+    "display": "_SIZE_T",
     "location": {
-      "column": "9",
-      "line": "25",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+      "column": "11",
+      "line": "16",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
     },
-    "name": "ERROR_OVERFLOW",
-    "origin": "project_file",
+    "name": "_SIZE_T",
+    "origin": "system_include",
     "scope": null
   },
   {
-    "ID": "c:main.c@766@macro@ERROR_UNEXPECTED_IT",
+    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "ERROR_UNEXPECTED_IT",
+    "display": "_STD_USING_SIZE_T",
+    "location": {
+      "column": "11",
+      "line": "17",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_STD_USING_SIZE_T",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@T@size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "_Sizet",
+    "location": {
+      "column": "18",
+      "line": "18",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "size_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DATA_PTR_MEM_HELPER1__",
     "location": {
       "column": "9",
-      "line": "26",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+      "line": "21",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
     },
-    "name": "ERROR_UNEXPECTED_IT",
-    "origin": "project_file",
+    "name": "__DATA_PTR_MEM_HELPER1__",
+    "origin": "system_include",
     "scope": null
   },
   {
-    "ID": "c:main.c@uwDutyCycle",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "uwDutyCycle",
-    "location": {
-      "column": "26",
-      "line": "34",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "uwDutyCycle",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@uwFrequency",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "uwFrequency",
-    "location": {
-      "column": "26",
-      "line": "35",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "uwFrequency",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@error",
-    "What": "Variable",
+    "ID": "c:ysizet.h@T@__data_size_t",
+    "What": "Typedef",
     "defdec": "Def",
-    "display": "error",
+    "display": "unsigned int",
     "location": {
-      "column": "19",
-      "line": "36",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+      "column": "1",
+      "line": "23",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
     },
-    "name": "error",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PWM_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PWM_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "39",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "PWM_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int main(void)",
-    "location": {
-      "column": "5",
-      "line": "41",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PWM_Init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PWM_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "64",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "PWM_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USART1_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void USART1_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "98",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "USART1_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@2732@F@USART1_IRQHandler@buffer",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "buffer",
-    "location": {
-      "column": "15",
-      "line": "102",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "buffer",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@2820@F@USART1_IRQHandler@message",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "message",
-    "location": {
-      "column": "13",
-      "line": "105",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "message",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3080@F@USART1_IRQHandler@message2",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "message2",
-    "location": {
-      "column": "13",
-      "line": "114",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "message2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM21_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM21_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "125",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "TIM21_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3708@F@TIM21_IRQHandler@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "16",
-      "line": "133",
-      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
+    "name": "__data_size_t",
+    "origin": "system_include",
     "scope": null
   },
   {
@@ -101268,6 +100680,594 @@
       "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
     },
     "name": "rename",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@739@macro@ERROR_OVERFLOW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ERROR_OVERFLOW",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "ERROR_OVERFLOW",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@768@macro@ERROR_UNEXPECTED_IT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ERROR_UNEXPECTED_IT",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "ERROR_UNEXPECTED_IT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@uwDutyCycle",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uwDutyCycle",
+    "location": {
+      "column": "26",
+      "line": "34",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "uwDutyCycle",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@uwFrequency",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uwFrequency",
+    "location": {
+      "column": "26",
+      "line": "35",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "uwFrequency",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@error",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "error",
+    "location": {
+      "column": "19",
+      "line": "36",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "error",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@cnt",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "cnt",
+    "location": {
+      "column": "10",
+      "line": "38",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "cnt",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@buffer",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "buffer",
+    "location": {
+      "column": "13",
+      "line": "39",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "buffer",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@msg",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "msg",
+    "location": {
+      "column": "14",
+      "line": "40",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PWM_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void PWM_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "42",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "PWM_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "44",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USART1_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void USART1_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "63",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "USART1_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PWM_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void PWM_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "100",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "PWM_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM21_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM21_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "134",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "TIM21_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4016@F@TIM21_IRQHandler@temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp",
+    "location": {
+      "column": "16",
+      "line": "142",
+      "path": "C:\\Users\\soren\\Desktop\\Bare-Metal-STM32L058\\3.3_TimerInputCapture_PWM - ongoing\\User\\main.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:string.h@100@macro@_STRING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_STRING",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "_STRING",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@memcmp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int memcmp(const void *, const void *, size_t)",
+    "location": {
+      "column": "45",
+      "line": "38",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "memcmp",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@memcpy",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void * memcpy(void *restrict, const void *restrict, size_t)",
+    "location": {
+      "column": "45",
+      "line": "40",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "memcpy",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@memmove",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void * memmove(void *, const void *, size_t)",
+    "location": {
+      "column": "45",
+      "line": "43",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "memmove",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@memset",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void * memset(void *, int, size_t)",
+    "location": {
+      "column": "45",
+      "line": "45",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "memset",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strcat",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strcat(char *restrict, const char *restrict)",
+    "location": {
+      "column": "45",
+      "line": "46",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strcat",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strcmp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int strcmp(const char *, const char *)",
+    "location": {
+      "column": "45",
+      "line": "48",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strcmp",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strcoll",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int strcoll(const char *, const char *)",
+    "location": {
+      "column": "45",
+      "line": "49",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strcoll",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strcpy",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strcpy(char *restrict, const char *restrict)",
+    "location": {
+      "column": "45",
+      "line": "50",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strcpy",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strcspn",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int strcspn(const char *, const char *)",
+    "location": {
+      "column": "45",
+      "line": "52",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strcspn",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strerror",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strerror(int)",
+    "location": {
+      "column": "45",
+      "line": "53",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strerror",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strlen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int strlen(const char *)",
+    "location": {
+      "column": "45",
+      "line": "54",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strlen",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strncat",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strncat(char *restrict, const char *restrict, size_t)",
+    "location": {
+      "column": "45",
+      "line": "55",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strncat",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strncmp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int strncmp(const char *, const char *, size_t)",
+    "location": {
+      "column": "45",
+      "line": "58",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strncmp",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strncpy",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strncpy(char *restrict, const char *restrict, size_t)",
+    "location": {
+      "column": "45",
+      "line": "60",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strncpy",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strspn",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int strspn(const char *, const char *)",
+    "location": {
+      "column": "45",
+      "line": "63",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strspn",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strtok",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strtok(char *restrict, const char *restrict)",
+    "location": {
+      "column": "45",
+      "line": "64",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strtok",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strxfrm",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int strxfrm(char *restrict, const char *restrict, size_t)",
+    "location": {
+      "column": "45",
+      "line": "66",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strxfrm",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strdup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strdup(const char *)",
+    "location": {
+      "column": "45",
+      "line": "70",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strdup",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strcasecmp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int strcasecmp(const char *, const char *)",
+    "location": {
+      "column": "45",
+      "line": "71",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strcasecmp",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strncasecmp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int strncasecmp(const char *, const char *, size_t)",
+    "location": {
+      "column": "45",
+      "line": "73",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strncasecmp",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strtok_r",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strtok_r(char *, const char *, char **)",
+    "location": {
+      "column": "45",
+      "line": "75",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strtok_r",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strnlen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "size_t strnlen(const char *, size_t)",
+    "location": {
+      "column": "45",
+      "line": "77",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strnlen",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@memchr",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void * memchr(const void *, int, size_t)",
+    "location": {
+      "column": "37",
+      "line": "171",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "memchr",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strchr",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strchr(const char *, int)",
+    "location": {
+      "column": "37",
+      "line": "172",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strchr",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strpbrk",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strpbrk(const char *, const char *)",
+    "location": {
+      "column": "37",
+      "line": "173",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strpbrk",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strrchr",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strrchr(const char *, int)",
+    "location": {
+      "column": "37",
+      "line": "174",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strrchr",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@strstr",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * strstr(const char *, const char *)",
+    "location": {
+      "column": "37",
+      "line": "175",
+      "path": "Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\string.h"
+    },
+    "name": "strstr",
     "origin": "system_include",
     "scope": null
   },

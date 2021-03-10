@@ -15,7 +15,6 @@ extern "C" {
 #define SEC_DELAY ((uint32_t)1000)
 
 extern void customDelay_init(void);
-extern void customDelay(uint32_t ms);
-
+extern void customDelay(uint32_t ms); 
 
 #endif // CUSTOMDELAY_H

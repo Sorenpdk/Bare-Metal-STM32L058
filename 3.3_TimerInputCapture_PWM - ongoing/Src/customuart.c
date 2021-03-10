@@ -45,8 +45,21 @@ void customUSART1_Init(void)
   USART1->BRR = 104;  /* (3) */
   
   USART1->CR1 |=  USART_CR1_RE | USART_CR1_TE | USART_CR1_UE; /* (4) */
-   
-  USART1->CR1 |= USART_CR1_RXNEIE | USART_CR1_TCIE;/* (5) */
+  
+  /* polling idle frame Transmission */
+  while((USART1->ISR & USART_ISR_TC) != USART_ISR_TC)
+  { 
+    /* add time out here for a robust application */
+  }
+  
+  USART1->ICR = USART_ICR_TCCF;/* clear TC flag */
+  USART1->CR1 |= USART_CR1_RXNEIE | USART_CR1_TXEIE | USART_CR1_TCIE;/* (5) */
+  USART1->TDR = 1;
+  
+  /* (3) Set priority for USART1_IRQn */
+  /* (4) Enable USART1_IRQn */
+  NVIC_SetPriority(USART1_IRQn, 8); /* (3) */
+  NVIC_EnableIRQ(USART1_IRQn);
 
 }
 
@@ -81,19 +94,12 @@ uint8_t UART_Receive_Char()
   */
 void UART_Send_Char(uint8_t c)
 {
- //if((USART1->ISR & USART_ISR_TXE) == USART_ISR_TXE)
-      USART1->TDR = c;
-     
-      while(!(USART1->ISR & USART_ISR_TC))
-      {
-        /** 
-          * Spin in here while we wait for the transmission to complete
-          * The TC bit is set by hardware if the transmission of a 
-          * frame containing data is complete and if TXE is set 
-          */
-        
-      }
-        
+  // Check we are ready to send the next byte
+  
+  if((USART1->ISR & USART_ISR_TXE)){
+      USART1->TDR = c; // Clear TXE flag on write to TDR
+  }
+       
 }
 
 
@@ -109,6 +115,19 @@ void UART_Send_String(uint8_t msg[], size_t len)
 {
   for(uint8_t i = 0; i < len; i++){
     UART_Send_Char(msg[i]);
+    
+    /* Figure 241. TC/TXE behavior when transmitting
+        Very important */
+     while(!(USART1->ISR & USART_ISR_TC))
+      {
+        /** 
+          * Spin in here while we wait for the transmission to complete
+          * The TC bit is set by hardware if the transmission of a 
+          * frame containing data is complete and if TXE is set 
+          */
+        
+     }
   }
   
+ 
 }

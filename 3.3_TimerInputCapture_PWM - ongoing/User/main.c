@@ -16,8 +16,9 @@
 #include "stm32l0xx.h"
 #include "customgpio.h"
 #include "customuart.h"
-#include "customdelay.h"
+
 #include "customclock.h"
+#include "customdelay.h"
 #include "string.h"
 #include "stdio.h"
 
@@ -30,12 +31,14 @@
   * Retval  None
   */
     
-
 static volatile uint32_t uwDutyCycle;
 static volatile uint32_t uwFrequency;
 volatile uint16_t error = 0xFF;  //initialized at 0 and modified by the functions 
 
-
+uint32_t cnt = 0;
+static char buffer[16];
+static char* msg;
+  
 void PWM_Init();
  
 int main (void)
@@ -44,30 +47,59 @@ int main (void)
   SystemCoreClockUpdate();
   SysTick_Config(SystemCoreClock/1000);
   customGPIO_init();
-  customUSART1_Init();
-  PWM_Init();
-
-  error = 0;
-  // 1 enable interrupt 
-  NVIC_EnableIRQ(USART1_IRQn);
-  NVIC_SetPriority(USART1_IRQn,1);
+  PWM_Init();  // prio 0
+  customUSART1_Init(); // prio 1
  
+  error = 0;
+
   while(1)
   {   
-   toggleLED2();
-   customDelay(100);
+    toggleLED2();
+    customDelay(500);
   }
   
+}
+
+void USART1_IRQHandler(void)
+{
+  
+    // Check that any transmission is completed TC == 1
+    if((USART1->ISR & USART_ISR_TC) == USART_ISR_TC)
+    {
+       // check that transmit data reg is empty so we can transmit next
+      // TXE == 1 - Redundant check, we already check inside send()
+      if((USART1->ISR & USART_ISR_TXE) == USART_ISR_TXE)
+      {
+        msg = "Duty Cycle: ";
+        UART_Send_String((uint8_t*)msg,strlen(msg));
+        if(uwDutyCycle != 0)
+        {
+          sprintf(buffer, "%d", uwDutyCycle);  
+        }
+        UART_Send_String((uint8_t*)buffer,2);     
+        UART_Send_Char(0x0A);
+        UART_Send_Char(0x0D); 
+      
+
+        msg = "Frequency: ";
+        UART_Send_String((uint8_t*)msg,strlen(msg)+1);
+        if(uwFrequency != 0)
+        {
+          sprintf(buffer, "%d", uwFrequency);  
+        }
+        UART_Send_String((uint8_t*)buffer,4);
+        UART_Send_Char(0x0A); 
+        UART_Send_Char(0x0D); 
+
+      }
+    }
+ 
 }
 
 
 void PWM_Init()
 {
-  /* Configure NVIC for TIMx */
-  /* (1) Enable Interrupt on TIMx */
-  /* (2) Set priority for TIMx*/
-    NVIC_EnableIRQ(TIM21_IRQn);
-    NVIC_SetPriority(TIM21_IRQn,0); /* (2) */
+ 
   
     /* (1) Select the active input TI1 for TIMx_CCR1 (CC1S = 01), 
          select the active input TI1 for TIMx_CCR2 (CC2S = 10) */ 
@@ -91,36 +123,13 @@ void PWM_Init()
   
   TIM21->CR1 |= TIM_CR1_CEN; /* (5) */
   
- 
-   
+   /* Configure NVIC for TIMx */
+  /* (1) Enable Interrupt on TIMx */
+  /* (2) Set priority for TIMx*/
+    NVIC_EnableIRQ(TIM21_IRQn);
+    NVIC_SetPriority(TIM21_IRQn,7); /* (2) */
 }
 
-void USART1_IRQHandler(void)
-{
-  /* This needs to be done better */
-  
-  static char buffer[16];
-  if((USART1->ISR & USART_ISR_TXE) == USART_ISR_TXE)
-  {
-    uint8_t message[] = "Duty Cycle: ";
-    UART_Send_String(message,sizeof(message));
-    sprintf(buffer, "%d", uwDutyCycle);   
-    UART_Send_String((uint8_t*)buffer,2);
-    UART_Send_Char(0x0D); // CR
-    UART_Send_Char(0x0A); // LF
-    
-    
-    
-    uint8_t message2[] = "Frequency: ";
-    UART_Send_String(message2,sizeof(message2));
-    sprintf(buffer, "%d", uwFrequency);   
-    UART_Send_String((uint8_t*)buffer,4);
-    UART_Send_Char(0x0D); // CR
-    UART_Send_Char(0x0A); // LF
-  }
- 
-   
-}
 
 void TIM21_IRQHandler(void)
 {
@@ -148,6 +157,7 @@ if ((TIM21->SR & (TIM_SR_CC1IF | TIM_SR_CC1OF) ) == TIM_SR_CC1IF)
   }
 
   else
+    
   {
     error = ERROR_UNEXPECTED_IT; /* Report an error */
  
@@ -158,4 +168,28 @@ if ((TIM21->SR & (TIM_SR_CC1IF | TIM_SR_CC1OF) ) == TIM_SR_CC1IF)
 }
 
 
-
+/*
+ msg = "Duty Cycle: ";
+    UART_Send_String((uint8_t*)msg,strlen(msg));
+    if(uwDutyCycle != 0)
+    {
+    sprintf(buffer, "%d", uwDutyCycle);  
+    }
+    UART_Send_String((uint8_t*)buffer,2);
+    UART_Send_Char(0x20);  
+    UART_Send_Char(0x25);
+    UART_Send_Char(0x0D); 
+    UART_Send_Char(0x0A); 
+    
+    msg = "Frequency: ";
+    UART_Send_String((uint8_t*)msg,strlen(msg));
+    if(uwFrequency != 0){
+    sprintf(buffer, "%d", uwFrequency);  
+    }
+    UART_Send_String((uint8_t*)buffer,4);
+    UART_Send_Char(0x20);
+    UART_Send_Char(0x48);
+    UART_Send_Char(0x7A);
+    UART_Send_Char(0x0D); 
+    UART_Send_Char(0x0A); 
+*/
