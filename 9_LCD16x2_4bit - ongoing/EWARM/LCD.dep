@@ -5,110 +5,140 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\Exe\LCD.out</file>
-            <file>$PROJ_DIR$\Debug\Obj\customgpio.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\customclock.xcl</file>
-            <file>$PROJ_DIR$\..\Inc\system_stm32l0xx.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\..\User\main.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\..\Src\customclock.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\LCD.pbd</file>
-            <file>$PROJ_DIR$\..\Src\customgpio.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\customdelay.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\customclock.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$PROJ_DIR$\..\Src\system_stm32l0xx.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\..\Src\stm32l0xx_it.c</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
             <file>$PROJ_DIR$\Debug\Obj\customclock.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_stm32l0xx.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_stm32l0xx.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\customgpio.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\customdelay.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\customuart.o</file>
-            <file>$PROJ_DIR$\..\Src\customuart.c</file>
-            <file>$PROJ_DIR$\..\Src\customdelay.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm32l0xx_it.o</file>
-            <file>$PROJ_DIR$\..\CMSIS\core_cm0plus.h</file>
-            <file>$PROJ_DIR$\..\CMSIS\core_cmFunc.h</file>
-            <file>$PROJ_DIR$\..\CMSIS\core_cmInstr.h</file>
-            <file>$PROJ_DIR$\..\Inc\customdelay.h</file>
-            <file>$PROJ_DIR$\..\Inc\customgpio.h</file>
-            <file>$PROJ_DIR$\..\Inc\customuart.h</file>
             <file>$PROJ_DIR$\..\Inc\stm32l0xx.h</file>
-            <file>$PROJ_DIR$\..\Inc\stm32l053xx.h</file>
-            <file>$PROJ_DIR$\..\Inc\customclock.h</file>
+            <file>$PROJ_DIR$\..\Src\stm32l0xx_it.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l0xx_it.o</file>
+            <file>$PROJ_DIR$\..\Inc\customuart.h</file>
+            <file>$PROJ_DIR$\..\Src\customdelay.c</file>
+            <file>$PROJ_DIR$\..\Inc\customgpio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\..\Inc\system_stm32l0xx.h</file>
             <file>$PROJ_DIR$\..\Inc\stm32l0xx_it.h</file>
+            <file>$PROJ_DIR$\..\Src\customuart.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
             <file>$PROJ_DIR$\Debug\Obj\customdelay.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\List\LCD.map</file>
-            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\..\Src\customclock.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\customuart.o</file>
+            <file>$PROJ_DIR$\..\Src\system_stm32l0xx.c</file>
             <file>$PROJ_DIR$\Debug\Obj\customuart.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\customgpio.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\customuart.xcl</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm32l0xx_it.xcl</file>
-            <file>$TOOLKIT_DIR$\config\linker\ST\stm32l053x8.icf</file>
+            <file>$PROJ_DIR$\Debug\List\LCD.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\..\Src\customgpio.c</file>
+            <file>$PROJ_DIR$\..\User\main.c</file>
             <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_stm32l0xx.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\lib\dl6M_tlf.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\customdelay.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\customgpio.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32l0xx.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32l0xx.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$PROJ_DIR$\..\Inc\stm32l053xx.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\customclock.xcl</file>
+            <file>$TOOLKIT_DIR$\config\linker\ST\stm32l053x8.icf</file>
+            <file>$PROJ_DIR$\Debug\Obj\customdelay.o</file>
+            <file>$PROJ_DIR$\..\CMSIS\core_cmFunc.h</file>
+            <file>$PROJ_DIR$\..\Inc\customclock.h</file>
+            <file>$PROJ_DIR$\..\Inc\customdelay.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\core_cm0plus.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\core_cmInstr.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\customuart.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\customgpio.o</file>
             <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
             <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm32l0xx_it.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tlf.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l0xx_it.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_stm32l0xx.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Exe\LCD.out</file>
             <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\customclock.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32l0xx_it.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\LCD.pbd</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\customgpio.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 0 43</file>
+                    <file> 49 18</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\Debug\Exe\LCD.out</name>
+            <name>$PROJ_DIR$\..\Src\stm32l0xx_it.c</name>
             <outputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 43</file>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 44</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 49 21 11 1 28 12 31 23 58 44 55 52</file>
+                    <name>ICCARM</name>
+                    <file> 9</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\User\main.c</name>
+            <name>$PROJ_DIR$\..\Src\customdelay.c</name>
             <outputs>
                 <tool>
-                    <name>__cstat</name>
-                    <file> 54</file>
+                    <name>ICCARM</name>
+                    <file> 31</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 12</file>
+                    <name>__cstat</name>
+                    <file> 13</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 8</file>
+                    <file> 23</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 39 32 17 13 4 24 20 6 34 22 15 33 3 40 38 35 41 36</file>
+                    <file> 34 1 28 35 12 53 42 11 27 47 36 7 19 32 8 9</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Src\customuart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4 1 28 35 12 53 42 11 27 47 36 7 19 32 8 41 22 57</file>
                 </tool>
             </inputs>
         </file>
@@ -116,35 +146,35 @@
             <name>$PROJ_DIR$\..\Src\customclock.c</name>
             <outputs>
                 <tool>
-                    <name>__cstat</name>
-                    <file> 14</file>
+                    <name>ICCARM</name>
+                    <file> 0</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 21</file>
+                    <name>__cstat</name>
+                    <file> 51</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 2</file>
+                    <file> 29</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 40 38 39 32 17 13 4 24 20 6 34 22 15 33 3 35 41</file>
+                    <file> 33 1 28 35 12 53 42 11 27 47 36 7 19 32 8 34 9</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Src\customgpio.c</name>
+            <name>$PROJ_DIR$\..\Src\system_stm32l0xx.c</name>
             <outputs>
                 <tool>
-                    <name>__cstat</name>
-                    <file> 46</file>
+                    <name>ICCARM</name>
+                    <file> 25</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 1</file>
+                    <name>__cstat</name>
+                    <file> 45</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
@@ -154,112 +184,68 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 36 38 39 32 17 13 4 24 20 6 34 22 15 33 3</file>
+                    <file> 1 28 35 12 53 42 11 27 47 36 7 19 32 8</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Src\system_stm32l0xx.c</name>
+            <name>$PROJ_DIR$\..\Src\customgpio.c</name>
             <outputs>
                 <tool>
-                    <name>__cstat</name>
-                    <file> 51</file>
+                    <name>ICCARM</name>
+                    <file> 39</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 23</file>
+                    <name>__cstat</name>
+                    <file> 24</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 25</file>
+                    <file> 56</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 38 39 32 17 13 4 24 20 6 34 22 15 33 3</file>
+                    <file> 6 1 28 35 12 53 42 11 27 47 36 7 19 32 8</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Src\stm32l0xx_it.c</name>
+            <name>$PROJ_DIR$\..\User\main.c</name>
             <outputs>
                 <tool>
-                    <name>__cstat</name>
-                    <file> 57</file>
+                    <name>ICCARM</name>
+                    <file> 37</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 31</file>
+                    <name>__cstat</name>
+                    <file> 40</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 48</file>
+                    <file> 46</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 41</file>
+                    <file> 28 35 12 53 42 11 27 47 36 7 19 32 8 33 1 34 9 6</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\main.c</name>
+            <name>$PROJ_DIR$\Debug\Exe\LCD.out</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 12</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 8</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Src\customuart.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 45</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 28</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 47</file>
+                    <name>ILINK</name>
+                    <file> 18</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 37 38 39 32 17 13 4 24 20 6 34 22 15 33 3 56 50 53</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Src\customdelay.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 42</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 11</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 27</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 35 38 39 32 17 13 4 24 20 6 34 22 15 33 3 41</file>
+                    <name>ILINK</name>
+                    <file> 30 0 31 39 15 37 3 25 50 48 55 43</file>
                 </tool>
             </inputs>
         </file>

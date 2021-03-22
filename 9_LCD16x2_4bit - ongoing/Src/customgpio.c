@@ -108,21 +108,22 @@ void customGPIO_init(void)
   GPIOC->MODER |= GPIO_MODER_MODE13_0; /* (2) GENERAL OUTPUT */
   GPIOC->MODER &= ~GPIO_MODER_MODE13_1; /* (2) */
   GPIOC->OTYPER &= ~GPIO_OTYPER_OT_13;  /* (3) PUSH PULL */
+  GPIOC->OSPEEDR |= GPIO_OSPEEDER_OSPEED13_1;   /* (5) MEDIUM SPEED */
   GPIOC->OSPEEDR |= GPIO_OSPEEDER_OSPEED13_0;   /* (5) MEDIUM SPEED */
   /**********************************************************************
-   ** 		LCD RW Configurations 	PC14	 **
+   ** 		LCD RW Configurations 	PC6	 **
    **********************************************************************/
-  GPIOC->MODER |= GPIO_MODER_MODE14_0; /* (2) GENERAL OUTPUT */
-  GPIOC->MODER &= ~GPIO_MODER_MODE14_1; /* (2) */
-  GPIOC->OTYPER &= ~GPIO_OTYPER_OT_14;  /* (3) PUSH PULL */
-  GPIOC->OSPEEDR |= GPIO_OSPEEDER_OSPEED14_0;   /* (5) MEDIUM SPEED */
+  GPIOC->MODER |= GPIO_MODER_MODE6_0; /* (2) GENERAL OUTPUT */
+  GPIOC->MODER &= ~GPIO_MODER_MODE6_1; /* (2) */
+  GPIOC->OTYPER &= ~GPIO_OTYPER_OT_6;  /* (3) PUSH PULL */
+  GPIOC->OSPEEDR |= GPIO_OSPEEDER_OSPEED6_0;   /* (5) MEDIUM SPEED */
    /**********************************************************************
-   ** 	LCD RS PC15 Register Select: H:Data Input L:Instruction Input        **
+   ** 	LCD RS PC10 Register Select: H:Data Input L:Instruction Input        **
    **********************************************************************/
-  GPIOC->MODER |= GPIO_MODER_MODE15_0; /* (2) GENERAL OUTPUT */
-  GPIOC->MODER &= ~GPIO_MODER_MODE15_1; /* (2) */
-  GPIOC->OTYPER &= ~GPIO_OTYPER_OT_15;  /* (3) PUSH PULL */
-  GPIOC->OSPEEDR |= GPIO_OSPEEDER_OSPEED15_0;   /* (5) MEDIUM SPEED */
+  GPIOC->MODER |= GPIO_MODER_MODE10_0; /* (2) GENERAL OUTPUT */
+  GPIOC->MODER &= ~GPIO_MODER_MODE10_1; /* (2) */
+  GPIOC->OTYPER &= ~GPIO_OTYPER_OT_10;  /* (3) PUSH PULL */
+  GPIOC->OSPEEDR |= GPIO_OSPEEDER_OSPEED10_0;   /* (5) MEDIUM SPEED */
 }
 
 /** TogglePort A Pin 5 (LD2) every second **/

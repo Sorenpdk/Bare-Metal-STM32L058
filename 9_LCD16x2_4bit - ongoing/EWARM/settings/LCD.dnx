@@ -48,13 +48,13 @@
     <StLinkDriver>
         <stlinkserialNo>066EFF485151717867165434</stlinkserialNo>
         <stlinkfoundProbes />
+        <stlinkResetStyle>0</stlinkResetStyle>
+        <stlinkResetStrategy>0</stlinkResetStrategy>
         <CStepIntDis>_ 0</CStepIntDis>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-        <stlinkResetStyle>4</stlinkResetStyle>
-        <stlinkResetStrategy>0</stlinkResetStrategy>
     </StLinkDriver>
     <DebugChecksum>
-        <Checksum>1455609699</Checksum>
+        <Checksum>190974355</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -66,12 +66,6 @@
     <Disassembly>
         <MixedMode>1</MixedMode>
     </Disassembly>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Count>0</Count>
-    </Breakpoints2>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -81,14 +75,23 @@
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
-    <Aliases>
-        <Count>0</Count>
-        <SuppressDialog>0</SuppressDialog>
-    </Aliases>
     <CallStackLog>
         <Enabled>0</Enabled>
     </CallStackLog>
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
+    <Aliases>
+        <A0>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\CMSIS\core_cm0plus.h" ""</A0>
+        <A1>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src\customdelay.c" "C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit - ongoing\Src\customdelay.c"</A1>
+        <A2>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\User\main.c" "C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit - ongoing\User\main.c"</A2>
+        <Count>3</Count>
+        <SuppressDialog>1</SuppressDialog>
+    </Aliases>
 </settings>
