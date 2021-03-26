@@ -19,4 +19,6 @@ main.pbi: \
   C:\Users\dkkospnd\OneDrive\ -\ Alfa\ Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\ -\ ongoing\EWARM\..\Inc/customdelay.h \
   C:\Users\dkkospnd\OneDrive\ -\ Alfa\ Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\ -\ ongoing\EWARM\..\Inc/stm32l0xx_it.h \
   C:\Users\dkkospnd\OneDrive\ -\ Alfa\ Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\ -\ ongoing\EWARM\..\Inc\customgpio.h \
-  C:\Users\dkkospnd\OneDrive\ -\ Alfa\ Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\ -\ ongoing\EWARM\..\Inc\customdelay.h
+  C:\Users\dkkospnd\OneDrive\ -\ Alfa\ Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\ -\ ongoing\EWARM\..\Inc\customdelay.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdio.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ysizet.h

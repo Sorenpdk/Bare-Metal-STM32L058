@@ -99620,13 +99620,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@672@macro@A",
+    "ID": "c:main.c@694@macro@A",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "A",
     "location": {
       "column": "9",
-      "line": "20",
+      "line": "22",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "A",
@@ -99634,13 +99634,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@702@macro@HIGH",
+    "ID": "c:main.c@724@macro@HIGH",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "HIGH",
     "location": {
       "column": "9",
-      "line": "22",
+      "line": "24",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "HIGH",
@@ -99648,13 +99648,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@718@macro@LOW",
+    "ID": "c:main.c@740@macro@LOW",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LOW",
     "location": {
       "column": "9",
-      "line": "23",
+      "line": "25",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "LOW",
@@ -99662,13 +99662,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@733@macro@E_PULSE",
+    "ID": "c:main.c@755@macro@E_PULSE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "E_PULSE",
     "location": {
       "column": "9",
-      "line": "24",
+      "line": "26",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "E_PULSE",
@@ -99676,13 +99676,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@753@macro@RS",
+    "ID": "c:main.c@775@macro@RS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RS",
     "location": {
       "column": "9",
-      "line": "25",
+      "line": "27",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "RS",
@@ -99690,13 +99690,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@813@macro@WR",
+    "ID": "c:main.c@835@macro@WR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "WR",
     "location": {
       "column": "9",
-      "line": "26",
+      "line": "28",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "WR",
@@ -99704,13 +99704,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@855@macro@DB4",
+    "ID": "c:main.c@877@macro@DB4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DB4",
     "location": {
       "column": "9",
-      "line": "27",
+      "line": "29",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "DB4",
@@ -99718,13 +99718,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@870@macro@DB5",
+    "ID": "c:main.c@892@macro@DB5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DB5",
     "location": {
       "column": "9",
-      "line": "28",
+      "line": "30",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "DB5",
@@ -99732,13 +99732,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@885@macro@DB6",
+    "ID": "c:main.c@907@macro@DB6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DB6",
     "location": {
       "column": "9",
-      "line": "29",
+      "line": "31",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "DB6",
@@ -99746,16 +99746,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@900@macro@DB7",
+    "ID": "c:main.c@922@macro@DB7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DB7",
     "location": {
       "column": "9",
-      "line": "30",
+      "line": "32",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "DB7",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@buffer",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "buffer",
+    "location": {
+      "column": "13",
+      "line": "36",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "buffer",
     "origin": "project_file",
     "scope": null
   },
@@ -99766,24 +99780,10 @@
     "display": "void LCD_GPIO(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "46",
+      "line": "39",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "LCD_GPIO",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void LCD_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "47",
-      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
-    },
-    "name": "LCD_Init",
     "origin": "project_file",
     "scope": null
   },
@@ -99794,7 +99794,7 @@
     "display": "void pulse(void)",
     "location": {
       "column": "6",
-      "line": "48",
+      "line": "40",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "pulse",
@@ -99802,16 +99802,58 @@
     "scope": null
   },
   {
-    "ID": "c:@F@clear",
+    "ID": "c:@F@LCD_transmit",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void clear(void)",
+    "display": "void LCD_transmit(uint8_t)",
     "location": {
       "column": "6",
-      "line": "49",
+      "line": "41",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
-    "name": "clear",
+    "name": "LCD_transmit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_send_cmd",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LCD_send_cmd(uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "42",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "LCD_send_cmd",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LCD_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "43",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "LCD_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@setcursor",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void setcursor(uint8_t, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "44",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "setcursor",
     "origin": "project_file",
     "scope": null
   },
@@ -99822,10 +99864,52 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "58",
+      "line": "51",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1966@F@main@cycles",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "cycles",
+    "location": {
+      "column": "12",
+      "line": "78",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "cycles",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2048@F@main@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "11",
+      "line": "85",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2158@F@main@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "11",
+      "line": "93",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
@@ -99836,10 +99920,80 @@
     "display": "void LCD_Init(void)",
     "location": {
       "column": "6",
-      "line": "76",
+      "line": "149",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "LCD_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_transmit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_transmit(uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "244",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "LCD_transmit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@5426@F@LCD_transmit@LSB",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "LSB",
+    "location": {
+      "column": "13",
+      "line": "246",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "LSB",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@5448@F@LCD_transmit@MSB",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "MSB",
+    "location": {
+      "column": "13",
+      "line": "247",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "MSB",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@setcursor",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void setcursor(uint8_t, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "271",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "setcursor",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_send_cmd",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_send_cmd(uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "287",
+      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
+    },
+    "name": "LCD_send_cmd",
     "origin": "project_file",
     "scope": null
   },
@@ -99850,24 +100004,10 @@
     "display": "void LCD_GPIO(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "135",
+      "line": "294",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "LCD_GPIO",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@clear",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void clear(void)",
-    "location": {
-      "column": "6",
-      "line": "151",
-      "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
-    },
-    "name": "clear",
     "origin": "project_file",
     "scope": null
   },
@@ -99878,11 +100018,1145 @@
     "display": "void pulse(void)",
     "location": {
       "column": "6",
-      "line": "158",
+      "line": "310",
       "path": "C:\\Users\\dkkospnd\\OneDrive - Alfa Laval\\Desktop\\Bare-Metal-STM32L058\\9_LCD16x2_4bit - ongoing\\User\\main.c"
     },
     "name": "pulse",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@99@macro@_STDIO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_STDIO",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "_STDIO",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@375@macro@NULL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NULL",
+    "location": {
+      "column": "11",
+      "line": "19",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "NULL",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@T@FILE",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "_Filet",
+    "location": {
+      "column": "18",
+      "line": "23",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "FILE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@491@macro@_FD_TYPE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_FD_TYPE",
+    "location": {
+      "column": "13",
+      "line": "26",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "_FD_TYPE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@__iar_Stdin",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "__iar_Stdin",
+    "location": {
+      "column": "37",
+      "line": "80",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__iar_Stdin",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@__iar_Stdout",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "__iar_Stdout",
+    "location": {
+      "column": "37",
+      "line": "81",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__iar_Stdout",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@__iar_Stderr",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "__iar_Stderr",
+    "location": {
+      "column": "37",
+      "line": "82",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__iar_Stderr",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@2715@macro@stdin",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "stdin",
+    "location": {
+      "column": "15",
+      "line": "84",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "stdin",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@2766@macro@stdout",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "stdout",
+    "location": {
+      "column": "15",
+      "line": "85",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "stdout",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@2818@macro@stderr",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "stderr",
+    "location": {
+      "column": "15",
+      "line": "86",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "stderr",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@2882@macro@_IOFBF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_IOFBF",
+    "location": {
+      "column": "13",
+      "line": "89",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "_IOFBF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@2913@macro@_IOLBF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_IOLBF",
+    "location": {
+      "column": "13",
+      "line": "90",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "_IOLBF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@2944@macro@_IONBF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_IONBF",
+    "location": {
+      "column": "13",
+      "line": "91",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "_IONBF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@2975@macro@BUFSIZ",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUFSIZ",
+    "location": {
+      "column": "13",
+      "line": "92",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "BUFSIZ",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3033@macro@FOPEN_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FOPEN_MAX",
+    "location": {
+      "column": "15",
+      "line": "94",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "FOPEN_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3074@macro@TMP_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TMP_MAX",
+    "location": {
+      "column": "13",
+      "line": "96",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "TMP_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3107@macro@FILENAME_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FILENAME_MAX",
+    "location": {
+      "column": "13",
+      "line": "97",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "FILENAME_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3140@macro@L_tmpnam",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "L_tmpnam",
+    "location": {
+      "column": "13",
+      "line": "98",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "L_tmpnam",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3283@macro@EOF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EOF",
+    "location": {
+      "column": "9",
+      "line": "103",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "EOF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3315@macro@SEEK_SET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEEK_SET",
+    "location": {
+      "column": "9",
+      "line": "105",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "SEEK_SET",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3342@macro@SEEK_CUR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEEK_CUR",
+    "location": {
+      "column": "9",
+      "line": "106",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "SEEK_CUR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3369@macro@SEEK_END",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEEK_END",
+    "location": {
+      "column": "9",
+      "line": "107",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "SEEK_END",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@T@fpos_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "_Fpost",
+    "location": {
+      "column": "16",
+      "line": "110",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fpos_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3737@macro@__PRINTFPR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__PRINTFPR",
+    "location": {
+      "column": "11",
+      "line": "126",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__PRINTFPR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3934@macro@__SCANFPR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__SCANFPR",
+    "location": {
+      "column": "11",
+      "line": "129",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__SCANFPR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@4131@macro@__SCANFSPR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__SCANFSPR",
+    "location": {
+      "column": "11",
+      "line": "132",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__SCANFSPR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@4448@macro@__DEPREC_PRINTF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DEPREC_PRINTF",
+    "location": {
+      "column": "9",
+      "line": "141",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__DEPREC_PRINTF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@4493@macro@__DEPREC_SCANF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DEPREC_SCANF",
+    "location": {
+      "column": "9",
+      "line": "142",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__DEPREC_SCANF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@clearerr",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void clearerr(FILE *)",
+    "location": {
+      "column": "28",
+      "line": "147",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "clearerr",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fclose",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fclose(FILE *)",
+    "location": {
+      "column": "28",
+      "line": "148",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fclose",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@feof",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int feof(FILE *)",
+    "location": {
+      "column": "28",
+      "line": "149",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "feof",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ferror",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ferror(FILE *)",
+    "location": {
+      "column": "28",
+      "line": "150",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "ferror",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fflush",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fflush(FILE *)",
+    "location": {
+      "column": "28",
+      "line": "151",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fflush",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fgetc",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fgetc(FILE *)",
+    "location": {
+      "column": "28",
+      "line": "152",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fgetc",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fgetpos",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fgetpos(FILE *restrict, fpos_t *restrict)",
+    "location": {
+      "column": "28",
+      "line": "153",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fgetpos",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fgets",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * fgets(char *restrict, int, FILE *restrict)",
+    "location": {
+      "column": "28",
+      "line": "154",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fgets",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fopen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "FILE * fopen(const char *restrict, const char *restrict)",
+    "location": {
+      "column": "28",
+      "line": "155",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fopen",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fprintf(FILE *restrict, const char *restrict, ...)",
+    "location": {
+      "column": "28",
+      "line": "156",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fputc",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fputc(int, FILE *)",
+    "location": {
+      "column": "28",
+      "line": "158",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fputc",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fputs",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fputs(const char *restrict, FILE *restrict)",
+    "location": {
+      "column": "28",
+      "line": "159",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fputs",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fread",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int fread(void *restrict, size_t, size_t, FILE *restrict)",
+    "location": {
+      "column": "28",
+      "line": "160",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fread",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@freopen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "FILE * freopen(const char *restrict, const char *restrict, FILE *restrict)",
+    "location": {
+      "column": "28",
+      "line": "162",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "freopen",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fscanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fscanf(FILE *restrict, const char *restrict, ...)",
+    "location": {
+      "column": "28",
+      "line": "164",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fscanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fseek",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fseek(FILE *, long, int)",
+    "location": {
+      "column": "28",
+      "line": "165",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fseek",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fsetpos",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int fsetpos(FILE *, const fpos_t *)",
+    "location": {
+      "column": "28",
+      "line": "166",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fsetpos",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ftell",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "long ftell(FILE *)",
+    "location": {
+      "column": "28",
+      "line": "167",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "ftell",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fwrite",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int fwrite(const void *restrict, size_t, size_t, FILE *restrict)",
+    "location": {
+      "column": "28",
+      "line": "168",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fwrite",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@rewind",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void rewind(FILE *)",
+    "location": {
+      "column": "28",
+      "line": "170",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "rewind",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@setbuf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void setbuf(FILE *restrict, char *restrict)",
+    "location": {
+      "column": "28",
+      "line": "171",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "setbuf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@setvbuf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int setvbuf(FILE *restrict, char *restrict, int, size_t)",
+    "location": {
+      "column": "28",
+      "line": "172",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "setvbuf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@tmpnam",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * tmpnam(char *)",
+    "location": {
+      "column": "28",
+      "line": "174",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "tmpnam",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@tmpfile",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "FILE * tmpfile(void)",
+    "location": {
+      "column": "28",
+      "line": "175",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "tmpfile",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ungetc",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ungetc(int, FILE *)",
+    "location": {
+      "column": "28",
+      "line": "176",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "ungetc",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vfprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vfprintf(FILE *restrict, const char *restrict, __Va_list)",
+    "location": {
+      "column": "28",
+      "line": "177",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vfprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vfscanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vfscanf(FILE *restrict, const char *restrict, __Va_list)",
+    "location": {
+      "column": "28",
+      "line": "180",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vfscanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fdopen",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "FILE * fdopen(signed char, const char *)",
+    "location": {
+      "column": "29",
+      "line": "184",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fdopen",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@fileno",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "signed char fileno(FILE *)",
+    "location": {
+      "column": "29",
+      "line": "185",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fileno",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@getw",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int getw(FILE *)",
+    "location": {
+      "column": "29",
+      "line": "186",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "getw",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@putw",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int putw(int, FILE *)",
+    "location": {
+      "column": "29",
+      "line": "187",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "putw",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@getc",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int getc(FILE *)",
+    "location": {
+      "column": "29",
+      "line": "189",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "getc",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@putc",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int putc(int, FILE *)",
+    "location": {
+      "column": "29",
+      "line": "190",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "putc",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__gets",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * __gets(char *, int)",
+    "location": {
+      "column": "37",
+      "line": "197",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__gets",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@gets",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * gets(char *)",
+    "location": {
+      "column": "37",
+      "line": "198",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "gets",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@perror",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void perror(const char *)",
+    "location": {
+      "column": "39",
+      "line": "200",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "perror",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int printf(const char *restrict, ...)",
+    "location": {
+      "column": "39",
+      "line": "201",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "printf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@puts",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int puts(const char *)",
+    "location": {
+      "column": "39",
+      "line": "202",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "puts",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@scanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int scanf(const char *restrict, ...)",
+    "location": {
+      "column": "39",
+      "line": "203",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "scanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@sprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int sprintf(char *restrict, const char *restrict, ...)",
+    "location": {
+      "column": "39",
+      "line": "204",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "sprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@sscanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int sscanf(const char *restrict, const char *restrict, ...)",
+    "location": {
+      "column": "39",
+      "line": "206",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "sscanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__ungetchar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int __ungetchar(int)",
+    "location": {
+      "column": "39",
+      "line": "209",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__ungetchar",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vprintf(const char *restrict, __Va_list)",
+    "location": {
+      "column": "39",
+      "line": "210",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vscanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vscanf(const char *restrict, __Va_list)",
+    "location": {
+      "column": "37",
+      "line": "213",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vscanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vsscanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vsscanf(const char *restrict, const char *restrict, __Va_list)",
+    "location": {
+      "column": "37",
+      "line": "214",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vsscanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vsprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vsprintf(char *restrict, const char *restrict, __Va_list)",
+    "location": {
+      "column": "37",
+      "line": "217",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vsprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__write_array",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "size_t __write_array(const void *, size_t, size_t)",
+    "location": {
+      "column": "35",
+      "line": "220",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__write_array",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@snprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int snprintf(char *restrict, size_t, const char *restrict, ...)",
+    "location": {
+      "column": "38",
+      "line": "222",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "snprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vsnprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vsnprintf(char *restrict, size_t, const char *restrict, __Va_list)",
+    "location": {
+      "column": "38",
+      "line": "224",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vsnprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@getchar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int getchar(void)",
+    "location": {
+      "column": "35",
+      "line": "229",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "getchar",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@putchar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int putchar(int)",
+    "location": {
+      "column": "35",
+      "line": "230",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "putchar",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@remove",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int remove(const char *)",
+    "location": {
+      "column": "35",
+      "line": "233",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "remove",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@rename",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int rename(const char *, const char *)",
+    "location": {
+      "column": "35",
+      "line": "234",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "rename",
+    "origin": "system_include",
     "scope": null
   }
 ]
