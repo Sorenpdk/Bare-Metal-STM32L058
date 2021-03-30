@@ -54,7 +54,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </StLinkDriver>
     <DebugChecksum>
-        <Checksum>1846521208</Checksum>
+        <Checksum>4225766334</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -88,10 +88,11 @@
         <Count>0</Count>
     </Breakpoints2>
     <Aliases>
-        <A0>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\CMSIS\core_cm0plus.h" ""</A0>
-        <A1>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src\customdelay.c" "C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit - ongoing\Src\customdelay.c"</A1>
-        <A2>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\User\main.c" "C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit - ongoing\User\main.c"</A2>
-        <Count>3</Count>
+        <A0>_ "C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit - ongoing\Src\customclock.c" ""</A0>
+        <A1>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\CMSIS\core_cm0plus.h" ""</A1>
+        <A2>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src\customdelay.c" "C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit - ongoing\Src\customdelay.c"</A2>
+        <A3>_ "C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\User\main.c" "C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit - ongoing\User\main.c"</A3>
+        <Count>4</Count>
         <SuppressDialog>1</SuppressDialog>
     </Aliases>
 </settings>
