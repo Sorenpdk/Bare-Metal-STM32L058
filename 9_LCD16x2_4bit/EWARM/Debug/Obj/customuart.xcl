@@ -1,47 +1,47 @@
-"C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src\customuart.c"
+"C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src\customuart.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\customuart.pbi.dep
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\Debug\Obj\customuart.pbi.dep
 -o
 customuart.pbi
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\..\Inc\
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\..\Inc\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\..\CMSIS\
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\..\CMSIS\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\..\User\
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\..\User\
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\..\Src\
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM\..\Src\
 -I
-Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include\
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include\
 -I
-Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\DSP\Include\
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\DSP\Include\
 -I
-Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
-Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\EWARM
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Inc
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Inc
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\CMSIS
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\CMSIS
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\User
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\User
 -I
-C:\Users\soren\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\9_LCD16x2_4bit\Src
 -I
-Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I
-Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\DSP\Include
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\DSP\Include
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -293,8 +293,8 @@ Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\DSP\Include
 -D__EDG_FLOAT80_ENABLING_POSSIBLE=0
 -D__EDG_FLOAT128_ENABLING_POSSIBLE=0
 -D__EDG_INT128_EXTENSIONS_ALLOWED=0
--D_DLIB_CONFIG_FILE_HEADER_NAME="Z:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
--D_DLIB_CONFIG_FILE_STRING="Z:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Config_Full.h"
+-D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+-D_DLIB_CONFIG_FILE_STRING="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Config_Full.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V8.50.6.265/W32 for ARM"
 -D_VA_DEFINED=
 -D_VA_LIST=struct __va_list

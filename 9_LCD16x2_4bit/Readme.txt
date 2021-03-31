@@ -20,6 +20,11 @@ The power supply should be decoupled ofcourse, as the LCD connected directly to 
 If left alone over a weekend it works fine, but if you plug in your PC it will corrupt. 
 
 
+FOR DDRAM
+/** RS | R/W | DB7 | DB6 | DB5 | DB4 | DB3 | DB2 | DB1 | DB0  **/
+/** 0  |  0  | 1   | x   | x   | x   | x   | x   | x   | x  **/
+/** Data sheet says range for 1st line is 00 to 0x27 + the 7th bit = 0x80 for place 0 **/
+
 LCD 1602A
 --------- Pins ---------
 BL+ : Backlight VDD (BLA)

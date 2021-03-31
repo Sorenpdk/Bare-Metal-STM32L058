@@ -27,9 +27,38 @@
 #define DB5     1
 #define DB6     2
 #define DB7     3
+#define STAR    0x2A
+#define BLANK   0x20
+#define UINT16  65536
+#define TENS    9
+#define HUNDREDS        99
+#define THOUSANDS       999
+#define TEN_THOUSANDS   9999
+
 
 /* Private variables ---------------------------------------------------------*/
-static char buffer[16];
+static char globalbuffer[16];
+
+unsigned char ManFlatArms[] = { 
+  0x0E, 
+  0x0E, 
+  0x04, 
+  0x04, 
+  0x1F, 
+  0x04, 
+  0x0A, 
+  0x0A };
+
+
+unsigned char ManRaiseArms[] = { 
+  0x0E,
+  0x0E,
+  0x04,
+  0x15,
+  0x0E,
+  0x04,
+  0x0A,
+  0x0A };
 
 /* Private function prototypes -----------------------------------------------*/
 void lcd_gpio(uint8_t pin, uint8_t pinState);
@@ -43,25 +72,9 @@ void lcd_write_cmd(uint8_t cmd);
 void lcd_set_cgram(uint8_t cgram);
 void lcd_write_data(uint8_t data);
 void lcd_custom_char(unsigned char* bitmap, uint8_t cgrampos);
+void check_placevalue_and_display(uint16_t localcycles);
 
-unsigned char bitmap[] = { 
-  0x0e, 
-  0x0e, 
-  0x04, 
-  0x04, 
-  0x1f, 
-  0x04, 
-  0x0a, 
-  0x0a};
-unsigned char bitmap2[] = { 
- 0x0E,
-  0x0E,
-  0x04,
-  0x15,
-  0x0E,
-  0x04,
-  0x0A,
-  0x0A};
+
 /**
   * Brief   Main program.
   * Param   None
@@ -75,23 +88,21 @@ int main(void)
   customGPIO_init();
   customDelay_init();
   lcd_init();
-  lcd_custom_char(bitmap, 0);
-  lcd_custom_char(bitmap2, 1);
-  static uint16_t cycles;
+  lcd_custom_char(ManFlatArms, 0);
+  lcd_custom_char(ManRaiseArms, 1);
   lcd_clear_display();
   lcd_set_ddram(1,0);
   lcd_write_string("Cycles 0");
   
+  static uint16_t cycles;
  
   while (1)
   {
-    
-  
-    
+
     for(int i = 0; i < 10; i++){ // up to 16
       customDelay(30);
       lcd_set_ddram(0,i);
-      lcd_write_data(0x2A);
+      lcd_write_data(STAR);
     }
     
     lcd_set_ddram(1,13);
@@ -100,54 +111,58 @@ int main(void)
     for(int i = 0; i < 10; i++){
       customDelay(30);
       lcd_set_ddram(0,i);
-      lcd_write_data(0x20);
+      lcd_write_data(BLANK);
     }
      
-  
-    cycles++;
-  
-    sprintf(buffer, "%d", cycles);   
-  
-      lcd_set_ddram(1,7);
-      lcd_write_data(buffer[0]);
-  
-    if(cycles > 9){
-      lcd_set_ddram(1,8);
-      lcd_write_data(buffer[1]); 
-    }
-  
-    if(cycles > 99){
-      lcd_set_ddram(1,9);
-      lcd_write_data(buffer[2]); 
-    }
-    
-    if(cycles > 999){
-      lcd_set_ddram(1,10);
-      lcd_write_data(buffer[3]); 
-    }
-    
-    if(cycles > 9999){
-      lcd_set_ddram(1,11);
-      lcd_write_data(buffer[4]); 
-    }
-    
-    /* Clear the cycle counter if we roll over */
-    if(!(cycles % 65536)){
-      for(uint8_t i = 7; i < 11; i++){
-        lcd_set_ddram(1,i);
-        lcd_write_data((uint8_t)' ');
-      }
-    }
-      lcd_set_ddram(1,13);
-      lcd_write_data(1);
+    cycles++;  
+    sprintf(globalbuffer, "%d", cycles);   
+
+    check_placevalue_and_display(cycles);
+
+    lcd_set_ddram(1,13);
+    lcd_write_data(1);
   
   }
   
   
 }
 
+void check_placevalue_and_display(uint16_t localcycles)
+{
+   lcd_set_ddram(1,7);
+   lcd_write_data(globalbuffer[0]);
+    
+  if(localcycles > TENS){
+      lcd_set_ddram(1,8);
+      lcd_write_data(globalbuffer[1]); 
+    }
+  
+    if(localcycles > HUNDREDS){
+      lcd_set_ddram(1,9);
+      lcd_write_data(globalbuffer[2]); 
+    }
+    
+    if(localcycles > THOUSANDS){
+      lcd_set_ddram(1,10);
+      lcd_write_data(globalbuffer[3]); 
+    }
+    
+    if(localcycles > TEN_THOUSANDS){
+      lcd_set_ddram(1,11);
+      lcd_write_data(globalbuffer[4]); 
+    }
+    
+    /* Clear the cycle counter display if we roll over 16 unsigned bits */
+    if(!(localcycles % UINT16)){
+      for(uint8_t i = 7; i < 11; i++){
+        lcd_set_ddram(1,i);
+        lcd_write_data(BLANK);
+      }
+    }
+  
+}
 
-void lcd_clear_display() // fine
+void lcd_clear_display()
 { 
   lcd_gpio(RS, LOW); // Select Instruction mode
   lcd_gpio(WR, LOW); // Select Write mode
@@ -156,17 +171,17 @@ void lcd_clear_display() // fine
 
 void lcd_custom_char(unsigned char* bitmap, uint8_t cgrampos)
 {
-  cgrampos &= 0x07; // set CGRAM address
+  cgrampos &= 0x07;
   lcd_write_cmd(0x40 | (cgrampos << 3));
+  
   for(uint8_t i = 0; i < 8; i++) // populate with bitmap, AC is incremented auto.
   {
-    lcd_write_data(bitmap[i]);
-    
+    lcd_write_data(bitmap[i]); 
   }
   
 }
 
-void lcd_init() // fine
+void lcd_init()
 {
   /******************** Wait for the LCD to boot and prepare init *************/
   customDelay(1500);
@@ -219,20 +234,19 @@ void lcd_init() // fine
   lcd_gpio(DB7, LOW);
   lcd_pulse();
 
-  lcd_gpio(DB4, HIGH); 
+  lcd_gpio(DB4, 1);  // Mandatory
   lcd_pulse();
   
   /************************* Initialization Done ******************************/
   lcd_set_ddram(0, 0);
   lcd_write_string("Initialization");
-  
-
   lcd_set_ddram(1, 0);
   lcd_write_string("Done...");
-  customDelay(1000); // Important delay as the very next instruction in main is clear display again
+  
+  customDelay(1000); // Give some time to show our message
 }
 
-void lcd_transmit(uint8_t data) // fine
+void lcd_transmit(uint8_t data)
 {
     static uint8_t LSB;
     static uint8_t MSB;
@@ -257,25 +271,29 @@ void lcd_transmit(uint8_t data) // fine
     lcd_pulse();
 }
 
-void lcd_set_ddram(uint8_t column, uint8_t row) // fine
+
+
+void lcd_set_ddram(uint8_t column, uint8_t row)
 {
     lcd_gpio(RS, LOW); // Select Instruction mode
     lcd_gpio(WR, LOW); // Select Write mode
      
-    /** RS | R/W | DB7 | DB6 | DB5 | DB4 | DB3 | DB2 | DB1 | DB0  **/
-    /** 0  |  0  | 1   | x   | x   | x   | x   | x   | x   | x  **/
-    /** Data sheet says range for 1st line is 00 to 0x27 + the 7th bit = 0x80 for place 0 **/
     if(column){ // if second line
-      if(row <= 15)
-      lcd_transmit(row | 0xC0);  
-    }   
+      if(row <= 15){
+        lcd_transmit(row | 0xC0);  
+      }
+      // TODO else update error handler and display.
+    }
+    
     else{
-      if(row <= 15)
-      lcd_transmit(row | 0x80);
+      if(row <= 15){
+        lcd_transmit(row | 0x80);
+      }
+      // TODO else update error handler and display.
     }
 }
 
-void lcd_write_cmd(uint8_t cmd) // fine
+void lcd_write_cmd(uint8_t cmd)
 {
   lcd_gpio(RS, LOW); // Select Instruction mode
   lcd_gpio(WR, LOW); // Select Write mode
@@ -289,7 +307,7 @@ void lcd_set_cgram(uint8_t cgramaddr)
   
 }
 
-void lcd_write_data(uint8_t data) // fine
+void lcd_write_data(uint8_t data)
 {
   lcd_gpio(RS, HIGH); // Select Data mode
   lcd_gpio(WR, LOW); // Select Write mode
@@ -306,7 +324,7 @@ void lcd_write_string(unsigned char *data)
 }
 
 
-void lcd_gpio(uint8_t pin, uint8_t pinState) // fine
+void lcd_gpio(uint8_t pin, uint8_t pinState) // TODO should add port as argument so we can switch between.
 {
 
     if(pinState){  
@@ -320,7 +338,7 @@ void lcd_gpio(uint8_t pin, uint8_t pinState) // fine
   
 }
 
-void lcd_pulse() // fine
+void lcd_pulse()
 {
   lcd_gpio(E_PULSE, HIGH);
   customDelay(10);
