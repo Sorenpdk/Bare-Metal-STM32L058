@@ -1,0 +1,512 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  31/Mar/2021  15:08:16
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Exe\freeRTOS.out
+#    Map file     =
+#        C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\List\freeRTOS.map
+#    Command line =
+#        -f C:\Users\dkkospnd\AppData\Local\Temp\EWA362.tmp
+#        ("C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\croutine.o" "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\customclock.o" "C:\Users\dkkospnd\OneDrive -
+#        Alfa Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\customgpio.o" "C:\Users\dkkospnd\OneDrive -
+#        Alfa Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\customuart.o" "C:\Users\dkkospnd\OneDrive -
+#        Alfa Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\event_groups.o" "C:\Users\dkkospnd\OneDrive -
+#        Alfa Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\heap_2.o" "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\list.o" "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\main.o" "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\port.o" "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\portasm.o" "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\queue.o" "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\startup_stm32l053xx.o"
+#        "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\stm32l0xx_it.o" "C:\Users\dkkospnd\OneDrive -
+#        Alfa Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\stream_buffer.o" "C:\Users\dkkospnd\OneDrive -
+#        Alfa Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\system_stm32l0xx.o"
+#        "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\tasks.o" "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Obj\timers.o" --no_out_extension -o
+#        "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\Exe\freeRTOS.out" --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\Debug\List\freeRTOS.map" --config
+#        "C:\Users\dkkospnd\OneDrive - Alfa
+#        Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS -
+#        ongoing\EWARM\freeRTOS.icf" --semihosting --entry __iar_program_start
+#        --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 1'136, alignment = 8 { };
+define block HEAP with size = 8'264, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  section .eeprom  in "P3"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xc0
+  .intvec            ro code   0x800'0000    0xc0  startup_stm32l053xx.o [1]
+                             - 0x800'00c0    0xc0
+
+"P1":                                      0x1c60
+  .text              ro code   0x800'00c0   0x7dc  tasks.o [1]
+  .text              ro code   0x800'089c   0x140  heap_2.o [1]
+  .text              ro code   0x800'09dc    0x4e  ABImemset.o [3]
+  .text              ro code   0x800'0a2a    0x9a  list.o [1]
+  .text              ro code   0x800'0ac4   0x108  port.o [1]
+  .text              ro code   0x800'0bcc   0x3c4  timers.o [1]
+  .text              ro code   0x800'0f90   0x1a8  main.o [1]
+  CODE               ro code   0x800'1138    0x7c  portasm.o [1]
+  .text              ro code   0x800'11b4    0xae  I32DivModFast.o [3]
+  .rodata            const     0x800'1262     0x2  heap_2.o [1]
+  .text              ro code   0x800'1264   0x5ca  queue.o [1]
+  .text              ro code   0x800'182e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1830    0xf0  customgpio.o [1]
+  .text              ro code   0x800'1920    0x72  customuart.o [1]
+  .text              ro code   0x800'1992     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1994    0x94  customclock.o [1]
+  .text              ro code   0x800'1a28    0xf0  system_stm32l0xx.o [1]
+  .text              ro code   0x800'1b18     0x2  IntDivZer.o [3]
+  .text              ro code   0x800'1b1a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1b1c    0x4e  ABImemcpy.o [3]
+  .text              ro code   0x800'1b6a    0x3c  zero_init3.o [3]
+  .text              ro code   0x800'1ba6    0x30  copy_init3.o [3]
+  .text              ro code   0x800'1bd6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1bd8    0x28  data_init.o [3]
+  .iar.init_table    const     0x800'1c00    0x24  - Linker created -
+  .text              ro code   0x800'1c24    0x1e  cmain.o [3]
+  .text              ro code   0x800'1c42     0x4  low_level_init.o [2]
+  .text              ro code   0x800'1c46     0x8  exit.o [2]
+  .text              ro code   0x800'1c4e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1c50     0xa  cexit.o [3]
+  .text              ro code   0x800'1c5a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1c5c    0x14  exit.o [4]
+  .rodata            const     0x800'1c70    0x10  system_stm32l0xx.o [1]
+  .text              ro code   0x800'1c80    0x10  startup_stm32l053xx.o [1]
+  Initializer bytes  const     0x800'1c90    0x10  <for P2-1>
+  .rodata            const     0x800'1ca0     0xc  system_stm32l0xx.o [1]
+  .text              ro code   0x800'1cac     0xc  cstartup_M.o [3]
+  .rodata            const     0x800'1cb8     0x8  main.o [1]
+  .rodata            const     0x800'1cc0     0x8  main.o [1]
+  .rodata            const     0x800'1cc8     0x8  main.o [1]
+  .rodata            const     0x800'1cd0     0x8  main.o [1]
+  .rodata            const     0x800'1cd8     0x8  tasks.o [1]
+  .rodata            const     0x800'1ce0     0x8  timers.o [1]
+  .rodata            const     0x800'1ce8     0x8  timers.o [1]
+  .text              ro code   0x800'1cf0     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1cf2     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1cf4     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1cf6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1cf8     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1cfa     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1cfc     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1cfe     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d00     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d02     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d04     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d06     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d08     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d0a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d0c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d0e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d10     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d12     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d14     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d16     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d18     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d1a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d1c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code   0x800'1d1e     0x2  startup_stm32l053xx.o [1]
+  .rodata            const     0x800'1d20     0x0  zero_init3.o [3]
+  .rodata            const     0x800'1d20     0x0  copy_init3.o [3]
+                             - 0x800'1d20  0x1c60
+
+"P2", part 1 of 3:                           0x10
+  P2-1                        0x2000'0000    0x10  <Init block>
+    .data            inited   0x2000'0000     0x4  heap_2.o [1]
+    .data            inited   0x2000'0004     0x4  port.o [1]
+    .data            inited   0x2000'0008     0x4  system_stm32l0xx.o [1]
+    .data            inited   0x2000'000c     0x4  tasks.o [1]
+                            - 0x2000'0010    0x10
+
+"P2", part 2 of 3:                         0x1b00
+  .bss               zero     0x2000'0010  0x1964  heap_2.o [1]
+  .bss               zero     0x2000'1974    0x64  tasks.o [1]
+  .bss               zero     0x2000'19d8    0x40  queue.o [1]
+  .bss               zero     0x2000'1a18    0x14  tasks.o [1]
+  .bss               zero     0x2000'1a2c    0x14  tasks.o [1]
+  .bss               zero     0x2000'1a40    0x14  tasks.o [1]
+  .bss               zero     0x2000'1a54    0x14  tasks.o [1]
+  .bss               zero     0x2000'1a68    0x14  tasks.o [1]
+  .bss               zero     0x2000'1a7c    0x14  timers.o [1]
+  .bss               zero     0x2000'1a90    0x14  timers.o [1]
+  .bss               zero     0x2000'1aa4     0x8  heap_2.o [1]
+  .bss               zero     0x2000'1aac     0x8  heap_2.o [1]
+  .bss               zero     0x2000'1ab4     0x4  heap_2.o [1]
+  .bss               zero     0x2000'1ab8     0x4  main.o [1]
+  .bss               zero     0x2000'1abc     0x4  main.o [1]
+  .bss               zero     0x2000'1ac0     0x4  tasks.o [1]
+  .bss               zero     0x2000'1ac4     0x4  tasks.o [1]
+  .bss               zero     0x2000'1ac8     0x4  tasks.o [1]
+  .bss               zero     0x2000'1acc     0x4  tasks.o [1]
+  .bss               zero     0x2000'1ad0     0x4  tasks.o [1]
+  .bss               zero     0x2000'1ad4     0x4  tasks.o [1]
+  .bss               zero     0x2000'1ad8     0x4  tasks.o [1]
+  .bss               zero     0x2000'1adc     0x4  tasks.o [1]
+  .bss               zero     0x2000'1ae0     0x4  tasks.o [1]
+  .bss               zero     0x2000'1ae4     0x4  tasks.o [1]
+  .bss               zero     0x2000'1ae8     0x4  tasks.o [1]
+  .bss               zero     0x2000'1aec     0x4  tasks.o [1]
+  .bss               zero     0x2000'1af0     0x4  tasks.o [1]
+  .bss               zero     0x2000'1af4     0x4  tasks.o [1]
+  .bss               zero     0x2000'1af8     0x4  tasks.o [1]
+  .bss               zero     0x2000'1afc     0x4  timers.o [1]
+  .bss               zero     0x2000'1b00     0x4  timers.o [1]
+  .bss               zero     0x2000'1b04     0x4  timers.o [1]
+  .bss               zero     0x2000'1b08     0x4  timers.o [1]
+  .bss               zero     0x2000'1b0c     0x4  timers.o [1]
+                            - 0x2000'1b10  0x1b00
+
+"P2", part 3 of 3:                          0x470
+  CSTACK                      0x2000'1b10   0x470  <Block>
+    CSTACK           uninit   0x2000'1b10   0x470  <Block tail>
+                            - 0x2000'1f80   0x470
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'1d20   0x800'ffff  0xe2e0
+  0x2000'1f80  0x2000'1fff    0x80
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1b00:
+          0x2000'0010  0x1b00
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+           0x800'1c90    0x10
+    1 destination range, total size 0x10:
+          0x2000'0000    0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+command line/config:
+    ------------------------------------------------
+    Total:
+
+C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS - ongoing\EWARM\Debug\Obj: [1]
+    customclock.o              148
+    customgpio.o               240
+    customuart.o               114
+    heap_2.o                   320        6    6'524
+    list.o                     154
+    main.o                     424       32        8
+    port.o                     264        4        4
+    portasm.o                  124
+    queue.o                  1'482                64
+    startup_stm32l053xx.o      268
+    system_stm32l0xx.o         240       32        4
+    tasks.o                  2'012       12      264
+    timers.o                   964       16       60
+    ------------------------------------------------
+    Total:                   6'754      102    6'928
+
+dl6M_tlf.a: [2]
+    exit.o                       8
+    low_level_init.o             4
+    ------------------------------------------------
+    Total:                      12
+
+rt6M_tl.a: [3]
+    ABImemcpy.o                 78
+    ABImemset.o                 78
+    I32DivModFast.o            174
+    IntDivZer.o                  2
+    cexit.o                     10
+    cmain.o                     30
+    copy_init3.o                48
+    cstartup_M.o                12
+    data_init.o                 40
+    zero_init3.o                60
+    ------------------------------------------------
+    Total:                     532
+
+shb_l.a: [4]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Linker created                       36    1'136
+----------------------------------------------------
+    Grand Total:             7'318      138    8'064
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base    0x800'1c00           --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'1c24           --   Gb  - Linker created -
+?main                    0x800'1c25          Code  Gb  cmain.o [3]
+AHBPrescTable            0x800'1c70    0x10  Data  Gb  system_stm32l0xx.o [1]
+CSTACK$$Base            0x2000'1b10           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1f80           --   Gb  - Linker created -
+NVIC_SetPriority         0x800'0f91    0x8a  Code  Lc  main.o [1]
+PLLMulTable              0x800'1ca0     0xc  Data  Gb  system_stm32l0xx.o [1]
+PendSV_Handler           0x800'113f          Code  Gb  portasm.o [1]
+Region$$Table$$Base      0x800'1c00           --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'1c24           --   Gb  - Linker created -
+SVC_Handler              0x800'117d          Code  Gb  portasm.o [1]
+SysTick_Config           0x800'101b    0x30  Code  Lc  main.o [1]
+SysTick_Handler          0x800'0b67    0x20  Code  Gb  port.o [1]
+SystemCoreClock         0x2000'0008     0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemCoreClockUpdate    0x800'1a2b    0xca  Code  Gb  system_stm32l0xx.o [1]
+SystemInit               0x800'1a29     0x2  Code  Gb  system_stm32l0xx.o [1]
+UART_Send_Char           0x800'1951    0x12  Code  Gb  customuart.o [1]
+UART_Send_String         0x800'197d    0x16  Code  Gb  customuart.o [1]
+__aeabi_idiv0            0x800'1b19          Code  Gb  IntDivZer.o [3]
+__aeabi_memcpy           0x800'1b51          Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy4          0x800'1b1d          Code  Gb  ABImemcpy.o [3]
+__aeabi_memcpy8          0x800'1b1d          Code  Gb  ABImemcpy.o [3]
+__aeabi_memset           0x800'09dd          Code  Gb  ABImemset.o [3]
+__aeabi_uidiv            0x800'11b5          Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod         0x800'11b5          Code  Gb  I32DivModFast.o [3]
+__cmain                  0x800'1c25          Code  Gb  cmain.o [3]
+__exit                   0x800'1c5d    0x14  Code  Gb  exit.o [4]
+__iar_Memcpy             0x800'1b5d          Code  Gb  ABImemcpy.o [3]
+__iar_Memset4_word       0x800'09fd          Code  Gb  ABImemset.o [3]
+__iar_Memset_word        0x800'09e9          Code  Gb  ABImemset.o [3]
+__iar_copy_init3         0x800'1ba7    0x30  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'1bd9    0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'1cad          Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'1b6b    0x3c  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'1c43     0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000          Data  Gb  startup_stm32l053xx.o [1]
+_call_main               0x800'1c31          Code  Gb  cmain.o [3]
+_exit                    0x800'1c51          Code  Gb  cexit.o [3]
+_main                    0x800'1c3f          Code  Gb  cmain.o [3]
+customClock_init         0x800'1995    0x94  Code  Gb  customclock.o [1]
+customGPIO_init          0x800'1831    0xb6  Code  Gb  customgpio.o [1]
+customUSART1_Init        0x800'1921    0x30  Code  Gb  customuart.o [1]
+exit                     0x800'1c47     0x8  Code  Gb  exit.o [2]
+heapSTRUCT_SIZE          0x800'1262     0x2  Data  Lc  heap_2.o [1]
+main                     0x800'109b    0x50  Code  Gb  main.o [1]
+myTask1                  0x800'104b    0x30  Code  Gb  main.o [1]
+myTask1Handle           0x2000'1ab8     0x4  Data  Gb  main.o [1]
+myTask2                  0x800'107b    0x20  Code  Gb  main.o [1]
+myTask2Handle           0x2000'1abc     0x4  Data  Gb  main.o [1]
+prvAddCurrentTaskToDelayedList
+                         0x800'0829    0x5c  Code  Lc  tasks.o [1]
+prvAddNewTaskToReadyList
+                         0x800'01e7    0x74  Code  Lc  tasks.o [1]
+prvCheckForValidListAndQueue
+                         0x800'0f2d    0x46  Code  Lc  timers.o [1]
+prvCheckTasksWaitingTermination
+                         0x800'06e5    0x36  Code  Lc  tasks.o [1]
+prvCopyDataFromQueue     0x800'16e1    0x2a  Code  Lc  queue.o [1]
+prvCopyDataToQueue       0x800'1661    0x80  Code  Lc  queue.o [1]
+prvDeleteTCB             0x800'0725    0x12  Code  Lc  tasks.o [1]
+prvGetNextExpireTime     0x800'0d2b    0x26  Code  Lc  timers.o [1]
+prvHeapInit              0x800'09a3    0x1c  Code  Lc  heap_2.o [1]
+prvIdleTask              0x800'0695     0xc  Code  Lc  tasks.o [1]
+prvInitialiseNewQueue    0x800'1337    0x22  Code  Lc  queue.o [1]
+prvInitialiseNewTask     0x800'0129    0xbe  Code  Lc  tasks.o [1]
+prvInitialiseTaskLists   0x800'06a1    0x44  Code  Lc  tasks.o [1]
+prvInsertTimerInActiveList
+                         0x800'0d89    0x3e  Code  Lc  timers.o [1]
+prvIsQueueEmpty          0x800'1779    0x1c  Code  Lc  queue.o [1]
+prvIsQueueFull           0x800'1797    0x1e  Code  Lc  queue.o [1]
+prvProcessExpiredTimer   0x800'0c59    0x5c  Code  Lc  timers.o [1]
+prvProcessReceivedCommands
+                         0x800'0dc9    0xf8  Code  Lc  timers.o [1]
+prvProcessTimerOrBlockTask
+                         0x800'0cc9    0x62  Code  Lc  timers.o [1]
+prvResetNextTaskUnblockTime
+                         0x800'0737    0x22  Code  Lc  tasks.o [1]
+prvSampleTimeNow         0x800'0d51    0x26  Code  Lc  timers.o [1]
+prvSampleTimeNow::xLastTime
+                        0x2000'1b0c     0x4  Data  Lc  timers.o [1]
+prvSwitchTimerLists      0x800'0ec1    0x68  Code  Lc  timers.o [1]
+prvTaskExitError         0x800'0ae1    0x16  Code  Lc  port.o [1]
+prvTimerTask             0x800'0cb5    0x14  Code  Lc  timers.o [1]
+prvUnlockQueue           0x800'170b    0x6e  Code  Lc  queue.o [1]
+pvPortMalloc             0x800'089d    0xcc  Code  Gb  heap_2.o [1]
+pvPortMalloc::xHeapHasBeenInitialised
+                        0x2000'1ab4     0x4  Data  Lc  heap_2.o [1]
+pxCurrentTCB            0x2000'1ac0     0x4  Data  Gb  tasks.o [1]
+pxCurrentTimerList      0x2000'1afc     0x4  Data  Lc  timers.o [1]
+pxDelayedTaskList       0x2000'1ac4     0x4  Data  Lc  tasks.o [1]
+pxOverflowDelayedTaskList
+                        0x2000'1ac8     0x4  Data  Lc  tasks.o [1]
+pxOverflowTimerList     0x2000'1b00     0x4  Data  Lc  timers.o [1]
+pxPortInitialiseStack    0x800'0ac5    0x1a  Code  Gb  port.o [1]
+pxReadyTasksLists       0x2000'1974    0x64  Data  Lc  tasks.o [1]
+toggleLED2               0x800'18e7     0xc  Code  Gb  customgpio.o [1]
+ucHeap                  0x2000'0010  0x1964  Data  Lc  heap_2.o [1]
+ulSetInterruptMaskFromISR
+                         0x800'11a1          Code  Gb  portasm.o [1]
+uxCriticalNesting       0x2000'0004     0x4  Data  Lc  port.o [1]
+uxCurrentNumberOfTasks  0x2000'1ad0     0x4  Data  Lc  tasks.o [1]
+uxDeletedTasksWaitingCleanUp
+                        0x2000'1acc     0x4  Data  Lc  tasks.o [1]
+uxListRemove             0x800'0a9d    0x28  Code  Gb  list.o [1]
+uxSchedulerSuspended    0x2000'1af8     0x4  Data  Lc  tasks.o [1]
+uxTaskNumber            0x2000'1aec     0x4  Data  Lc  tasks.o [1]
+uxTopReadyPriority      0x2000'1ad8     0x4  Data  Lc  tasks.o [1]
+uxTopUsedPriority       0x2000'000c     0x4  Data  Gb  tasks.o [1]
+vApplicationMallocFailedHook
+                         0x800'1129     0x6  Code  Gb  main.o [1]
+vApplicationStackOverflowHook
+                         0x800'1131     0x6  Code  Gb  main.o [1]
+vApplicationTickHook     0x800'1137     0x2  Code  Gb  main.o [1]
+vClearInterruptMaskFromISR
+                         0x800'11a9          Code  Gb  portasm.o [1]
+vListInitialise          0x800'0a2b    0x1e  Code  Gb  list.o [1]
+vListInitialiseItem      0x800'0a49     0x6  Code  Gb  list.o [1]
+vListInsert              0x800'0a67    0x36  Code  Gb  list.o [1]
+vListInsertEnd           0x800'0a4f    0x18  Code  Gb  list.o [1]
+vPortEnterCritical       0x800'0b35    0x14  Code  Gb  port.o [1]
+vPortExitCritical        0x800'0b49    0x1e  Code  Gb  port.o [1]
+vPortFree                0x800'0969    0x3a  Code  Gb  heap_2.o [1]
+vPortStartFirstTask      0x800'117f          Code  Gb  portasm.o [1]
+vPortYield               0x800'0b21    0x12  Code  Gb  port.o [1]
+vQueueAddToRegistry      0x800'17b7    0x28  Code  Gb  queue.o [1]
+vQueueWaitForMessageRestricted
+                         0x800'17e5    0x4a  Code  Gb  queue.o [1]
+vSetMSP                  0x800'1139          Code  Gb  portasm.o [1]
+vTaskDelay               0x800'025d    0x30  Code  Gb  tasks.o [1]
+vTaskInternalSetTimeOutState
+                         0x800'0605     0xe  Code  Gb  tasks.o [1]
+vTaskMissedYield         0x800'0689     0x8  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventList    0x800'052d    0x20  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventListRestricted
+                         0x800'0555    0x2a  Code  Gb  tasks.o [1]
+vTaskStartScheduler      0x800'02a9    0x4e  Code  Gb  tasks.o [1]
+vTaskSuspendAll          0x800'02f9     0xa  Code  Gb  tasks.o [1]
+vTaskSwitchContext       0x800'04a5    0x86  Code  Gb  tasks.o [1]
+xActiveTimerList1       0x2000'1a7c    0x14  Data  Lc  timers.o [1]
+xActiveTimerList2       0x2000'1a90    0x14  Data  Lc  timers.o [1]
+xDelayedTaskList1       0x2000'1a18    0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x2000'1a2c    0x14  Data  Lc  tasks.o [1]
+xEnd                    0x2000'1aac     0x8  Data  Lc  heap_2.o [1]
+xFreeBytesRemaining     0x2000'0000     0x4  Data  Lc  heap_2.o [1]
+xIdleTaskHandle         0x2000'1af4     0x4  Data  Lc  tasks.o [1]
+xNextTaskUnblockTime    0x2000'1af0     0x4  Data  Lc  tasks.o [1]
+xNumOfOverflows         0x2000'1ae8     0x4  Data  Lc  tasks.o [1]
+xPendedTicks            0x2000'1ae0     0x4  Data  Lc  tasks.o [1]
+xPendingReadyList       0x2000'1a40    0x14  Data  Lc  tasks.o [1]
+xPortStartScheduler      0x800'0af7    0x2a  Code  Gb  port.o [1]
+xQueueGenericCreate      0x800'12d1    0x66  Code  Gb  queue.o [1]
+xQueueGenericReset       0x800'1265    0x6c  Code  Gb  queue.o [1]
+xQueueGenericSend        0x800'1359   0x134  Code  Gb  queue.o [1]
+xQueueGenericSendFromISR
+                         0x800'148d    0xb8  Code  Gb  queue.o [1]
+xQueueReceive            0x800'1545   0x11c  Code  Gb  queue.o [1]
+xQueueRegistry          0x2000'19d8    0x40  Data  Gb  queue.o [1]
+xSchedulerRunning       0x2000'1adc     0x4  Data  Lc  tasks.o [1]
+xStart                  0x2000'1aa4     0x8  Data  Lc  heap_2.o [1]
+xSuspendedTaskList      0x2000'1a68    0x14  Data  Lc  tasks.o [1]
+xTaskCheckForTimeOut     0x800'0619    0x6c  Code  Gb  tasks.o [1]
+xTaskCreate              0x800'00c1    0x66  Code  Gb  tasks.o [1]
+xTaskGetSchedulerState   0x800'075d    0x1e  Code  Gb  tasks.o [1]
+xTaskGetTickCount        0x800'03b9     0x6  Code  Gb  tasks.o [1]
+xTaskIncrementTick       0x800'03e5    0xb6  Code  Gb  tasks.o [1]
+xTaskPriorityDisinherit
+                         0x800'0789    0x6a  Code  Gb  tasks.o [1]
+xTaskRemoveFromEventList
+                         0x800'0589    0x68  Code  Gb  tasks.o [1]
+xTaskResumeAll           0x800'0309    0xaa  Code  Gb  tasks.o [1]
+xTasksWaitingTermination
+                        0x2000'1a54    0x14  Data  Lc  tasks.o [1]
+xTickCount              0x2000'1ad4     0x4  Data  Lc  tasks.o [1]
+xTimerCreateTimerTask    0x800'0bcd    0x32  Code  Gb  timers.o [1]
+xTimerGenericCommand     0x800'0c01    0x56  Code  Gb  timers.o [1]
+xTimerQueue             0x2000'1b04     0x4  Data  Lc  timers.o [1]
+xTimerTaskHandle        0x2000'1b08     0x4  Data  Lc  timers.o [1]
+xYieldPending           0x2000'1ae4     0x4  Data  Lc  tasks.o [1]
+
+
+[1] = C:\Users\dkkospnd\OneDrive - Alfa Laval\Desktop\Bare-Metal-STM32L058\10. freeRTOS - ongoing\EWARM\Debug\Obj
+[2] = dl6M_tlf.a
+[3] = rt6M_tl.a
+[4] = shb_l.a
+
+  7'318 bytes of readonly  code memory
+    138 bytes of readonly  data memory
+  8'064 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
