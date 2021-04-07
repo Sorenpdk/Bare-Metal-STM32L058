@@ -336,7 +336,7 @@
             </BasePane-34056>
             <IarPane-34056>
                 <col-names>
-                    <item> </item>
+                    <item />
                     <item>Core</item>
                     <item>Cycles</item>
                     <item>PC</item>
@@ -873,7 +873,7 @@
                     <item>buffer</item>
                     <item>Tick</item>
                     <item>Tick</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>
